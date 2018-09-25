@@ -16,6 +16,11 @@ class Main extends React.Component {
 
         return (
             <main>
+                <h2>My bio:
+                    {/* Hi I'm Ben, a Udacity Certified Front-End Web Developer,
+                     currently transitioning from a career in Geographic Information Systems
+                      and Engineering to Software Engineering. */}
+                </h2>
                 <section id="stories">
                 {tempStory.map((item)=>{
                     return (
