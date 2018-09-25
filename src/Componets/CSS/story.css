@@ -1,0 +1,8 @@
+article {
+    background-color: gray;
+    justify-items: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px black solid;
+}

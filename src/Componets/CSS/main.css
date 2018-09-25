@@ -1,4 +1,25 @@
 main {
-    display: grid;
-    background-color: crimson;
+    background-color: wheat;
 }
+
+#stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.1rem;
+}
+
+#stories article:first-of-type  {
+    grid-row: 1 / 3;
+    background-color: red; 
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.1rem;
+}
+
+/* h2 {
+    color: red;
+} */
