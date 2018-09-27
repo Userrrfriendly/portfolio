@@ -2,10 +2,23 @@ import React from 'react';
 import './CSS/main.css';
 import Story from './story';
 import Project from './project';
+import * as Data from '../data';
 
 class Main extends React.Component {
     render () {
-        const tempStory = ['Main','Resume','Engineering experience'];
+        // const tempStory = [
+        //     {
+        //         name: 'Main',
+        //         url: './../Images/hero-small.jpg'
+        //     },
+        //     {
+        //         name: 'Resume',
+        //         url: '../Images/travelling-card.jpg'
+        //     },
+        //     {
+        //         name: 'Engineering experience',
+        //         url: './Images/weatherapp.jpg'
+        //     }];
         const tempProjects = ['flickr Map', 'My reads', 'Restaurant Review',
                             'Arcade Game', 'Matching Game','Unit Tests','Calculator',
                             'Wikipedia reader', 'Weather App',];
@@ -22,9 +35,9 @@ class Main extends React.Component {
                       and Engineering to Software Engineering. */}
                 </h2>
                 <section id="stories">
-                {tempStory.map((item)=>{
+                {Data.tempStory.map((item)=>{
                     return (
-                        <Story key={item} name={item}/>
+                        <Story key={item.name} name={item.name} url={item.url}/>
                     )
                 })}
                 </section>
