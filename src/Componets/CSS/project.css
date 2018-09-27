@@ -1,16 +1,42 @@
-article {
-    background-color: salmon;
+.project {
+    /* background-color: salmon; */
     min-width: 200px;
     min-height: 200px;
-    margin-bottom: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    border-bottom: 1px solid #d0d0d0;
 }
 
-article:last-of-type {
+.project footer h3 {
+    font-weight: normal;
+}
+
+.project footer p {
+    color:#888;
+}
+
+.project:hover {
+    background: #f7f7f7;
+}
+
+.project:last-of-type {
     margin-bottom: 0;
 }
 
+/* <img> */
+.project-thumbnail {
+    max-width: 70%;
+    margin-top: 1rem;
+}
+
 @media screen and (min-width:600px) {
-    article {
+    .project {
         margin: 0;
+        border-right: 1px solid #d0d0d0;
+    }
+    .project:nth-child(3n-1) {
+        border-left:1px solid  #d0d0d0;
+    }
+    .project:nth-child(-n+4) {
+        border-top:1px solid  #d0d0d0;
     }
 }

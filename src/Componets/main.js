@@ -19,9 +19,9 @@ class Main extends React.Component {
         //         name: 'Engineering experience',
         //         url: './Images/weatherapp.jpg'
         //     }];
-        const tempProjects = ['flickr Map', 'My reads', 'Restaurant Review',
-                            'Arcade Game', 'Matching Game','Unit Tests','Calculator',
-                            'Wikipedia reader', 'Weather App',];
+        // const tempProjects = ['flickr Map', 'My reads', 'Restaurant Review',
+        //                     'Arcade Game', 'Matching Game','Unit Tests','Calculator',
+        //                     'Wikipedia reader', 'Weather App',];
         const style = {
             gridColumn: 'span 3',
             textAlign: 'left'
@@ -43,9 +43,13 @@ class Main extends React.Component {
                 </section>
                 <section id="projects">
                 <h2 style={style}>My Projects</h2>
-                {tempProjects.map((item)=>{
+                {Data.tempProjects.map((project)=>{
                     return (
-                        <Project key={item} name={item} />
+                        <Project key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            imageUrl={project.imageUrl}
+                        />
                     )
                 })}
                 </section>
