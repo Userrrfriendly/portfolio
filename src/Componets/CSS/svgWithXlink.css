@@ -1,0 +1,7 @@
+.svg {
+    margin: 0.5rem;
+}
+
+svg:hover .social-icon {
+    fill:black;
+}

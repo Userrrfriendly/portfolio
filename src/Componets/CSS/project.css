@@ -2,17 +2,22 @@
 .project {
     min-width: 200px;
     min-height: 200px;
-    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
     cursor: pointer;
+}
+
+.project:nth-child(2) {
+    /* first .project on mobile */
+    border-top: 1px solid #d0d0d0;
 }
 
 .project:hover {
     background: #f7f7f7;
 }
 
-.project:last-of-type {
+/* .project:last-of-type {
     margin-bottom: 0;
-}
+} */
 
 .project h3 {
     font-weight: 500;
@@ -56,9 +61,9 @@
     .project:nth-child(3n-1) {
         border-left:1px solid  #d0d0d0;
     }
-    /* .project:nth-child(-n+4) {
+    .project:nth-child(-n+4) {
         border-top:1px solid  #d0d0d0;
-    } */
+    }
     .project h3 {
         margin: 0.5rem 0;
     }

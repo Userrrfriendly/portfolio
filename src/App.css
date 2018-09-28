@@ -26,8 +26,6 @@
 body {
   min-height: 100%;
   background-color: #ebebeb;
-  /* font-family: 'Marcellus SC', serif;  */
-  /* All capital a bit more gothic than i'd like */
   font-family: 'Alegreya SC', serif;
   font-weight: 500;
 }

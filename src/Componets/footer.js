@@ -1,10 +1,13 @@
 import React from 'react';
 import './CSS/footer.css';
+import SvgTest from './SvgWithXlink';
 
 function Footer() {
     return (
         <footer id="footer">
-          <p>Application's footer</p>
+            <SvgTest iconName="gitHub"/>
+            <SvgTest iconName="linkedIn"/>
+            <p>Application's footer</p>
         </footer>
     )
 }
