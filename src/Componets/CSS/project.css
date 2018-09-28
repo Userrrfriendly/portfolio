@@ -1,17 +1,9 @@
+/* <article> */
 .project {
-    /* background-color: salmon; */
     min-width: 200px;
     min-height: 200px;
-    /* margin-bottom: 0.2rem; */
-    border-bottom: 1px solid #d0d0d0;
-}
-
-.project footer h3 {
-    font-weight: normal;
-}
-
-.project footer p {
-    color:#888;
+    border-top: 1px solid #d0d0d0;
+    cursor: pointer;
 }
 
 .project:hover {
@@ -22,10 +14,38 @@
     margin-bottom: 0;
 }
 
+.project h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color:rgb(99, 97, 97);
+    margin: 0.25rem 0;
+}
+
+.project p {
+    color:#888;
+    /* font-style: italic; */
+    margin-bottom: 2.5rem;
+}
+
+/* <figure> */
+.project-figure {
+    position: relative;
+    margin: auto;
+}
+
 /* <img> */
 .project-thumbnail {
-    max-width: 70%;
+    max-width: 90%;
     margin-top: 1rem;
+}
+
+/* <figcaption> */
+.project-caption {
+    background: #333333f2;
+    color: #f7f7f7;
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 10%;
 }
 
 @media screen and (min-width:600px) {
@@ -36,7 +56,17 @@
     .project:nth-child(3n-1) {
         border-left:1px solid  #d0d0d0;
     }
-    .project:nth-child(-n+4) {
+    /* .project:nth-child(-n+4) {
         border-top:1px solid  #d0d0d0;
+    } */
+    .project h3 {
+        margin: 0.5rem 0;
+    }
+    .project-thumbnail {
+        max-width: 70%;
+        /* margin-top: 1rem; */
+    }
+    .project-caption {
+        left: 5%;
     }
 }

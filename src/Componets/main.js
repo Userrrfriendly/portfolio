@@ -42,13 +42,14 @@ class Main extends React.Component {
                 })}
                 </section>
                 <section id="projects">
-                <h2 style={style}>My Projects</h2>
+                <h2 style={style}>My Projects:</h2>
                 {Data.tempProjects.map((project)=>{
                     return (
                         <Project key={project.name}
                             name={project.name}
                             description={project.description}
                             imageUrl={project.imageUrl}
+                            projectType={project.projectType}
                         />
                     )
                 })}

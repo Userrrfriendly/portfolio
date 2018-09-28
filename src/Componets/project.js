@@ -6,7 +6,6 @@ class Project extends React.Component {
     render() {
         return (
             <article className="project">
-                <section className="project-header">
                 {/* <img 
                     srcset="elva-fairy-320w.jpg 320w,
                         elva-fairy-480w.jpg 480w,
@@ -17,13 +16,12 @@ class Project extends React.Component {
                     src={this.props.imageUrl}
                     alt=""
                 /> */}
-                <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
-
-                </section>
-                <section className="project-footer">
-                    <h3>{this.props.name}</h3>
-                    <p>{this.props.description}</p>
-                </section>
+                <figure className="project-figure">
+                    <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
+                    <figcaption className="project-caption">{this.props.projectType}</figcaption>
+                </figure>
+                <h3>{this.props.name}</h3>
+                <p>{this.props.description}</p>
             </article>
         )
     }
@@ -32,7 +30,8 @@ class Project extends React.Component {
 Project.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired //change to array for the srcset ???
+    imageUrl: PropTypes.string.isRequired, //change to array for the srcset ???
+    projectType: PropTypes.string.isRequired
 }
 
 export default Project;

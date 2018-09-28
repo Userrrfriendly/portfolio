@@ -30,47 +30,56 @@ export const tempProjects = [
     {
         name:'Flickr-Photo-Plotter',
         description:'Pins images on a map based on the images geolocation',
-        imageUrl: flickr
+        imageUrl: flickr,
+        projectType: 'Udacity'
     },
     {
         name:'My reads',
         description: 'Organize books on shelves based on what you are reading',
-        imageUrl: myReads
+        imageUrl: myReads,
+        projectType: 'Udacity'
     },
     {
         name: 'Restaurant Review',
         description: 'Restaurant review app',
-        imageUrl: restaurantReview
+        imageUrl: restaurantReview,
+        projectType: 'Udacity'
     },
     {
         name: 'Arcade Game',
         description: 'Save the princess from bugs',
-        imageUrl: arcadeGame
+        imageUrl: arcadeGame,
+        projectType: 'Udacity'
     },
     {
         name: 'Matching Game',
         description: 'Retro matching game',
-        imageUrl: matchingGame
+        imageUrl: matchingGame,
+        projectType: 'Udacity'
     },
     {
         name: 'Unit Tests',
         description: 'Test before you code',
-        imageUrl: unitTest
+        imageUrl: unitTest,
+        projectType: 'Udacity'
     },
     {
         name: 'Calculator',
         description: 'A calculator build with jQuery',
-        imageUrl: calculator
+        imageUrl: calculator,
+        projectType: 'FreeCodeCamp'
     },
     {
         name: 'Wikipedia reader',
         description: 'Uses the wikipedia API to browse wikipedia articles',
-        imageUrl: wikiReader
+        imageUrl: wikiReader,
+        projectType: 'FreeCodeCamp'
     },
     {
         name: 'Weather App',
         description: 'Find out what the weather is without going outiside!',
-        imageUrl: weatherApp
+        imageUrl: weatherApp,
+        projectType: 'FreeCodeCamp'
     }];
 
 // name: ,
