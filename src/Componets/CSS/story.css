@@ -1,10 +1,14 @@
+.story:first-of-type {
+    height: 50vh;
+}
+
 .story {
     background-color: gray;
     justify-items: center;
     align-items: center;
     min-width: 200px;
-    height: 50vh;
-    min-height: 200px;
+    height: 20vh;
+    /* min-height: 200px; */
     overflow: hidden;
     margin-bottom: 0.5rem;
 }
@@ -13,7 +17,7 @@
     width: 105%;
     height: 105%;
     /* change min-height OR change the resolution of the images aka no wide images */
-    min-height: 300px;
+    /* min-height: 300px; */
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +38,8 @@
     .story {
         height: auto;
         margin: 0;
+        min-height: 200px;
+
     }
     /* .story {
         background-color: gray;
