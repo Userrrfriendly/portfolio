@@ -22,3 +22,4 @@
     - .project-caption must be styled green for freeCodeCamp and blue for Udacity
     - try flexbox for aligning the images in the stories
     - https://css-tricks.com/creating-svg-icon-system-react/
+    - main -> my bio <h2> must be moved in the acording section

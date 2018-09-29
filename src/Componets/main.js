@@ -6,10 +6,10 @@ import * as Data from '../data';
 
 class Main extends React.Component {
     render () {
-        const style = {
-            gridColumn: 'span 3',
-            textAlign: 'left'
-        }
+        // const style = {
+        //     gridColumn: 'span 3',
+        //     textAlign: 'left'
+        // }
 
         return (
             <main>
@@ -26,7 +26,7 @@ class Main extends React.Component {
                 })}
                 </section>
                 <section id="projects">
-                <h2 style={style}>My Projects:</h2>
+                <h2>My Projects:</h2>
                 {Data.tempProjects.map((project)=>{
                     return (
                         <Project key={project.name}

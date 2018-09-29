@@ -5,12 +5,11 @@
     min-width: 200px;
     height: 50vh;
     min-height: 200px;
-    /* border: 1px black solid; */
     overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 
 .story figure {
-    background-color: green;
     width: 105%;
     height: 105%;
     /* change min-height OR change the resolution of the images aka no wide images */
@@ -29,11 +28,22 @@
 .story figure:hover {
     width: 111%;
     height: 111%;
-    /* background-color: yellowgreen; */
 }
 
 @media screen and (min-width:600px) {
     .story {
         height: auto;
+        margin: 0;
     }
-  }
+    /* .story {
+        background-color: gray;
+        justify-items: center;
+        align-items: center;
+        min-width: 200px;
+        min-height: 200px;
+        overflow: hidden;
+        
+        height: 50vh;
+        margin-bottom: 0.5rem;
+    } */
+}
