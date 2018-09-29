@@ -9,9 +9,7 @@ class Story extends React.Component {
         }
         return (
             <article className="story">
-                {/* <p>This is the {this.props.name} story</p> */}
                 <figure style={figureStyle}>
-                    {/* <img src={this.props.url} alt={this.props.name} className="story grow"/> */}
                 </figure>
             </article>
         )

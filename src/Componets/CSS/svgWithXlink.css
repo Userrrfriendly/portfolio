@@ -1,5 +1,24 @@
-.svg {
-    margin: 0.5rem;
+.icon-link {
+    margin: 0.25rem;
+    padding: 0.25rem;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.icon-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px lightsteelblue;
+    border: 1px solid darkgrey;
+}
+
+svg .social-icon {
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 300ms;
+    -webkit-transition-timing-function: ease-in-out;
 }
 
 svg:hover .social-icon {

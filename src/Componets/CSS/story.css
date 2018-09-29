@@ -13,6 +13,7 @@
     background-color: green;
     width: 105%;
     height: 105%;
+    /* change min-height OR change the resolution of the images aka no wide images */
     min-height: 300px;
     margin: 0;
     background-repeat: no-repeat;
@@ -28,36 +29,8 @@
 .story figure:hover {
     width: 111%;
     height: 111%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
-
-/* .story {
-    max-width: 100%;
-    border: 10px solid #fff;  
-    float: left;
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-    overflow: hidden;
-    -webkit-box-shadow: 5px 5px 5px #111;
-            box-shadow: 5px 5px 5px #111; 
-}
-
-.grow {
-    height: 300px;
-    width: 300px;
-   
-    -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
-}
-   
-.grow:hover {
-    width: 400px;
-    height: 400px;
-} */
 
 @media screen and (min-width:600px) {
     .story {

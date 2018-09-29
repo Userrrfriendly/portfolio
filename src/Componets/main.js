@@ -6,22 +6,6 @@ import * as Data from '../data';
 
 class Main extends React.Component {
     render () {
-        // const tempStory = [
-        //     {
-        //         name: 'Main',
-        //         url: './../Images/hero-small.jpg'
-        //     },
-        //     {
-        //         name: 'Resume',
-        //         url: '../Images/travelling-card.jpg'
-        //     },
-        //     {
-        //         name: 'Engineering experience',
-        //         url: './Images/weatherapp.jpg'
-        //     }];
-        // const tempProjects = ['flickr Map', 'My reads', 'Restaurant Review',
-        //                     'Arcade Game', 'Matching Game','Unit Tests','Calculator',
-        //                     'Wikipedia reader', 'Weather App',];
         const style = {
             gridColumn: 'span 3',
             textAlign: 'left'

@@ -20,3 +20,5 @@
     - expand/fix images on <Project> mobile screens
     - refactor tesxSVG to smth meaningfull that will also render the links
     - .project-caption must be styled green for freeCodeCamp and blue for Udacity
+    - try flexbox for aligning the images in the stories
+    - https://css-tricks.com/creating-svg-icon-system-react/
