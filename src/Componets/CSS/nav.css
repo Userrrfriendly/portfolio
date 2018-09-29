@@ -48,6 +48,10 @@ nav {
 }
 
 @media screen and (min-width:950px) {
+    .nav-link {
+        padding: 0.5rem  0.8rem;
+        font-size: 1.2rem;
+    }
     .nav-link:last-of-type {
         margin-right: 3%;
     }
