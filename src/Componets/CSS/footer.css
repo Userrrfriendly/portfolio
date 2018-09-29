@@ -37,9 +37,6 @@
 .footer-contact-info {
     display: flex;
     align-items: center;
-}
-
-.footer-contact-info {
     margin-left: 5px;
 }
 
@@ -58,7 +55,6 @@
         border-top: 1px solid #d0d0d0;
         flex-wrap: nowrap;
         justify-content: space-between;
-        align-items: center;
     }
 
     .footer-legal {
