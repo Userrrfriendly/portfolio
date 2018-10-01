@@ -1,5 +1,5 @@
 .story:first-of-type {
-    height: 50vh;
+    height: 60vh;
 }
 
 .story {
@@ -7,9 +7,10 @@
     justify-items: center;
     align-items: center;
     min-width: 200px;
-    height: 20vh;
+    height: 25vh;
     overflow: hidden;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .story figure {
@@ -33,11 +34,62 @@
     height: 111%;
 }
 
+.story-color-overlay {
+    /* background:rgba(255, 110, 110, 0.479); */
+    height: 100%;
+    width: 100%;
+}
+/* only for testing */
+#stories article:first-of-type .story-caption  {
+    background-color: #ff8a0080;
+    /* color: yellow; */
+    /* background: initial;
+    height: 100%;
+    width: 100%; */
+}
+
+.story-caption {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    text-align: left;
+    /* margin-left: 1rem; */
+    /* font-size: 1.5rem; */
+    text-shadow: 0px 0px 20px #FFFFFF;
+    width: 100%;
+}
+.story-caption h3 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.story-caption p {
+    margin: 0 0 0.5rem 1rem;
+}
+
 @media screen and (min-width:600px) {
     .story {
         height: auto;
         margin: 0;
-        /* min-height: 200px; */
+    }
+    /* .story:first-of-type {
+        height: auto;
+    } */
+}
 
+@media screen and (min-width:950px) {
+    .story-color-overlay {
+        background: initial;
     }
 }
+
+@media screen and (orientation: portrait) and (min-width:600px) {
+    .story:first-of-type {
+        height: auto;
+        /* max-height: 350px; */
+        /* min-height: 100px; */
+    }
+    .story {
+        height: 20vh;
+    }
+  }

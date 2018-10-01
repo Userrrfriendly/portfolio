@@ -12,7 +12,12 @@ class Main extends React.Component {
                     <h2>My bio:</h2>
                     {Data.tempStory.map((item)=>{
                         return (
-                            <Story key={item.name} name={item.name} url={item.url}/>
+                            <Story key={item.name}
+                                name={item.name}
+                                caption={item.caption}
+                                url={item.url}
+                                backgroundColor={item.backgroundColor}    
+                            />
                         )
                     })}
                 </section>

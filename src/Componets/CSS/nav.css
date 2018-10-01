@@ -17,6 +17,7 @@ nav {
     height: 250px;
     transition: height 500ms;
     overflow: hidden;
+    padding: 0;
 }
 
 .nav-list-collapsed {
@@ -31,8 +32,8 @@ nav {
 .nav-list li {
     list-style-type: none;
     margin: 0.5rem;
-    /* padding: 0.5rem; */
 }
+
 .nav-list li:first-of-type {
     margin-top:1rem;
 }
@@ -40,7 +41,6 @@ nav {
 .nav-link {
     text-decoration: none;
     color:black;
-    /* padding: 0.2rem; */
     padding: 0.5rem;
     font-size: 1rem;
 }

@@ -14,16 +14,22 @@ import calculator from './Images/minecraft.jpg';
 
 export const tempStory = [
     {
-        name: 'Main',
-        url: mainUrl
+        name: 'My Story',
+        url: mainUrl,
+        caption:'Read about my transision from Engineering to Software Engineering',
+        backgroundColor: 'initial'
     },
     {
         name: 'Resume',
-        url: resumeUrl
+        url: resumeUrl,
+        caption: 'View my Resume',
+        backgroundColor: '#0000ff80' //blue
     },
     {
-        name: 'Engineering experience',
-        url: pastXPUrl
+        name: 'non-tech experience',
+        url: pastXPUrl,
+        caption: 'Read more if you are curious what about my engineering experience...',
+        backgroundColor: '#00800080' //green
     }];
 
 export const tempProjects = [

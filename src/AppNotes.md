@@ -4,7 +4,7 @@
 * https://github.com/mbrevda/react-image think about it
 
 ## TODO: 2:54 30/09/2018
-    - Create a mobile Nav (1 hour)
+    + Create a mobile Nav (1 hour) ==> 3 hours
     - Make Project Screenshots (1 hour)
     - Add text overlay to the stories (1 hour)
         - Add filter overlays for different screens (1 hour)
@@ -14,6 +14,7 @@
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
             - ReactRoute could solve the problem so don't be hasty
     - ----------------------
+    - * iphone5 landscape my story image sucks
     - * Create a Story Page 8 hours
     - * Create a Project Page 8 hours
     - * Create a Blog Page 16 hours
