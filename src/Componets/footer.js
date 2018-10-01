@@ -6,6 +6,7 @@ import UpArrowBtn from './upArrowButton';
 function Footer() {
     return (
         <footer id="footer">
+            <UpArrowBtn />
             <div className="footer-contact-info">
                 <a href="#" className="footer-links">Contact Me</a>
                 <SvgWithXlink iconName="gitHub"/>
@@ -14,7 +15,7 @@ function Footer() {
             <div className="footer-legal">
                 <p>Veniamin Tsigourof - 2018</p>
             </div>
-            <UpArrowBtn />
+            
         </footer>
     )
 }

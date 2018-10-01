@@ -19,6 +19,15 @@ nav {
     overflow: hidden;
 }
 
+.nav-list-collapsed {
+    height: 0;
+}
+
+.nav-list-hide-li li {
+    /* sets display to none thus removes the items from tab order */
+    display: none;
+}
+
 .nav-list li {
     list-style-type: none;
     margin: 0.5rem;
@@ -46,7 +55,13 @@ nav {
     background-size: cover;
     background-color: white;
     border: none;
+    transition: background-color 500ms;
 }
+
+.hamburger-menu:active {
+    background-color: gray;
+    transform: translateY(4px);
+  }
 
 /* .nav-link:last-of-type {
     margin-left: auto;
@@ -67,11 +82,18 @@ nav {
 }
 
 .nav-link.my-story {
-    /* margin-left: 5%; */
     font-weight: bold;
 }
 
 @media screen and (min-width:600px) {
+    .nav-list-collapsed {
+        height: auto;
+    }
+    
+    .nav-list-hide-li li {
+        display: initial;
+    }
+
     .hamburger-menu {
         display: none;
     }
@@ -85,7 +107,6 @@ nav {
 
     .nav-link {
         padding: 0.5rem  0.4rem;
-        /* font-size: 1rem; */
     }
 
     .nav-list li {
@@ -105,9 +126,6 @@ nav {
         margin-right: 0; */
     }
 
-    /* .my-story {
-        margin-left: 0;
-    } */
 }
 
 @media screen and (min-width:950px) {
