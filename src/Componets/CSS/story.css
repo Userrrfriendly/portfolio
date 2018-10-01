@@ -93,3 +93,9 @@
         height: 20vh;
     }
   }
+
+  @media screen and (orientation: landscape) and (max-height:420px) {
+    .story:first-of-type {
+        height: 80vh;
+    }
+  }

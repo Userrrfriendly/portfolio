@@ -5,9 +5,11 @@
 
 ## TODO: 2:54 30/09/2018
     + Create a mobile Nav (1 hour) ==> 3 hours
-    - Make Project Screenshots (1 hour)
-    - Add text overlay to the stories (1 hour)
+    + Add text overlay to the stories (1 hour) ==> 3 hours
         - Add filter overlays for different screens (1 hour)
+    - Make Project Screenshots (1 hour)
+        - Find Past Experience Picture
+        - Make Resume Picture
     - Fix the images css in the stories (1 hour)
     - .project-caption must be styled green for freeCodeCamp and blue for Udacity (1 hour)
     - Stories and Projects should be list items (1 hour)
