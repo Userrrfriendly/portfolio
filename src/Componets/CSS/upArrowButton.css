@@ -26,8 +26,6 @@
     -webkit-box-shadow: 0 0 5px lightsteelblue;
             box-shadow: 0 0 5px lightsteelblue;
     border: 1px solid darkgrey;
-    /* padding: 3px 0px 3px 3px; */
-    /* margin: 5px 1px 3px 0px; */
 }
 
 @-webkit-keyframes bounce {
@@ -116,6 +114,5 @@
   .up-arrow {
     top: -25%;
     right: 10%;
-    /* left: 50%; */
 }
 }

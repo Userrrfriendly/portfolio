@@ -2,13 +2,50 @@ nav {
     background-color: #fff;
     display: flex;
     width: 100%;
+    min-height: 44px;
+    position: relative;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 250px;
+    transition: height 500ms;
+    overflow: hidden;
+}
+
+.nav-list li {
+    list-style-type: none;
+    margin: 0.5rem;
+    /* padding: 0.5rem; */
+}
+.nav-list li:first-of-type {
+    margin-top:1rem;
 }
 
 .nav-link {
     text-decoration: none;
     color:black;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
+    padding: 0.5rem;
     font-size: 1rem;
+}
+
+.hamburger-menu {
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    right: 0;
+    background-image: url("../../Images/icons/Hamburger_icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    border: none;
 }
 
 /* .nav-link:last-of-type {
@@ -21,7 +58,8 @@ nav {
     color: grey;
 }
 
-.nav-link:focus {
+.nav-link:focus,
+.hamburger-menu:focus {
     outline: none;
     -webkit-box-shadow: 0 0 5px lightsteelblue;
             box-shadow: 0 0 5px lightsteelblue;
@@ -34,14 +72,37 @@ nav {
 }
 
 @media screen and (min-width:600px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-list {
+        flex-flow: row nowrap;
+        height: auto;
+        padding: 0;
+        overflow: initial;
+    }
+
     .nav-link {
-        padding: 0.5rem  0.5rem;
+        padding: 0.5rem  0.4rem;
         /* font-size: 1rem; */
     }
 
-    .nav-link:last-of-type {
+    .nav-list li {
+        list-style-type: none;
+        margin: 0.25rem 0 0.5rem;
+    }
+
+    .nav-list li:last-of-type {
         margin-left: auto;
         margin-right: 0;
+    }
+    .nav-list li:first-of-type {
+        margin: 0.25rem 0 0.5rem;
+    }
+    .nav-link:last-of-type {
+        /* margin-left: auto;
+        margin-right: 0; */
     }
 
     /* .my-story {
@@ -52,12 +113,12 @@ nav {
 @media screen and (min-width:950px) {
     .nav-link {
         padding: 0.5rem  0.8rem;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .nav-link:last-of-type {
-        margin-right: 3%;
+        /* margin-right: 3%; */
     }
     .my-story {
-        margin-left: 3%;
+        /* margin-left: 3%; */
     }
 }

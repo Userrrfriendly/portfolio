@@ -9,6 +9,7 @@ main h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: min-content 1fr 1fr;
+        /* https://stackoverflow.com/questions/50708974/how-do-you-collapse-unused-row-in-a-css-grid */
         grid-gap: 1rem;
     }
     

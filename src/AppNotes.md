@@ -3,7 +3,7 @@
 * try implementing img or picture that can serve different images based on the device rather than the background-image prop.
 * https://github.com/mbrevda/react-image think about it
 
-## TODO: 2:50 30/09/2018
+## TODO: 2:54 30/09/2018
     - Create a mobile Nav (1 hour)
     - Make Project Screenshots (1 hour)
     - Add text overlay to the stories (1 hour)
@@ -21,7 +21,7 @@
     - * Start working on your Resume ...
     - * Add React.Router or #Router 8 hours
     - * What about image compression? ...
-    - * Test on Edge (5 minutes)
+    - * Test on Edge (5 minutes) + (10 minutes to setup at Innovator)
     - * Create Internet Explorer fallbacks (Unknown...)
 
 ## Remember:
