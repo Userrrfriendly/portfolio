@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 class Project extends React.Component {
     render() {
+        const figcaptionClass = this.props.projectType.toLowerCase() + '-figcaption';
         return (
             <article className="project">
                 {/* <img 
@@ -18,7 +19,7 @@ class Project extends React.Component {
                 /> */}
                 <figure className="project-figure">
                     <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
-                    <figcaption className="project-caption">{this.props.projectType}</figcaption>
+                    <figcaption className={figcaptionClass + ' ' + "project-caption"}>{this.props.projectType}</figcaption>
                 </figure>
                 <h3>{this.props.name}</h3>
                 <p>{this.props.description}</p>

@@ -37,15 +37,24 @@
 .project-thumbnail {
     max-width: 90%;
     margin-top: 1rem;
+    border: 1px solid lightgray;
 }
 
 /* <figcaption> */
 .project-caption {
-    background: #333333f2;
+    background: #640040de;
     color: #f7f7f7;
     position: absolute;
     padding: 10px 20px;
     bottom: 10%;
+}
+
+.udacity-figcaption {
+    background: #02b3e4e0;
+}
+
+.freecodecamp-figcaption {
+    background: #006400de;
 }
 
 @media screen and (min-width:600px) {

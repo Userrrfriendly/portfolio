@@ -7,16 +7,16 @@
     + Create a mobile Nav (1 hour) ==> 3 hours
     + Add text overlay to the stories (1 hour) ==> 3 hours
         - Add filter overlays for different screens (1 hour)
-    - Make Project Screenshots (1 hour)
-        - Find Past Experience Picture
-        - Make Resume Picture
-    - Fix the images css in the stories (1 hour)
-    - .project-caption must be styled green for freeCodeCamp and blue for Udacity (1 hour)
+    + Make Project Screenshots (1 hour) ==> (2hours)
+        - Find Past Experience Picture (half hour)
+        - Make Resume Picture (8hours)
+        - Fix the images css in the stories (1 hour)
+    + .project-caption must be styled green for freeCodeCamp and blue for Udacity (1 hour) ==> 1hour
     - Stories and Projects should be list items (1 hour)
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
             - ReactRoute could solve the problem so don't be hasty
     - ----------------------
-    - * iphone5 landscape my story image sucks
+    + * iphone5 landscape my story image sucks
     - * Create a Story Page 8 hours
     - * Create a Project Page 8 hours
     - * Create a Blog Page 16 hours
@@ -26,6 +26,8 @@
     - * What about image compression? ...
     - * Test on Edge (5 minutes) + (10 minutes to setup at Innovator)
     - * Create Internet Explorer fallbacks (Unknown...)
+    - * minify images with gulp-imagemin (2hours including gulp)
+    - * Add logo or smth for mobile screens with collapsed nav-bar
 
 ## Remember:
     - all images must be the same size

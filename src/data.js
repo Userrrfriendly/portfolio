@@ -1,16 +1,26 @@
 import mainUrl from './Images/hero-large_h1.jpg';
-import resumeUrl from './Images/travelling-card.jpg';
+import resumeUrl from './Images/resume_test.png';
 import pastXPUrl from './Images/weatherapp.jpg';
 // projects:
-import flickr from './Images/asta.jpg';
-import myReads from './Images/butler.jpg';
-import restaurantReview from './Images/cortana.jpg';
-import arcadeGame from './Images/designers.jpg';
-import matchingGame from './Images/easydom.jpg';
-import unitTest from './Images/farhad.jpg';
-import wikiReader from './Images/halo.jpg';
-import weatherApp from './Images/hugh.jpg';
-import calculator from './Images/minecraft.jpg';
+import flickr from './Images/projects/flickr-photo-plotter.jpg';
+import arcadeGame from './Images/projects/arcade-1.jpg'; 
+import matchingGame from './Images/projects/matching-game.jpg';
+import myReads from './Images/projects/myReads.jpg';
+import unitTest from './Images/projects/jasmine.jpg';
+import restaurantReview from './Images/projects/restaurant-review.jpg';
+import wikiReader from './Images/projects/Wikipedia Viewer.jpg'; 
+import weatherApp from './Images/projects/weather-app.jpg';
+import calculator from './Images/projects/calculator.jpg';
+
+//'./Images/cortana.jpg';
+//'./Images/farhad.jpg';
+//'./Images/butler.jpg';
+//'./Images/easydom.jpg';
+//'./Images/designers.jpg';
+// './Images/asta.jpg';
+//'./Images/halo.jpg';
+//'./Images/hugh.jpg';
+//'./Images/minecraft.jpg';
 
 export const tempStory = [
     {
@@ -29,7 +39,7 @@ export const tempStory = [
         name: 'non-tech experience',
         url: pastXPUrl,
         caption: 'Read more if you are curious what about my engineering experience...',
-        backgroundColor: '#00800080' //green
+        backgroundColor: '#beff00b5' //green
     }];
 
 export const tempProjects = [
@@ -73,17 +83,17 @@ export const tempProjects = [
         name: 'Calculator',
         description: 'A calculator build with jQuery',
         imageUrl: calculator,
-        projectType: 'FreeCodeCamp'
+        projectType: 'freeCodeCamp'
     },
     {
         name: 'Wikipedia reader',
         description: 'Uses the wikipedia API to browse wikipedia articles',
         imageUrl: wikiReader,
-        projectType: 'FreeCodeCamp'
+        projectType: 'freeCodeCamp'
     },
     {
         name: 'Weather App',
         description: 'Find out what the weather is without going outiside!',
         imageUrl: weatherApp,
-        projectType: 'FreeCodeCamp'
+        projectType: 'freeCodeCamp'
     }];
