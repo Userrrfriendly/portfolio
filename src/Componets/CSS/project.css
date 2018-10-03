@@ -42,6 +42,7 @@
 
 /* <figcaption> */
 .project-caption {
+    background: rgba(64,4,13,0.05);
     background: #640040de;
     color: #f7f7f7;
     position: absolute;
@@ -50,10 +51,12 @@
 }
 
 .udacity-figcaption {
+    background: rgba(2,179,228,0.88);
     background: #02b3e4e0;
 }
 
 .freecodecamp-figcaption {
+    background: rgba(0,100,0,0.87);
     background: #006400de;
 }
 

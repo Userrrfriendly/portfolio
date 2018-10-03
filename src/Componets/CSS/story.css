@@ -42,6 +42,7 @@
 
 /* First Story */
 #stories article:first-of-type .story-caption  {
+    background-color: rgba(255,138,0,0.5);
     background-color: #ff8a0080;
 }
 
@@ -101,6 +102,7 @@
         background: initial !important;
     }
     .story-caption  {
+        background-color: rgba(96,169,185,0.64);
         background-color: #60a9b9a2;
     }
     /* .test {
