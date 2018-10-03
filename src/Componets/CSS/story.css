@@ -7,7 +7,7 @@
     justify-items: center;
     align-items: center;
     min-width: 200px;
-    height: 25vh;
+    height: 20vh;
     overflow: hidden;
     margin-bottom: 0.5rem;
     position: relative;
@@ -32,20 +32,17 @@
 .story figure:hover {
     width: 111%;
     height: 111%;
+    cursor: pointer;
 }
 
 .story-color-overlay {
-    /* background:rgba(255, 110, 110, 0.479); */
     height: 100%;
     width: 100%;
 }
-/* only for testing */
+
+/* First Story */
 #stories article:first-of-type .story-caption  {
     background-color: #ff8a0080;
-    /* color: yellow; */
-    /* background: initial;
-    height: 100%;
-    width: 100%; */
 }
 
 .story-caption {
@@ -58,6 +55,7 @@
     text-shadow: 0px 0px 20px #FFFFFF;
     width: 100%;
 }
+
 .story-caption h3 {
     font-size: 1.8rem;
     margin: 0 0 0.5rem 1rem;
@@ -77,12 +75,6 @@
     } */
 }
 
-@media screen and (min-width:950px) {
-    .story-color-overlay {
-        background: initial;
-    }
-}
-
 @media screen and (orientation: portrait) and (min-width:600px) {
     .story:first-of-type {
         height: auto;
@@ -94,8 +86,24 @@
     }
   }
 
-  @media screen and (orientation: landscape) and (max-height:420px) {
+@media screen and (orientation: landscape) and (max-height:420px) {
+    .story {
+        min-height: 22vh;
+    }
+
     .story:first-of-type {
         height: 80vh;
     }
-  }
+}
+
+@media screen and (min-width:950px) {
+    .story-color-overlay {
+        background: initial !important;
+    }
+    .story-caption  {
+        background-color: #60a9b9a2;
+    }
+    /* .test {
+        background-color: #90287fd1;
+    } */
+}
