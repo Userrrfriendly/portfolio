@@ -1,6 +1,6 @@
 import React from 'react';
 import './CSS/nav.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // || My Story || My Resume || My Past Experience || My Projects || Blog || <-> || Contact Me ||
 
@@ -24,15 +24,28 @@ class Nav extends React.Component {
     render() {
         return (
             <nav>
+                {/* activeClassName="active" */}
                 <button onClick={this.toggleMenu} className="hamburger-menu" aria-label="Menu"></button>
                 <ul className="nav-list nav-list-collapsed nav-list-hide-li">
-                    <li><a href="#" className="nav-link my-story">My Story</a></li>
-                    <li><a href="#" className="nav-link">My Resume</a></li>
-                    <li><a href="#" className="nav-link">My Past Experience</a></li>
-                    <li><a href="#" className="nav-link">My Projects</a></li>
-                    <li><a href="#" className="nav-link">Blog</a></li>
-                    {/* <li><a href="#" className="nav-link">Contact Me</a></li> */}
-                    <li><Link to="/ContactMe" className="nav-link">Contact Me</Link></li>
+                    <li className="nav-list-item"><NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink></li>                    
+                    <li className="nav-list-item"><NavLink to="/MyStory" className="nav-link my-story" activeClassName="active">My Story</NavLink></li>
+                    <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">My Resume</NavLink></li>
+                    <li className="nav-list-item"><NavLink to="/PastExperience" className="nav-link" activeClassName="active">Past Experience</NavLink></li>
+                    <li className="nav-list-item test-dropdown">
+                        <NavLink to="/MyProjects" className="nav-link nav-link-dropdown" activeClassName="active">My Projects</NavLink>
+                        <ul className="drop-down-menu">
+                            <li className="drop-down-item"><a href="#">Flicker Photo-Plotter</a></li>
+                            <li className="drop-down-item"><a href="#">My Reads</a></li>
+                            <li className="drop-down-item"><a href="#">Restaurant reviews</a></li>
+                            <li className="drop-down-item"><a href="#">Arcade Game</a></li>
+                            <li className="drop-down-item"><a href="#">Matching Game</a></li>
+                            <li className="drop-down-item"><a href="#">Unit Tests</a></li>
+                            <li className="drop-down-item"><a href="#">Calculator</a></li>
+                            <li className="drop-down-item"><a href="#">Wikipedia reader</a></li>
+                            <li className="drop-down-item"><a href="#">Weather App</a></li>
+                        </ul>
+                    </li>
+                    <li><NavLink to="/ContactMe" className="nav-link" activeClassName="active">Contact Me</NavLink></li>
                 </ul>
             </nav>
         )

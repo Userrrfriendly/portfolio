@@ -18,7 +18,11 @@
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
             - ReactRoute could solve the problem so don't be hasty
     - ----------------------
-    - *Add homescreen in <Nav> for better rooting
+    - * Add homescreen in <Nav> for better rooting
+    - * Add an arrow next to my projects in <Nav> so that the user 'gets' the list
+    - * Add a dropdown functionality for the Projects section in the <Nav>
+    - * In routing add a component for error page
+    - * <Story> doesn't make much sense rename it to something meaningfull like hero section or smth
     - * Create a Story Page 8 hours
     - * Create a Project Page 8 hours
     - * Create a Blog Page 16 hours

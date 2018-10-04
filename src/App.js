@@ -30,8 +30,17 @@ const routes = [
   },
   {
       path: '/MyProjects',
-      component: TestComponent
-
+      component: TestComponent,
+      subRoutes: [
+        'Flickr-Photo-Plotter',
+        'My reads',
+        'Restaurant Review',
+        'Arcade Game',
+        'Matching Game',
+        'Unit Tests',
+        'Calculator',
+        'Wikipedia reader',
+        'Weather App']
   },
   {
       path: '/ContactMe',
@@ -52,7 +61,7 @@ class App extends Component {
               key={route.path}
               path={route.path}
               component={route.component}
-               />
+            />
         ))}
           <Footer/>
         </div>
