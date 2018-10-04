@@ -97,3 +97,22 @@ export const tempProjects = [
         imageUrl: weatherApp,
         projectType: 'freeCodeCamp'
     }];
+
+export const routes = [
+    {
+        path: 'MyStory',
+    },
+    {
+        path: 'MyResume',
+    },
+    {
+        path: 'PastExperience',
+    },
+    {
+        path: 'MyProjects',
+    },
+    {
+        path: 'ContactMe',
+        // component: Nav
+    },
+]

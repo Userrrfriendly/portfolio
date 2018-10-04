@@ -1,6 +1,6 @@
 import React from 'react';
 import './CSS/nav.css';
-// import hamburger from '../Images/icons/Hamburger_icon.svg';
+import { Link } from 'react-router-dom';
 
 // || My Story || My Resume || My Past Experience || My Projects || Blog || <-> || Contact Me ||
 
@@ -31,7 +31,8 @@ class Nav extends React.Component {
                     <li><a href="#" className="nav-link">My Past Experience</a></li>
                     <li><a href="#" className="nav-link">My Projects</a></li>
                     <li><a href="#" className="nav-link">Blog</a></li>
-                    <li><a href="#" className="nav-link">Contact Me</a></li>
+                    {/* <li><a href="#" className="nav-link">Contact Me</a></li> */}
+                    <li><Link to="/ContactMe" className="nav-link">Contact Me</Link></li>
                 </ul>
             </nav>
         )

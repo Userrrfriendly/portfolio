@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class Story extends React.Component {
     render() {
         const figureStyle = {
-            backgroundImage:`url(${this.props.url})`
+            backgroundImage:`url(${this.props.url})`,
         };
         const overlayColor = {
             background: this.props.backgroundColor
@@ -28,7 +28,7 @@ Story.propTypes = {
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     caption: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired
+    backgroundColor: PropTypes.string.isRequired
 }
 
 export default Story;
