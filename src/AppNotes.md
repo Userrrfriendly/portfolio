@@ -18,6 +18,9 @@
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
             - ReactRoute could solve the problem so don't be hasty
     - ----------------------
+    - * It would make more sense if in <Nav> you generated the drop-down-items from a file
+        - thus you could make the css inline style have height that would be 2rem*number of items
+        - this would allow smooth animation.
     - * Add homescreen in <Nav> for better rooting
     - * Add an arrow next to my projects in <Nav> so that the user 'gets' the list
     - * Add a dropdown functionality for the Projects section in the <Nav>

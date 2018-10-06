@@ -5,6 +5,25 @@ import { NavLink } from 'react-router-dom';
 // || My Story || My Resume || My Past Experience || My Projects || Blog || <-> || Contact Me ||
 
 class Nav extends React.Component {
+    componentDidMount() {
+        const subMenuUL = document.querySelector('.drop-down-menu');
+        const projectsBtn = document.querySelector('.nav-link-dropdown');
+        // Close drop-down-menu if clicked outside the menu area
+        window.addEventListener('mouseup', function(e) {
+            if (subMenuUL.classList.contains('drop-down-expand')) {
+                if (e.target != subMenuUL && e.target != projectsBtn) {
+                    subMenuUL.classList.toggle('drop-down-hide');
+                    subMenuUL.classList.toggle('drop-down-expand');
+                    if (e.target != subMenuUL && e.target.parentNode != subMenuUL) {
+                        // subMenuUL.classList.toggle('drop-down-hide');
+                        // subMenuUL.classList.toggle('drop-down-expand');
+                        // projectsBtn.classList.add('active');
+                        projectsBtn.focus();
+                    }
+                } 
+            }
+        })
+    }
 
     toggleMenu = ()=> {
         const navList = document.querySelector('.nav-list');
@@ -21,19 +40,33 @@ class Nav extends React.Component {
             },500)
     }
 
+    dropDownClick = ()=> {
+        const subMenuUL = document.querySelector('.drop-down-menu');
+        subMenuUL.classList.toggle('drop-down-hide');
+        subMenuUL.classList.toggle('drop-down-expand');
+    }
+
     render() {
         return (
             <nav>
-                {/* activeClassName="active" */}
                 <button onClick={this.toggleMenu} className="hamburger-menu" aria-label="Menu"></button>
                 <ul className="nav-list nav-list-collapsed nav-list-hide-li">
                     <li className="nav-list-item"><NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink></li>                    
                     <li className="nav-list-item"><NavLink to="/MyStory" className="nav-link my-story" activeClassName="active">My Story</NavLink></li>
                     <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">My Resume</NavLink></li>
                     <li className="nav-list-item"><NavLink to="/PastExperience" className="nav-link" activeClassName="active">Past Experience</NavLink></li>
+                    
+                    {/* <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">TEST Component</NavLink></li> */}
+
                     <li className="nav-list-item test-dropdown">
-                        <NavLink to="/MyProjects" className="nav-link nav-link-dropdown" activeClassName="active">My Projects</NavLink>
-                        <ul className="drop-down-menu">
+                        <button
+                            className="nav-link-dropdown"
+                            aria-haspopup="true"
+                            // activeClassName="active"
+                            onClick={this.dropDownClick}    
+                            >My Projects
+                        </button>                        
+                        <ul className="drop-down-menu drop-down-hide"> 
                             <li className="drop-down-item"><a href="#">Flicker Photo-Plotter</a></li>
                             <li className="drop-down-item"><a href="#">My Reads</a></li>
                             <li className="drop-down-item"><a href="#">Restaurant reviews</a></li>
@@ -45,7 +78,7 @@ class Nav extends React.Component {
                             <li className="drop-down-item"><a href="#">Weather App</a></li>
                         </ul>
                     </li>
-                    <li><NavLink to="/ContactMe" className="nav-link" activeClassName="active">Contact Me</NavLink></li>
+                    <li className="nav-list-item"><NavLink to="/ContactMe" className="nav-link" activeClassName="active">Contact Me</NavLink></li>
                 </ul>
             </nav>
         )
