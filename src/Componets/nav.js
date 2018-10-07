@@ -2,8 +2,6 @@ import React from 'react';
 import './CSS/nav.css';
 import { NavLink } from 'react-router-dom';
 
-// || My Story || My Resume || My Past Experience || My Projects || Blog || <-> || Contact Me ||
-
 class Nav extends React.Component {
     componentDidMount() {
         const subMenuUL = document.querySelector('.drop-down-menu');
@@ -14,10 +12,8 @@ class Nav extends React.Component {
                 if (e.target != subMenuUL && e.target != projectsBtn) {
                     subMenuUL.classList.toggle('drop-down-hide');
                     subMenuUL.classList.toggle('drop-down-expand');
-                    if (e.target != subMenuUL && e.target.parentNode != subMenuUL) {
-                        // subMenuUL.classList.toggle('drop-down-hide');
-                        // subMenuUL.classList.toggle('drop-down-expand');
-                        // projectsBtn.classList.add('active');
+                    if (e.target.parentNode != subMenuUL && e.target.parentNode.classList.contains('drop-down-item')) {
+                        //if a child element of the dropdown was clicked the button retains focus
                         projectsBtn.focus();
                     }
                 } 
@@ -55,14 +51,10 @@ class Nav extends React.Component {
                     <li className="nav-list-item"><NavLink to="/MyStory" className="nav-link my-story" activeClassName="active">My Story</NavLink></li>
                     <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">My Resume</NavLink></li>
                     <li className="nav-list-item"><NavLink to="/PastExperience" className="nav-link" activeClassName="active">Past Experience</NavLink></li>
-                    
-                    {/* <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">TEST Component</NavLink></li> */}
-
-                    <li className="nav-list-item test-dropdown">
+                    <li className="nav-list-item li-dropdown-container">
                         <button
                             className="nav-link-dropdown"
                             aria-haspopup="true"
-                            // activeClassName="active"
                             onClick={this.dropDownClick}    
                             >My Projects
                         </button>                        
@@ -84,31 +76,5 @@ class Nav extends React.Component {
         )
     }
 }
-
-// function Nav() {
-//     const logValue = ()=>{
-//         console.log('hi from logValue');
-//     }
-//     // console.log(logValue);
-//     return (
-//         <nav>
-//             {/* <a href="#" className="nav-link my-story">My Story</a>
-//             <a href="#" className="nav-link">My Resume</a>
-//             <a href="#" className="nav-link">My Past Experience</a>
-//             <a href="#" className="nav-link">My Projects</a>
-//             <a href="#" className="nav-link">Blog</a>
-//             <a href="#" className="nav-link">Contact Me</a> */}
-//             <button onClick={logValue} className="hamburger-menu" aria-label="Menu"></button>
-//             <ul className="nav-list">
-//                 <li><a href="#" className="nav-link my-story">My Story</a></li>
-//                 <li><a href="#" className="nav-link">My Resume</a></li>
-//                 <li><a href="#" className="nav-link">My Past Experience</a></li>
-//                 <li><a href="#" className="nav-link">My Projects</a></li>
-//                 <li><a href="#" className="nav-link">Blog</a></li>
-//                 <li><a href="#" className="nav-link">Contact Me</a></li>
-//             </ul>
-//         </nav>
-//     )
-// }
 
 export default Nav;

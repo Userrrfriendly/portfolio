@@ -13,6 +13,7 @@
         
     - Find Past Experience Picture (half hour)
     - Make Resume Picture (8hours)
+    - 
     - Fix the images css in the stories (1 hour)
     - Stories and Projects should be list items (1 hour)
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
@@ -21,9 +22,7 @@
     - * It would make more sense if in <Nav> you generated the drop-down-items from a file
         - thus you could make the css inline style have height that would be 2rem*number of items
         - this would allow smooth animation.
-    - * Add homescreen in <Nav> for better rooting
     - * Add an arrow next to my projects in <Nav> so that the user 'gets' the list
-    - * Add a dropdown functionality for the Projects section in the <Nav>
     - * In routing add a component for error page
     - * <Story> doesn't make much sense rename it to something meaningfull like hero section or smth
     - * Create a Story Page 8 hours
