@@ -6,7 +6,7 @@ import Main from './Componets/main';
 import Footer from './Componets/footer';
 import Nav from './Componets/nav';
 import { Route } from 'react-router-dom';
-
+import TestComponent from './Componets/Testcomponent';
 // const TestComponent = ()=> {
 //   return (
 //     <div>This is a testComponent</div>
@@ -58,9 +58,21 @@ class App extends Component {
             <Route
               key={route.path}
               path={route.path}
-              component={route.component}
+              // component={route.component}
+              render= {(props)=> (
+                <route.component name={route.path}/>
+              )}
             />
-        ))}
+          ))}
+          {Routes.subRoutes.map((subRoute)=> (
+            <Route
+              key={subRoute.path}
+              path={subRoute.path}
+              render={(props)=> (
+                <TestComponent name={subRoute.description} />
+              )}
+            />
+          ))}
           <Footer/>
         </div>
     )
