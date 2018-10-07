@@ -1,16 +1,18 @@
-import mainUrl from './Images/hero-large_h1.jpg';
-import resumeUrl from './Images/resume_test.png';
-import pastXPUrl from './Images/weatherapp.jpg';
+import mainUrl from '../Images/hero-large_h1.jpg';
+import resumeUrl from '../Images/resume_test.png';
+import pastXPUrl from '../Images/weatherapp.jpg';
 // projects:
-import flickr from './Images/projects/flickr-photo-plotter.jpg';
-import arcadeGame from './Images/projects/arcade-1.jpg'; 
-import matchingGame from './Images/projects/matching-game.jpg';
-import myReads from './Images/projects/myReads.jpg';
-import unitTest from './Images/projects/jasmine.jpg';
-import restaurantReview from './Images/projects/restaurant-review.jpg';
-import wikiReader from './Images/projects/Wikipedia Viewer.jpg'; 
-import weatherApp from './Images/projects/weather-app.jpg';
-import calculator from './Images/projects/calculator.jpg';
+import flickr from '../Images/projects/flickr-photo-plotter.jpg';
+import arcadeGame from '../Images/projects/arcade-1.jpg'; 
+import matchingGame from '../Images/projects/matching-game.jpg';
+import myReads from '../Images/projects/myReads.jpg';
+import unitTest from '../Images/projects/jasmine.jpg';
+import restaurantReview from '../Images/projects/restaurant-review.jpg';
+import wikiReader from '../Images/projects/Wikipedia Viewer.jpg'; 
+import weatherApp from '../Images/projects/weather-app.jpg';
+import calculator from '../Images/projects/calculator.jpg';
+
+
 
 //'./Images/cortana.jpg';
 //'./Images/farhad.jpg';

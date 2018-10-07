@@ -1,6 +1,7 @@
 import React from 'react';
 import './CSS/nav.css';
 import { NavLink } from 'react-router-dom';
+import * as Routes from '../Data/routes';
 
 class Nav extends React.Component {
     componentDidMount() {
@@ -58,8 +59,14 @@ class Nav extends React.Component {
                             onClick={this.dropDownClick}    
                             >My Projects
                         </button>                        
-                        <ul className="drop-down-menu drop-down-hide"> 
-                            <li className="drop-down-item"><a href="#">Flicker Photo-Plotter</a></li>
+                        <ul className="drop-down-menu drop-down-hide">
+                            {Routes.subRoutes.map((subRoute)=> (
+                                <li key={subRoute.path} className="drop-down-item">
+                                    <NavLink to={subRoute.path}>{subRoute.description}</NavLink>
+                                </li>
+                            ))
+                            }
+                            {/* <li className="drop-down-item"><a href="#">Flicker Photo-Plotter</a></li>
                             <li className="drop-down-item"><a href="#">My Reads</a></li>
                             <li className="drop-down-item"><a href="#">Restaurant reviews</a></li>
                             <li className="drop-down-item"><a href="#">Arcade Game</a></li>
@@ -67,7 +74,7 @@ class Nav extends React.Component {
                             <li className="drop-down-item"><a href="#">Unit Tests</a></li>
                             <li className="drop-down-item"><a href="#">Calculator</a></li>
                             <li className="drop-down-item"><a href="#">Wikipedia reader</a></li>
-                            <li className="drop-down-item"><a href="#">Weather App</a></li>
+                            <li className="drop-down-item"><a href="#">Weather App</a></li> */}
                         </ul>
                     </li>
                     <li className="nav-list-item"><NavLink to="/ContactMe" className="nav-link" activeClassName="active">Contact Me</NavLink></li>
