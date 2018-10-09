@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/prj-details.css';
 
 class PrjDetail extends React.Component {
     render() {

@@ -4,11 +4,30 @@
     display: flex;
     flex-flow: row wrap;
     text-align: left;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 60vw 1fr; */
+}
+.prj-pg-aside {
+    /* background:rgba(85, 112, 128, 0.452); */
+    order: -1;
+    text-align: center;
+}
+.prj-pg-aside h2 {
+    /* text-align: center; */
+    margin-top: 2rem;
 }
 
 @media screen and (min-width:600px) {
 
 }
+
+@media screen and (min-width:700px) {
+    .prj-pg-aside {
+        /* max-width: 30vw; */
+    }
+}
+
 @media screen and (min-width:950px) {
 
 }

@@ -86,7 +86,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -129,7 +170,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -172,7 +254,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -180,9 +303,9 @@ export const subRoutes = [
         title: 'Arcade Game',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: arcadeGame,
+            livePageUrl: 'https://userrrfriendly.github.io/frontend-nanodegree-arcade-game/',
+            sourceCodeUrl: 'https://github.com/Userrrfriendly/frontend-nanodegree-arcade-game',
             content: [
                 {
                     articleTitle: 'Goals',
@@ -215,7 +338,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -258,7 +422,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -301,7 +506,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -344,7 +590,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -387,7 +674,48 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     },
     {
@@ -430,7 +758,51 @@ export const subRoutes = [
                         and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
                     The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
                 },
-        ]
+        ],
+        chartData: {
+            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 2, 2, 2, 2, 2],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.4)',
+                    'rgba(54, 162, 235, 0.4)',
+                    'rgba(255, 206, 86, 0.4)',
+                    'rgba(75, 192, 192, 0.4)',
+                    'rgba(153, 102, 255, 0.4)',
+                    'rgba(255, 159, 64, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        chartOptions: {
+            cutoutPercentage: 60,
+            tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      var label = data.labels[tooltipItem.index] || 'unlabeled';
+                      // console.log(data.labels[tooltipItem.index]);
+        
+                      return label;
+                  }
+              }
+            },
+            legend: {
+              position: 'bottom',
+              onClick: false
+            }
+          }
         }
     }
     ];
+
+
+
