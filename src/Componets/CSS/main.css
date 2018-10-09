@@ -1,4 +1,7 @@
-main h2 {
+#main-home {
+    background-color: #ebebeb;
+}
+#main-home h2 {
     text-align: left;
     margin-top: 1rem;
     margin-bottom: 1rem;

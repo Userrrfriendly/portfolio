@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import * as Data from './Data/data';
+// import * as Data from './Data/data';
 import * as Routes from './Data/routes';
 import Main from './Componets/main';
 import Footer from './Componets/footer';
 import Nav from './Componets/nav';
 import { Route } from 'react-router-dom';
 import TestComponent from './Componets/Testcomponent';
+import PrjMain from './Componets/project-page/prj-main';
+
 // const TestComponent = ()=> {
 //   return (
 //     <div>This is a testComponent</div>
@@ -60,7 +62,7 @@ class App extends Component {
               path={route.path}
               // component={route.component}
               render= {(props)=> (
-                <route.component name={route.path}/>
+                <route.component title={route.path}/>
               )}
             />
           ))}
@@ -69,7 +71,8 @@ class App extends Component {
               key={subRoute.path}
               path={subRoute.path}
               render={(props)=> (
-                <TestComponent name={subRoute.description} />
+                // <TestComponent title={subRoute.title} />
+                <PrjMain data={subRoute.data} title={subRoute.title}/>
               )}
             />
           ))}

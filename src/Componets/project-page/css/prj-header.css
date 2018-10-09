@@ -1,0 +1,105 @@
+/* HEADER */
+.prj-pg-header {
+    display: flex;
+    flex-flow: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+    text-align: left;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.prj-pg-header-title-container {
+    min-width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 6rem;
+}
+
+.prj-pg-header-links-container {
+    display:flex;
+    flex-flow: row nowrap;
+    min-height: 6rem;
+    margin-left: 1rem;
+}
+
+.prj-pg-header-title-container h1 {
+    margin: 2rem 1rem;
+    font-size: 3rem;
+}
+
+.prj-pg-header-title-container,
+.prj-pg-header-img-container {
+    margin: 0;
+}
+
+.prj-pg-live-link,
+.prj-pg-source-link {
+    text-decoration: none;
+    min-width: 6rem;
+    border-radius: 5px;
+    min-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #ffbb00; */
+    background: #ffea00;
+    /* color: black; */
+    padding: 0.5rem 0;
+    /* margin-left: 1rem; */
+    /* border: 1px solid black; */
+    max-height: 1rem;
+    /* color: gray; */
+    color: black;
+}
+
+.prj-pg-source-link {
+    margin-left:1rem;
+}
+.prj-pg-header-img-container {
+    margin: auto;
+}
+.prj-pg-header-img-container img {
+    max-width: calc(100vw - 2rem);
+}
+
+@media screen and (min-width:700px) {
+    .prj-pg-header {
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .prj-pg-header-img-container img {
+        max-width: 50vw;
+        /* padding-top: 1rem; */
+    }
+
+    .prj-pg-header-title-container,
+    .prj-pg-header-img-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+}
+
+/* small breakpoint */
+@media screen and (min-width:700px) {
+    .prj-pg-header-img-container img {
+        padding-top: 2rem;
+    }
+    .prj-pg-header-title-container,
+    .prj-pg-header-img-container {
+        max-height: auto;
+    }
+    .prj-pg-header-title-container h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .prj-pg-header-title-container h1 {
+        font-size: 5rem;
+    }
+}

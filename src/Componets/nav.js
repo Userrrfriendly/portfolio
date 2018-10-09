@@ -10,10 +10,10 @@ class Nav extends React.Component {
         // Close drop-down-menu if clicked outside the menu area
         window.addEventListener('mouseup', function(e) {
             if (subMenuUL.classList.contains('drop-down-expand')) {
-                if (e.target != subMenuUL && e.target != projectsBtn) {
+                if (e.target !== subMenuUL && e.target !== projectsBtn) {
                     subMenuUL.classList.toggle('drop-down-hide');
                     subMenuUL.classList.toggle('drop-down-expand');
-                    if (e.target.parentNode != subMenuUL && e.target.parentNode.classList.contains('drop-down-item')) {
+                    if (e.target.parentNode !== subMenuUL && e.target.parentNode.classList.contains('drop-down-item')) {
                         //if a child element of the dropdown was clicked the button retains focus
                         projectsBtn.focus();
                     }
@@ -62,7 +62,7 @@ class Nav extends React.Component {
                         <ul className="drop-down-menu drop-down-hide">
                             {Routes.subRoutes.map((subRoute)=> (
                                 <li key={subRoute.path} className="drop-down-item">
-                                    <NavLink to={subRoute.path}>{subRoute.description}</NavLink>
+                                    <NavLink to={subRoute.path}>{subRoute.title}</NavLink>
                                 </li>
                             ))
                             }

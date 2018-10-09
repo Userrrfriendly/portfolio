@@ -6,7 +6,6 @@
     display: inline-block;
     border-radius: 50%;
     border: 1px solid transparent;
-    z-index: 1;
 }
 
 .icon-link:focus {

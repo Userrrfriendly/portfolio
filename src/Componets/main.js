@@ -7,7 +7,7 @@ import * as Data from '../Data/data';
 class Main extends React.Component {
     render () {
         return (
-            <main>
+            <main id="main-home">
                 <section id="stories">
                     <h2>My bio:</h2>
                     {Data.tempStory.map((item)=>{
