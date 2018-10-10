@@ -1,3 +1,7 @@
-.prj-pg-details {
-    /* order: -1; */
+.prj-pg-details-p {
+    padding: 0 1rem 0 0.5rem;
+}
+
+.prj-pg-details-article:last-of-type {
+    padding-bottom: 2rem;
 }
