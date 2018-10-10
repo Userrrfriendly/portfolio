@@ -135,9 +135,9 @@ export const subRoutes = [
         title: 'My reads',
         type: 'Project',
         data:{
-            imgUrl: flickr,
+            imgUrl: myReads,
             livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            sourceCodeUrl: 'https://github.com/Userrrfriendly/reactnd-project-myreads-starter',
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -219,9 +219,9 @@ export const subRoutes = [
         title: 'Restaurant Review',
         type: 'Project',
         data:{
-            imgUrl: flickr,
+            imgUrl: restaurantReview,
             livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            sourceCodeUrl: 'https://github.com/Userrrfriendly/mws-restaurant-stage-1',
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -387,9 +387,9 @@ export const subRoutes = [
         title: 'Matching Game',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: matchingGame,
+            livePageUrl: 'https://userrrfriendly.github.io/MatchingGame/',
+            sourceCodeUrl: 'https://github.com/Userrrfriendly/MatchingGame',
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -471,9 +471,9 @@ export const subRoutes = [
         title: 'Unit Tests',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: unitTest,
+            livePageUrl: false,
+            sourceCodeUrl: 'https://github.com/Userrrfriendly/frontend-nanodegree-feedreader',
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -555,9 +555,9 @@ export const subRoutes = [
         title: 'Calculator',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: calculator,
+            livePageUrl: 'https://codepen.io/Userrrfriendly/full/JbVrpp/',
+            sourceCodeUrl: false ,
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -639,9 +639,9 @@ export const subRoutes = [
         title: 'Wikipedia reader',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: wikiReader,
+            livePageUrl: 'https://codepen.io/Userrrfriendly/full/evOVOm/',
+            sourceCodeUrl: false,
             content: [
                 {
                     articleTitle: 'Goals:',
@@ -723,9 +723,9 @@ export const subRoutes = [
         title: 'Weather App',
         type: 'Project',
         data:{
-            imgUrl: flickr,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
-            sourceCodeUrl: 'https://github.com/Userrrfriendly/Flickr-Photo-Plotter',
+            imgUrl: weatherApp,
+            livePageUrl: 'https://codepen.io/Userrrfriendly/pen/qmJyOj',
+            sourceCodeUrl: false,
             content: [
                 {
                     articleTitle: 'Goals:',

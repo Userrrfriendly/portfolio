@@ -13,7 +13,12 @@
         
     - Find Past Experience Picture (half hour)
     - Make Resume Picture (8hours)
-    - 
+    - Add live pages to all the projects
+        - my reads, restaurant review,
+        - in feedreader (unit tests) update code to remove live page
+        - for calculator wikireader and weather app EITHER:
+            - remove the source button OR
+            - add it to github
     - Fix the images css in the stories (1 hour)
     - Stories and Projects should be list items (1 hour)
         - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
