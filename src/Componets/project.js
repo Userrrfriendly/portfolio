@@ -1,29 +1,25 @@
 import React from 'react';
 import './CSS/project.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class Project extends React.Component {
     render() {
         const figcaptionClass = this.props.projectType.toLowerCase() + '-figcaption';
+        console.log(this.props)
         return (
-            <article className="project">
-                {/* <img 
-                    srcset="elva-fairy-320w.jpg 320w,
-                        elva-fairy-480w.jpg 480w,
-                        elva-fairy-800w.jpg 800w"
-                    sizes="(max-width: 320px) 280px,
-                        (max-width: 480px) 440px,
-                        800px"
-                    src={this.props.imageUrl}
-                    alt=""
-                /> */}
-                <figure className="project-figure">
-                    <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
-                    <figcaption className={figcaptionClass + ' ' + "project-caption"}>{this.props.projectType}</figcaption>
-                </figure>
-                <h3>{this.props.name}</h3>
-                <p>{this.props.description}</p>
-            </article>
+            <Link className="project-link" to={this.props.projectPath}>
+                <article className="project">
+
+                    <figure className="project-figure">
+                        <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
+                        <figcaption className={figcaptionClass + ' ' + "project-caption"}>{this.props.projectType}</figcaption>
+                    </figure>
+                    <h3>{this.props.name}</h3>
+                    <p>{this.props.description}</p>
+                    
+                </article>
+            </Link>
         )
     }
 }

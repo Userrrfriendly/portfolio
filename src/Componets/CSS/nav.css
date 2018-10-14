@@ -17,6 +17,8 @@ nav {
     padding: 0;
 }
 
+
+
 .nav-list-collapsed {
     max-height: 0;
 }
@@ -24,7 +26,8 @@ nav {
 .nav-list-item {
     margin:0;
 }
-.nav-list-hide-li .nav-list-item {
+.nav-list-hide-li .nav-list-item,
+.arrowhead {
     /* sets display to none thus removes the items from tab order */
     display: none;
 }
@@ -266,7 +269,12 @@ nav {
         height: 0;
         overflow: hidden;
     }
-    
+    .arrowhead {
+        display: initial;
+        color: #424141;
+        font-size: 12px;
+        
+    }
     .drop-down-hide {
         height: 0;
     }

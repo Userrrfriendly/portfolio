@@ -10,38 +10,42 @@
     + .project-caption must be styled green for freeCodeCamp and blue for Udacity (1 hour) ==> 1hour
     + iphone5 landscape my story image sucks
     + Add filter overlays for different screens in projects figcaptions(1 hour) ==> 1hour
+    + * Add an arrow next to my projects in <Nav> so that the user 'gets' the list => 15 minuts
+    + * Create a Project Page 8 hours => 16 hours
+    + * In routing add a component for error page (1hour) => (1/2 hour)
         
+    
     - Find Past Experience Picture (half hour)
     - Make Resume Picture (8hours)
-    - Add live pages to all the projects
-        - my reads, restaurant review,
-        - in feedreader (unit tests) update code to remove live page
-        - for calculator wikireader and weather app EITHER:
-            - remove the source button OR
-            - add it to github
     - Fix the images css in the stories (1 hour)
-    - Stories and Projects should be list items (1 hour)
-        - Add tab index to the stories and the projects (if all things are wrapped in links it will be taken care of)
-            - ReactRoute could solve the problem so don't be hasty
+    - Stories and Projects should be list items (1 hour) => 1hour for the projects
     - ----------------------
+    - Instead of adding live pages, start writing about each project and also correcting everything about it( live links,git hub links,bugs etc)
+        - Add live pages to all the projects
+            - my reads, restaurant review,
+            - in feedreader (unit tests) update code to remove live page
+    - for calculator wikireader and weather app EITHER:
+        - remove the source button OR
+        - add it to github
+    - * Create my Story Page 16 hours
+    - * Create Resume Page 16 hours
+    - * Create Past Experience Page 16 hours  
+    - * Create a Blog Page 16 hours
+    - * Do something about the UD between 7000-1000px at Project Page
+    - * Add aria for canvas
+    - * Change font size at the Legend change colors for the Donought component
     - * It would make more sense if in <Nav> you generated the drop-down-items from a file
         - thus you could make the css inline style have height that would be 2rem*number of items
         - this would allow smooth animation.
-    - * Add an arrow next to my projects in <Nav> so that the user 'gets' the list
-    - * In routing add a component for error page
-    - * <Story> doesn't make much sense rename it to something meaningfull like hero section or smth
-    - * Create a Story Page 8 hours
-    - * Create a Project Page 8 hours
-    - * Create a Blog Page 16 hours
-    - * Refactor UI for blog stories (1 hour)
     - * Start working on your Resume ...
-    - * Add React.Router or #Router 8 hours
-        - Refactor all the ankor tags into <Link/>s (30 minutes)
-    - * What about image compression? ...
+    + * Add React.Router or #Router 8 hours => 16hours
+        - Refactor all the ankor tags into <Link/>s (30 minutes for stories)
     + * Test on Edge (5 minutes) + (10 minutes to setup at Innovator)
-    - * Create Internet Explorer fallbacks (Unknown...)
-    - * minify images with gulp-imagemin (2hours including gulp)
-    - * Add logo or smth for mobile screens with collapsed nav-bar
+    - ** <Story> doesn't make much sense rename it to something meaningfull like hero section or smth
+    - ** minify images with gulp-imagemin (2hours including gulp)
+    - ** Refactor UI for blog stories (1 hour)
+    - ** Merge some of the components (up Arrow) (1 hour)
+    - ⇣ ↧ ⤓ ⤋ ⬍ ⇩ ⇓ ↴ ⤸ ⤶ ⤦  ▼ 
 
 ## Remember:
     - Should <Project/> consume each property at a time (main.js) or should it swallow the object and deconstruct it inside the render of project.js?

@@ -1,0 +1,11 @@
+.error-route {
+    width: 100%;
+    height: calc(100vh - 44px - 8rem);
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .error-route {
+        height: calc(100vh - 4.5rem - 6rem -1px);
+    }
+}

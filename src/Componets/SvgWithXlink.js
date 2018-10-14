@@ -13,6 +13,7 @@ function SvgWithXlink (props) {
     let svgPath;
     let viewBox;
     let url;
+    let ariaLabel;
     const gitHubPath = <g>
         <path className="social-icon" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
             c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
@@ -47,14 +48,16 @@ function SvgWithXlink (props) {
         svgPath = gitHubPath;
         viewBox = '0 0 438.549 438.549';
         url = 'https://github.com/Userrrfriendly';
+        ariaLabel = 'Link to my Veniamin\'s github profile'
     } else if (props.iconName === 'linkedIn') {
         svgPath = linkedInPath;
         viewBox = viewBox="0 0 486.392 486.392";
         url = 'https://www.linkedin.com/in/veniamin-tsigourof/';
+        ariaLabel = 'Link to my Veniamin\'s LinkedIn profile'
     }
 
     return (
-        <a href={url} target="_blank" rel="noopener noreferrer" className="icon-link">
+        <a href={url} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label={ariaLabel}>
             <svg className="svg"
                 width= {props.width}
                 height= {props.height}

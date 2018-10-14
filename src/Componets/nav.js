@@ -58,6 +58,7 @@ class Nav extends React.Component {
                             aria-haspopup="true"
                             onClick={this.dropDownClick}    
                             >My Projects
+                                <span className="arrowhead" aria-hidden="true"> ▼</span>
                         </button>                        
                         <ul className="drop-down-menu drop-down-hide">
                             {Routes.subRoutes.map((subRoute)=> (

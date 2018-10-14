@@ -8,6 +8,7 @@ import Nav from './Componets/nav';
 import { Route } from 'react-router-dom';
 import TestComponent from './Componets/Testcomponent';
 import PrjMain from './Componets/project-page/prj-main';
+import ErrorRoute from './Componets/error-route';
 
 // const TestComponent = ()=> {
 //   return (
@@ -76,6 +77,7 @@ class App extends Component {
               )}
             />
           ))}
+          <Route component={ErrorRoute}/>
           <Footer/>
         </div>
     )

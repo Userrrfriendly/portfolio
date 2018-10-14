@@ -30,6 +30,7 @@ class Main extends React.Component {
                                 description={project.description}
                                 imageUrl={project.imageUrl}
                                 projectType={project.projectType}
+                                projectPath={project.path}
                             />
                         )
                     })}

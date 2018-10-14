@@ -9,11 +9,13 @@
     justify-content: center;
     align-items: center;
     font-family: serif;
-    color: gray;
+    /* color: gray; */
+    color:#717171;
 }
 
 .footer-links {
-    color: gray;
+    /* color: gray; */
+    color:#717171;
     font-size: 1rem;
     display: block;
     text-decoration: none;
