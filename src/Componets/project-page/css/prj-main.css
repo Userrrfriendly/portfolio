@@ -9,6 +9,8 @@
     grid-template-columns: 60vw 1fr; */
     max-width: 1600px;
     margin: auto;
+    font-family: 'Alegreya', serif;
+    /* font-size: 18px; */
 }
 .prj-pg-aside {
     /* background:rgba(85, 112, 128, 0.452); */
@@ -19,6 +21,26 @@
     margin-top: 2rem;
 }
 
+/* STYLES FOR prj-components */
+/* check-list is a <ul>, check-item is a <li> */
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-item {
+    padding-left: 1.3em;
+}
+
+.check-item:before {
+    content: "✔";
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+    margin-right: 1rem;
+    color: green;
+}
+
+/* MEDIA QUERRIES */
 @media screen and (min-width:1000px) {
     .prj-pg-details {
         order:-1;

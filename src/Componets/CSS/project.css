@@ -77,14 +77,14 @@
 @media screen and (min-width:600px) {
     .project {
         margin: 0;
-        border-right: 1px solid #d0d0d0;
+        border: 1px solid #d0d0d0;
     }
     /* .project:nth-child(3n-1) {
         border-left:1px solid  #d0d0d0;
     } */
-    .project:nth-child(-n+3) {
+    /* .project:nth-child(-n+3) {
         border-top:1px solid  #d0d0d0;
-    }
+    } */
     .project h3 {
         margin: 0.5rem 0;
     }
@@ -102,10 +102,10 @@
     }
 }
 @media screen and (min-width:950px) {
-    .project:nth-child(-n+4) {
+    /* .project:nth-child(-n+4) {
         border-top:1px solid  #d0d0d0;
     }
     .project:nth-child(3n-1) {
         border-left:1px solid  #d0d0d0;
-    }
+    } */
 }

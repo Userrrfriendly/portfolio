@@ -9,6 +9,11 @@ import restaurantReview from '../Images/projects/restaurant-review.jpg';
 import wikiReader from '../Images/projects/Wikipedia Viewer.jpg'; 
 import weatherApp from '../Images/projects/weather-app.jpg';
 import calculator from '../Images/projects/calculator.jpg';
+import React from 'react';
+//Project components:
+import ArcadeGame from '../Componets/project-page/prj-components/arcade-game';
+import FlickrPhotoPlotter from '../Componets/project-page/prj-components/flickr-photo-plotter';
+
 
 export const routes = [
     {
@@ -45,9 +50,27 @@ export const routes = [
     }
   ];
 
+  /*Sub-Routes */
+const chartOptions = {
+    cutoutPercentage: 60,
+    tooltips: {
+      callbacks: {
+          label: function(tooltipItem, data) {
+              var label = data.labels[tooltipItem.index] || 'unlabeled';
+              // console.log(data.labels[tooltipItem.index]);
+              return label;
+          }
+      }
+    },
+    legend: {
+      position: 'bottom',
+      onClick: false
+    }
+  };
+
 export const subRoutes = [
     {
-        path: '/projects/flickr-fhoto-plotter',
+        path: '/projects/flickr-photo-plotter',
         title: 'Flickr-Photo-Plotter',
         type: 'Project',
         data:{
@@ -57,77 +80,30 @@ export const subRoutes = [
             content: [
                 {
                     articleTitle: 'Goals:',
-                    articleContent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-                },
-                {
-                    articleTitle: 'Functionality:',
-                    articleContent: `It is a long established fact that a reader will be distracted by the readable content of a page when 
-                    looking at its layout. `
-                },
-                {
-                    articleTitle: 'Difficulties:',
-                    articleContent: ` The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                     as opposed to using 'Content here, content here', making it look like readable English. 
-                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                      Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-                },
-                {
-                    articleTitle: 'What did I learn?',
-                    articleContent: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good 
-                        and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
+                    articleContent: <FlickrPhotoPlotter />
                 },
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ["HTML5", "CSS", "JavaScript", "ReactJs", "Google Maps", "Wikipedia API", "Flickr API"],
             datasets: [{
                 label: '# of Votes',
-                data: [2, 2, 2, 2, 2, 2],
+                data: [2, 2, 2, 2, 2, 2,2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
                     'rgba(54, 162, 235, 0.4)',
                     'rgba(255, 206, 86, 0.4)',
                     'rgba(75, 192, 192, 0.4)',
                     'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
+                    'rgba(255, 159, 64, 0.4)',
+                    'rgba(0, 0, 0, 0.4)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -195,23 +171,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -279,23 +239,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -309,58 +253,26 @@ export const subRoutes = [
             content: [
                 {
                     articleTitle: 'Goals:',
-                    articleContent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-                },
-                {
-                    articleTitle: 'Functionality:',
-                    articleContent: `It is a long established fact that a reader will be distracted by the readable content of a page when 
-                    looking at its layout. `
-                },
-                {
-                    articleTitle: 'Difficulties:',
-                    articleContent: ` The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                     as opposed to using 'Content here, content here', making it look like readable English. 
-                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                      Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-                },
-                {
-                    articleTitle: 'What did I learn?',
-                    articleContent: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good 
-                        and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
+                    articleContent: <ArcadeGame />
                 },
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ['HTML5', 'CSS', 'JavaScript', 'Canvas API', 'ES6', 'Object Oriented Programming'],
             datasets: [{
                 label: '# of Votes',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.4)',
-                    'rgba(54, 162, 235, 0.4)',
-                    'rgba(255, 206, 86, 0.4)',
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
+                    '#ff0000',
+                    '#00e3e4',
+                    '#ffa500',
+                    '#004dff',
+                    '#c9cbcf',
+                    '#00ff73'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: {
@@ -447,23 +359,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -531,23 +427,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -615,23 +495,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -699,23 +563,7 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -783,26 +631,17 @@ export const subRoutes = [
                 borderWidth: 2
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     }
     ];
 
+
+
+// const error = function ErrorRoute() {
+//     return(
+//         <div className="error-route">Ooops!! It seems that the path does not exist...</div>
+//     )
+// }
 
 

@@ -12,7 +12,10 @@ class PrjDetail extends React.Component {
                     return (
                         <article key={article.articleTitle} className="prj-pg-details-article">
                             <h3>{article.articleTitle}</h3>
-                            <p className="prj-pg-details-p">{article.articleContent}</p>
+                            {console.log(typeof(article.articleContent))}
+                            {/* AFTER CORRECTING ALL THE PAGES REMOVE THE typeof */}
+                            {typeof(article.articleContent) === 'object' ? article.articleContent : <p className="prj-pg-details-p">{article.articleContent}</p>}
+                            {/* <p className="prj-pg-details-p">{article.articleContent}</p> ORIGINAL WAY*/}
                         </article>
                     )
                 })}               

@@ -108,22 +108,3 @@ export const tempProjects = [
         projectType: 'freeCodeCamp',
         path: '/projects/weather-app'
     }];
-
-// export const routes = [
-//     {
-//         path: 'MyStory',
-//     },
-//     {
-//         path: 'MyResume',
-//     },
-//     {
-//         path: 'PastExperience',
-//     },
-//     {
-//         path: 'MyProjects',
-//     },
-//     {
-//         path: 'ContactMe',
-//         // component: Nav
-//     },
-// ]
