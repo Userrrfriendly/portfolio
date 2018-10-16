@@ -61,9 +61,18 @@
 
 }
 
+.prj-pg-live-link:focus,
+.prj-pg-source-link:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 5px lightsteelblue;
+    box-shadow: 0 0 5px lightsteelblue;
+    border: 1px solid darkgrey;
+}
+
 .prj-pg-source-link {
     margin-left:1rem;
 }
+
 .prj-pg-header-img-container {
     margin: auto;
 }
