@@ -255,27 +255,20 @@ export const subRoutes = [
                 },
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ["JavaScript", "Jasmine", "jQuery"],
             datasets: [{
                 label: 'Tools & Frameworks used:',
-                data: [2, 2, 2, 2, 2, 2],
+                data: [1, 3, 1],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.4)',
-                    'rgba(54, 162, 235, 0.4)',
-                    'rgba(255, 206, 86, 0.4)',
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
+                    '#108040',
+                    '#8A4182',
+                    '#0769ad',
+
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -336,14 +329,9 @@ export const subRoutes = [
                     'rgba(255, 159, 64, 0.4)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -404,14 +392,9 @@ export const subRoutes = [
                     'rgba(255, 159, 64, 0.4)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -472,14 +455,9 @@ export const subRoutes = [
                     'rgba(255, 159, 64, 0.4)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
