@@ -13,7 +13,9 @@ import React from 'react';
 //Project components:
 import ArcadeGame from '../Componets/project-page/prj-components/arcade-game';
 import FlickrPhotoPlotter from '../Componets/project-page/prj-components/flickr-photo-plotter';
-
+import MyReads from '../Componets/project-page/prj-components/my-reads';
+import RestaurantReview from '../Componets/project-page/prj-components/restaurant-review';
+import MemoryGame from '../Componets/project-page/prj-components/memory-game';
 
 export const routes = [
     {
@@ -33,16 +35,6 @@ export const routes = [
     {
         path: '/MyProjects',
         component: TestComponent,
-        // subRoutes: [
-        //   'Flickr-Photo-Plotter',
-        //   'My reads',
-        //   'Restaurant Review',
-        //   'Arcade Game',
-        //   'Matching Game',
-        //   'Unit Tests',
-        //   'Calculator',
-        //   'Wikipedia reader',
-        //   'Weather App']
     },
     {
         path: '/ContactMe',
@@ -86,7 +78,7 @@ export const subRoutes = [
         chartData: {
             labels: ["HTML5", "CSS", "JavaScript", "ReactJs", "Google Maps", "Wikipedia API", "Flickr API"],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2,2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
@@ -112,46 +104,19 @@ export const subRoutes = [
         type: 'Project',
         data:{
             imgUrl: myReads,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
+            livePageUrl: 'https://userrrfriendly.github.io/reactnd-project-myreads-starter/',
             sourceCodeUrl: 'https://github.com/Userrrfriendly/reactnd-project-myreads-starter',
             content: [
                 {
                     articleTitle: 'Goals:',
-                    articleContent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-                },
-                {
-                    articleTitle: 'Functionality:',
-                    articleContent: `It is a long established fact that a reader will be distracted by the readable content of a page when 
-                    looking at its layout. `
-                },
-                {
-                    articleTitle: 'Difficulties:',
-                    articleContent: ` The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                     as opposed to using 'Content here, content here', making it look like readable English. 
-                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                      Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-                },
-                {
-                    articleTitle: 'What did I learn?',
-                    articleContent: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good 
-                        and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
+                    articleContent: <MyReads />
                 },
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ["JavaScript", "ReactJs", "React-Router-Dom"],
             datasets: [{
-                label: '# of Votes',
-                data: [2, 2, 2, 2, 2, 2],
+                label: 'Tools & Frameworks used:',
+                data: [2, 6, 2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
                     'rgba(54, 162, 235, 0.4)',
@@ -161,14 +126,9 @@ export const subRoutes = [
                     'rgba(255, 159, 64, 0.4)'
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -180,63 +140,31 @@ export const subRoutes = [
         type: 'Project',
         data:{
             imgUrl: restaurantReview,
-            livePageUrl: 'https://userrrfriendly.github.io/Flickr-Photo-Plotter/',
+            livePageUrl: false,
             sourceCodeUrl: 'https://github.com/Userrrfriendly/mws-restaurant-stage-1',
             content: [
                 {
                     articleTitle: 'Goals:',
-                    articleContent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-                },
-                {
-                    articleTitle: 'Functionality:',
-                    articleContent: `It is a long established fact that a reader will be distracted by the readable content of a page when 
-                    looking at its layout. `
-                },
-                {
-                    articleTitle: 'Difficulties:',
-                    articleContent: ` The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                     as opposed to using 'Content here, content here', making it look like readable English. 
-                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                      Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-                },
-                {
-                    articleTitle: 'What did I learn?',
-                    articleContent: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good 
-                        and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
+                    articleContent: <RestaurantReview />
                 },
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ["HTML5", "CSS", "JavaScript", "Service Worker", "ARIA"],
             datasets: [{
-                label: '# of Votes',
-                data: [2, 2, 2, 2, 2, 2],
+                label: 'Tools & Frameworks used:',
+                data: [2, 2, 2, 2, 2],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.4)',
-                    'rgba(54, 162, 235, 0.4)',
-                    'rgba(255, 206, 86, 0.4)',
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
+                    '#ffe900',
+                    '#efd6ac',
+                    '#bfd7ea',
+                    '#21a0a0',
+                    '#e53d00',
+                    '#183a37',
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -259,7 +187,7 @@ export const subRoutes = [
         chartData: {
             labels: ['HTML5', 'CSS', 'JavaScript', 'Canvas API', 'ES6', 'Object Oriented Programming'],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
                     '#ff0000',
@@ -275,23 +203,7 @@ export const subRoutes = [
                 borderWidth: 3
             }]
         },
-        chartOptions: {
-            cutoutPercentage: 60,
-            tooltips: {
-              callbacks: {
-                  label: function(tooltipItem, data) {
-                      var label = data.labels[tooltipItem.index] || 'unlabeled';
-                      // console.log(data.labels[tooltipItem.index]);
-        
-                      return label;
-                  }
-              }
-            },
-            legend: {
-              position: 'bottom',
-              onClick: false
-            }
-          }
+        chartOptions: chartOptions
         }
     },
     {
@@ -305,58 +217,23 @@ export const subRoutes = [
             content: [
                 {
                     articleTitle: 'Goals:',
-                    articleContent: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-                },
-                {
-                    articleTitle: 'Functionality:',
-                    articleContent: `It is a long established fact that a reader will be distracted by the readable content of a page when 
-                    looking at its layout. `
-                },
-                {
-                    articleTitle: 'Difficulties:',
-                    articleContent: ` The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                     as opposed to using 'Content here, content here', making it look like readable English. 
-                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                      and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                      Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
-                },
-                {
-                    articleTitle: 'What did I learn?',
-                    articleContent: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-                    in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                    and going through the cites of the word in classical literature, discovered the undoubtable source.
-                     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good 
-                        and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`
-                },
+                    articleContent: <MemoryGame />
+                }
         ],
         chartData: {
-            labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
+            labels: ["HTML5", "CSS", "JavaScript"],
             datasets: [{
-                label: '# of Votes',
-                data: [2, 2, 2, 2, 2, 2],
+                label: 'Tools & Frameworks used:',
+                data: [2, 2, 2],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.4)',
-                    'rgba(54, 162, 235, 0.4)',
-                    'rgba(255, 206, 86, 0.4)',
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)'
+                    '#ff0000',
+                    '#00e3e4',
+                    '#ffa500',
                 ],
                 borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#fff'
                 ],
-                borderWidth: 2
+                borderWidth: 3
             }]
         },
         chartOptions: chartOptions
@@ -406,7 +283,7 @@ export const subRoutes = [
         chartData: {
             labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
@@ -474,7 +351,7 @@ export const subRoutes = [
         chartData: {
             labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
@@ -542,7 +419,7 @@ export const subRoutes = [
         chartData: {
             labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
@@ -610,7 +487,7 @@ export const subRoutes = [
         chartData: {
             labels: ["HTML5", "ReactJs", "JavaScript", "Green", "Purple", "Orange"],
             datasets: [{
-                label: '# of Votes',
+                label: 'Tools & Frameworks used:',
                 data: [2, 2, 2, 2, 2, 2],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.4)',
@@ -635,13 +512,3 @@ export const subRoutes = [
         }
     }
     ];
-
-
-
-// const error = function ErrorRoute() {
-//     return(
-//         <div className="error-route">Ooops!! It seems that the path does not exist...</div>
-//     )
-// }
-
-

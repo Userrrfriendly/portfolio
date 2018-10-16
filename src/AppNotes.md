@@ -31,7 +31,8 @@
         - remove the source button OR
         - add it to github
     - * Change font size at the Legend change colors for the Donought component
-
+    - * Try using object destructuring in routes.js (chart data like 'html', data etc...)
+    - 
     - * Do something about the UD between 7000-1000px at Project Page
     - * It would make more sense if in <Nav> you generated the drop-down-items from a file
         - thus you could make the css inline style have height that would be 2rem*number of items

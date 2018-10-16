@@ -17,8 +17,8 @@ function FlickrPhotoPlotter()  {
         ]
     return (
         <div>
-            <article class="prj-pg-details-article">
-                <h3>Goals:</h3>
+            <article className="prj-pg-details-article">
+                <h3 className="prj-pg-details-article-h3">Goals:</h3>
                 <p>Develop a single-page application using React featuring a map of your choice or a map of a place you would like to visit. 
                     Add additional functionality to this application, including: 
                     map markers to identify popular locations or places you’d like to visit, 
@@ -32,9 +32,9 @@ function FlickrPhotoPlotter()  {
                     ))}
                 </ul>
             </article>
-            <article class="prj-pg-details-article">
-                <h3>Functionality:</h3>
-                <p class="prj-pg-details-p">
+            <article className="prj-pg-details-article">
+                <h3 className="prj-pg-details-article-h3">Functionality:</h3>
+                <p className="prj-pg-details-p">
                     This single page application displays a map (Google Maps) and a list of landmarks 
                     (currently the landmarks are Dodecanese islands of Greece plus Santorini and Delos). 
                     The user can filter the landmarks by using the input field above the marker list. 
@@ -60,10 +60,10 @@ function FlickrPhotoPlotter()  {
 
                 </ul>
             </article>
-            <article class="prj-pg-details-article">
-                <h3>Approach/Milestones:</h3>
-                <p class="prj-pg-details-p">
-                    This project had so many moving parts that it had to be broken down to many sub-problems: 
+            <article className="prj-pg-details-article">
+                <h3 className="prj-pg-details-article-h3">Approach/Milestones:</h3>
+                <p className="prj-pg-details-p">
+                    This project had so many moving parts that it had to be broken down to many sub-problems: </p>
                     {<ul>
                         <li>How to use Google Maps with React?</li>
                         <li>Wikipedia API implementation</li>
@@ -71,6 +71,7 @@ function FlickrPhotoPlotter()  {
                         <li>Error handling for the every asynchronous request</li>
                         <li>State management </li>
                     </ul>}
+                    <p className="prj-pg-details-p">
                     Just like every problem that involves programming the implementations of Google Maps within a React app had multiple solutions.
                     I choose not to rely on any external library for this task and instead tried to use one of  
                     react components lifecycle events: <code> componentDidMount()</code> to initialize the map.
@@ -84,9 +85,9 @@ function FlickrPhotoPlotter()  {
                     and in case of errors would provide the user with some meaningful information about what went wrong.  
                 </p>
             </article>
-            <article class="prj-pg-details-article">
-                <h3>What did I learn from this project?</h3>
-                <p class="prj-pg-details-p">
+            <article className="prj-pg-details-article">
+                <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3>
+                <p className="prj-pg-details-p">
                 I learned how design patterns and UI libraries like React assist in developing a manageable codebase. 
                 I also explored how frameworks can decrease the time required developing an application and provide a 
                 number of utilities for us to use. 

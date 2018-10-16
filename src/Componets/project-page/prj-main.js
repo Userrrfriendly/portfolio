@@ -21,7 +21,7 @@ class PrjMain extends React.Component {
                 <main id="prj-main">
                     <PrjDetails data={this.props.data} />
                     <aside className="prj-pg-aside">
-                        <h2>Application Overview</h2>
+                        <h2 className="prj-pg-h2">Application Overview</h2>
                         <p>Build with:</p>
                         <div className="chart-container">
                             <Chart

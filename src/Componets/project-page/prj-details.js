@@ -7,7 +7,7 @@ class PrjDetail extends React.Component {
 
         return (
             <section className="prj-pg-details">
-                <h2>Project Details</h2>
+                <h2 className="prj-pg-h2">Project Details</h2>
                 {data.map((article)=>{
                     return (
                         <article key={article.articleTitle} className="prj-pg-details-article">

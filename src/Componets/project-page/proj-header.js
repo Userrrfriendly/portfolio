@@ -24,14 +24,14 @@ class PrjHeader extends React.Component {
                 <div className="prj-pg-header-title-container">
                     <h1>{this.props.title}</h1>
                     <div className="prj-pg-header-links-container">
-                        <a href={data.livePageUrl}
+                        {data.livePageUrl && <a href={data.livePageUrl}
                             target="_blank" rel="noopener noreferrer"
                             className="prj-pg-live-link">View App
-                        </a>
-                        <a href={data.sourceCodeUrl}
+                        </a>}
+                        {data.sourceCodeUrl && <a href={data.sourceCodeUrl}
                             target="_blank" rel="noopener noreferrer"
                             className="prj-pg-source-link">View Code
-                        </a>
+                        </a>}
                     </div>
                 </div>
                 <div className="prj-pg-header-img-container">
