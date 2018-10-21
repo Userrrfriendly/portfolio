@@ -48,7 +48,7 @@ function MemoryGame()  {
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3>
                 <p className="prj-pg-details-p">
-                    The memory game presented the first opportunity to fully combine my skills in 
+                    The memory game presented a good opportunity to fully combine my skills in 
                     HTML, CSS, and JavaScript into a large project. 
                     Aside from solidifying my skills with these three technologies, 
                     I discovered how best to combine them in a complex application.

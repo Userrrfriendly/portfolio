@@ -1,5 +1,5 @@
 import React from 'react';
-import {Doughnut, Pie} from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2'; //Doughnut
 import './css/prj-chart.css';
 
 class Chart extends React.Component {

@@ -34,11 +34,10 @@ function MyReads()  {
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">Functionality:</h3>
                 <p className="prj-pg-details-p">
-                    The app is consisted of a collection of books that are placed on three bookshelfs 
-                    (currently reading, want to read & read) 
-                    the user can move the books from one shelf to another, 
-                    remove a book completely from the library, search for books and add new books to the library. 
-                    The app uses Udacitys Book Lender API!.
+                    The app is consisted of a collection of books that are placed on three bookshelves 
+                    (currently reading, want to read & read) the user can move the books from one shelf to another, 
+                    remove a book completely from the library, search for books and add new books to the library.
+                     The app uses Udacity's Book Lender API.
                 </p>
             </article>
             <article className="prj-pg-details-article">

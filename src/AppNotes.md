@@ -17,6 +17,12 @@
     + * Add React.Router or #Router 8 hours => 16hours
         - Refactor all the anchor tags into <Link/>s (30 minutes for stories)
     
+
+    <!-- MOBILE BUGS -->
+    - FONT TO SMALL
+    - MENU TOO SMALL SPACING IS BAD, EVERYTHING IS TOO CLOSE
+    + <CODE> BREAKS BECAUSE IT DOESNT WRAP
+    + PLEASE ADD route {match}
     - * Create my Story Page 16 hours
     - * Create Resume Page 16 hours
     - * Create Past Experience Page 16 hours  

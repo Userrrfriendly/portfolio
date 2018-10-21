@@ -39,14 +39,14 @@ function RestaurantReview()  {
                 <h3 className="prj-pg-details-article-h3">Approach/Milestones:</h3>
                 <p className="prj-pg-details-p">
                     My approach for this project was to break down the objectives in three main problems
-                    (subsequently each of the main problems was brocken down to smaller sub-problems):
+                    (subsequently each of the main problems was broken down to smaller sub-problems):
                 </p>
                 <ol>
                     <li>Make the webpage responsive across different devices
                         <ul>
                             <li>Start from Mobile first</li>
                             <li>Move to tablets and medium screen devices</li>
-                            <li>Finally responsiveness to devices with large screens</li>
+                            <li>Finally add responsiveness to devices with large screens</li>
                         </ul>
                     </li>
                     <li>Make the page accessible for screen readers by using ARIA practices 
@@ -56,7 +56,7 @@ function RestaurantReview()  {
                             <li>Make the page accessible by keyboard by fixing the tab order</li>
                         </ul>
                     </li>
-                    <li>Cache soume of the resources for offline by implementing Service Worker</li>
+                    <li>Cache some of the resources for offline by implementing Service Worker</li>
                 </ol>
                 <p className="prj-pg-details-p">
                     My approach for this project was to break down the objectives in three main problems:
@@ -65,8 +65,18 @@ function RestaurantReview()  {
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3>
                 <p className="prj-pg-details-p">
+                    The project presented the first opportunity to learn about progressive web apps 
+                    and how they can improve the user experience both for mobile and desktop users. 
+                    The implementing of Service Worker and Caching are the first steps one must take in 
+                    order to transform a static web-page into a progressive web app. 
+                    A Service Worker can bring a number of features that would normally require a native 
+                    application to the web. Push notifications, rich offline & low-fi experience, background syncs etc. 
+                    all done with just a simple script written in plain JavaScript!
+                </p>
+                <p className="prj-pg-details-p">
+                    The other important issue in this project was the proper implementation of web-accessibility.
                     According to World Health Organization 
-                    the esmated number of people visually impaired in the world is 285 million, 
+                    the estimated number of people visually impaired in the world is 285 million, 
                     39 million blind and 246 million having low vision; 
                     <cite>
                         <a href="http://www.who.int/blindness/GLOBALDATAFINALforweb.pdf" target="blank" rel="noopener noreferrer"> Global data on visual impairments 2010 </a>
@@ -74,28 +84,23 @@ function RestaurantReview()  {
                     </cite>
                 </p>
                 <p className="prj-pg-details-p">
-                    Apart from people with vision imparements, ARIA & A11Y techniques can make webpages accessible to people with other disabilities
-                    like motor, hearing and cognitive imparements not to mention people with temporary disabilities.
-                    So enforcing the propper use of ARIA & A11Y should be considered a standard practice for every developer.
-                    Furthermore by working on this project I descovered that by using proper ARIA techniques everyone benefits in the long term:
+                    Apart from people with vision impairments, ARIA & A11Y techniques can make web-pages accessible to people with other disabilities
+                    like motor, hearing and cognitive impairments not to mention people with temporary disabilities.
+                    So enforcing the proper use of ARIA & A11Y should be considered a standard practice for every developer.
+                    Furthermore by working on this project I discovered that by using proper ARIA techniques everyone benefits in the long term:
                 </p>
                 <ul>
-                    <li>HTML5 semantics make the site not only more accessible for screenreader but it makes much more sense from a developers perspective,
-                    eg a nav element is clearly comunicating that this element is designed for navigation purposes and makes more scense that a div with 
-                    a nav-bar class or id</li>
+                    <li>HTML5 semantics make the site not only more accessible for screen reader 
+                    but it makes much more sense from a developers perspective,
+                    eg elements like <code> {'<nav>, <main>, <header>, <footer>'} </code>etc are clearly communicating 
+                    that these elements are designed for a specific purpose and are more intuitive that a 
+                    <code>{'<div>'}</code> with an descriptive class or id</li>
                     <li>if the webpage has prober tab order and can be fully traversed and used with just a keyboard is another feature 
-                    that anyone - and not just people with some short of imairment - can benefit from</li>
-                    <li>if the webpage has prober tab order and can be fully traversed and used with just a keyboard is another feature 
-                    that anyone - and not just people with some short of imairment - can benefit from</li>
-                    <li>proper colour contrast will help not only a person
+                    that anyone - and not just people with some short of impairment  - can benefit from</li>
+                    <li>proper color  contrast will help not only a person
                     with some visual impairment but any user under circumstances like small screen, bright sunlight etc.</li>
                 </ul>
-                <p className="prj-pg-details-p">
-                    Apart from accessibility the other topic that that was addressed in this project is the use ServiceWorker
-                    and Caching. A Service Worker can bring a number of features that would normally require a native application
-                    to the web. Push notifications, rich offline & low-fi experience, background syncs etc. all done with just a simple script written in
-                    plain JavaScript! 
-                </p>
+
             </article>
         </div>
     )

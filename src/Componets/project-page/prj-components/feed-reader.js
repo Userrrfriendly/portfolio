@@ -17,10 +17,10 @@ function FeedReader()  {
                 <h3 className="prj-pg-details-article-h3">Goals:</h3>
                 <p className="prj-pg-details-p">
                     In this project a web-based application that reads RSS feeds was provided. 
-                    The application already included Jasmine && the test suite describtions.
-                    The objective was to finish writting the Tests.
+                    The application already included Jasmine && the test suite descriptions. 
+                    The objective was to finish writing the Tests.
                 </p>
-                <ul className="check-list"><strong>Build a game where:</strong>
+                <ul className="check-list"><strong>Additional requirements:</strong>
                     {goalsData.map((listItem, i)=>(
                         <li key={i} className="check-item">{listItem}</li>
                     ))}

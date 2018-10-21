@@ -50,7 +50,7 @@ export const tempProjects = [
         description:'Pins images on a map based on the images geolocation',
         imageUrl: flickr,
         projectType: 'Udacity',
-        path: '/projects/flickr-fhoto-plotter'
+        path: '/projects/flickr-photo-plotter'
     },
     {
         name:'My reads',

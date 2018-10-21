@@ -10,47 +10,6 @@ import { Route, Switch } from 'react-router-dom';
 import PrjMain from './Componets/project-page/prj-main';
 import ErrorRoute from './Componets/error-route';
 
-// const TestComponent = ()=> {
-//   return (
-//     <div>This is a testComponent</div>
-//   )
-// }
-
-// const routes = [
-//   {
-//       path: '/MyStory',
-//       component: TestComponent
-//   },
-//   {
-//       path: '/MyResume',
-//       component: TestComponent
-
-//   },
-//   {
-//       path: '/PastExperience',
-//       component: TestComponent
-
-//   },
-//   {
-//       path: '/MyProjects',
-//       component: TestComponent,
-//       // subRoutes: [
-//       //   'Flickr-Photo-Plotter',
-//       //   'My reads',
-//       //   'Restaurant Review',
-//       //   'Arcade Game',
-//       //   'Matching Game',
-//       //   'Unit Tests',
-//       //   'Calculator',
-//       //   'Wikipedia reader',
-//       //   'Weather App']
-//   },
-//   {
-//       path: '/ContactMe',
-//       component: TestComponent
-//   }
-// ];
-
 class App extends Component {
   render() {
     return (
