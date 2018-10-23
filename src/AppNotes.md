@@ -14,33 +14,30 @@
     + * Create a Project Page 8 hours => 16 hours
     + * In routing add a component for error page (1hour) => (1/2 hour)
     + Add Alegreya font to project page
-    + * Add React.Router or #Router 8 hours => 16hours
-        - Refactor all the anchor tags into <Link/>s (30 minutes for stories)
-    
-
-    <!-- MOBILE BUGS -->
-    - FONT TO SMALL
-    - MENU TOO SMALL SPACING IS BAD, EVERYTHING IS TOO CLOSE
+    + FONT TO SMALL
+    + MENU TOO SMALL SPACING IS BAD, EVERYTHING IS TOO CLOSE
     + <CODE> BREAKS BECAUSE IT DOESNT WRAP
     + PLEASE ADD route {match}
+    + * Add React.Router or #Router 8 hours => 16hours
+        - Refactor all the anchor tags into <Link/>s (30 minutes for stories)
+    + * Update focus in project page header button that displays code/live page to match the rest of the app
+    
+
     - * Create my Story Page 16 hours
     - * Create Resume Page 16 hours
     - * Create Past Experience Page 16 hours  
     - Fix the images css in the stories (1 hour)
     - Stories and Projects should be list items (1 hour) => 1hour for the projects
     - ----------------------
-    - Instead of adding live pages, start writing about each project and also correcting everything about it( live links,git hub links,bugs etc)
-        - Add live pages to all the projects
-            - my reads, restaurant review,
+    + Instead of adding live pages, start writing about each project and also correcting everything about it( live links,git hub links,bugs etc)
+        + Add live pages to all the projects
+            + my reads, restaurant review,
             + in feedreader (unit tests) update code to remove live page
-    - for calculator wikireader and weather app EITHER:
-        - add the code link from code pen as source link
     - * in Each Individual Project page add to the application overview a section that says either:
         - This project is part of udacity FEND
         - This project is part of freeCodeCamp challenge
     - * Change font size at the Legend change colors for the Donought component
     - * Try using object destructuring in routes.js (chart data like 'html', data etc...)
-    - * Update focus in project page header button that displays code/live page to match the rest of the app
     - * Do something about the UD between 7000-1000px at Project Page
     - * It would make more sense if in <Nav> you generated the drop-down-items from a file
         - thus you could make the css inline style have height that would be 2rem*number of items

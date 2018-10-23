@@ -7,6 +7,9 @@
     height: 100%;
 }
 
+#projects a:first-of-type .project {
+    border-top: 1px solid #d0d0d0;
+}
 
 .project-link:focus {
     /* outline: red; */
@@ -19,9 +22,9 @@
 }
 
 /* first .project on mobile */
-.project:nth-child(2) {
-    border-top: 1px solid #d0d0d0;
-}
+/* .project:nth-child(1 - 1) {
+    border-top: 10px solid #d0d0d0;
+} */
 
 .project:hover {
     background: #f7f7f7;

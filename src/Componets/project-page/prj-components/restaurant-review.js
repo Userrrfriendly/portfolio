@@ -31,9 +31,35 @@ function RestaurantReview()  {
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">Functionality:</h3>
                 <p className="prj-pg-details-p">
-                    This initial static webpage displays restaurants on a map 
-                    the restaurants can be filtered either by location or by cuisine.
+                    This initial static webpage displays restaurants on a map. 
+                    The restaurants can be filtered either by location or by cuisine.
                 </p>
+                <p className="prj-pg-details-p">
+                    <strong>Important!</strong>
+                    <i> There is no online version of this project in order to view the project you have to:</i>
+                </p>
+                
+                    <ul>
+                        <li>
+                            clone or download the repo from <a href="https://github.com/Userrrfriendly/mws-restaurant-stage-1" 
+                                target="_blank" 
+                                rel="noopener noreferrer">gitHub 
+                            </a>
+                        </li>
+                        <li>in case you already have python installed on your system:
+                            <ul>
+                                <li>check the version of Python you have: <code> python -V </code></li>
+                                <li>for Python 2.x, start up the server with python <code> -m SimpleHTTPServer 8000</code></li>
+                                <li>for Python 3.x you can use python3 <code>python3 -m http.server 8000</code></li>
+                            </ul>
+                        </li>
+                        <li>In case you don't have Python, navigate to <a href="https://www.python.org/" target="_blank"
+                                rel="noopener noreferrer">Python's website</a> to download and install it.
+                        </li>
+                        <li>in the console navigate to the projects directory and type <code>python3 -m http.server 8000</code> to view the app</li>
+                    </ul>
+                    
+                    
             </article>
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">Approach/Milestones:</h3>

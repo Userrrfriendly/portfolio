@@ -11,10 +11,18 @@ class Project extends React.Component {
         projectType: PropTypes.string.isRequired
     }
 
+    handleClick = (e)=>{
+        //for consistency (especially on mobile) scrolls the page to the top when a project is clicked.
+        window.scrollTo({
+            top: 1,
+            behavior: 'instant'
+        })
+    }
+
     render() {
         const figcaptionClass = this.props.projectType.toLowerCase() + '-figcaption';
         return (
-            <Link className="project-link" to={this.props.projectPath}>
+            <Link onClick={this.handleClick} className="project-link" to={this.props.projectPath}>
                 <article className="project">
                     <figure className="project-figure">
                         <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>

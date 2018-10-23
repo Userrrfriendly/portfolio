@@ -9,8 +9,14 @@ import { Route, Switch } from 'react-router-dom';
 // import TestComponent from './Componets/Testcomponent';
 import PrjMain from './Componets/project-page/prj-main';
 import ErrorRoute from './Componets/error-route';
+import smoothscroll from 'smoothscroll-polyfill';
 
 class App extends Component {
+  componentDidMount() {
+    //once the App mounts smoothscroll-polyfill takes care about smooth scrolling across all devices and browsers. 
+    smoothscroll.polyfill();
+  }
+
   render() {
     return (
         <div className="App">

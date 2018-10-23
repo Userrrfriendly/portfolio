@@ -23,9 +23,10 @@ nav {
     max-height: 0;
 }
 
-.nav-list-item {
-    margin:0;
-}
+/* .nav-list-item {
+    margin: 0.2rem 0;
+} */
+
 .nav-list-hide-li .nav-list-item,
 .arrowhead {
     /* sets display to none thus removes the items from tab order */
@@ -34,7 +35,7 @@ nav {
 
 .nav-list-item {
     list-style-type: none;
-    margin: 0;
+    margin: 0.2rem 0;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -47,7 +48,7 @@ nav {
     text-decoration: none;
     color:black;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: inline-block;
     max-height: 1rem;
 }
@@ -93,18 +94,14 @@ nav {
     border: 1px solid darkgrey;
 }
 
-/* .nav-link.my-story {
-    font-weight: bold;
-} */
-
 .my-story {
     color: #821919;
 }
 /* MY DROP-DOWN MENU */
 /* button */
-.nav-link-dropdown {
+/* .nav-link-dropdown {
     position: relative;
-}
+} */
 
 .drop-down-menu {
     display: flex;
@@ -216,6 +213,7 @@ nav {
 /* Projects Submenu */
 .nav-link-dropdown {
     /* border: 0; */
+    position: relative;
     font-family: inherit;
     /* font-size: 1rem; */
     /* line-height: 1.2; */
@@ -234,7 +232,7 @@ nav {
     text-decoration: none;
     color:black;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: inline-block;
     margin:0;
 }
