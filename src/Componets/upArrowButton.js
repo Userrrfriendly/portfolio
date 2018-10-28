@@ -3,7 +3,7 @@ import './CSS/upArrowButton.css';
 
 class UpArrowBtn extends React.Component {
     handleClick = (e)=> {
-        e.preventDefault();
+        // e.preventDefault();
         window.scrollTo({
             top: 1,
             behavior: 'smooth'
@@ -20,6 +20,6 @@ class UpArrowBtn extends React.Component {
 }
 /*
     *this does not display well in edge:⬆
-    *this looks prettier but does:⇧ 
+    *this looks less pretty but does:⇧ 
 */
 export default UpArrowBtn;

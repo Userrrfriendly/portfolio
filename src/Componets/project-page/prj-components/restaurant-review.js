@@ -84,9 +84,6 @@ function RestaurantReview()  {
                     </li>
                     <li>Cache some of the resources for offline by implementing Service Worker</li>
                 </ol>
-                <p className="prj-pg-details-p">
-                    My approach for this project was to break down the objectives in three main problems:
-                </p>
             </article>
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3>

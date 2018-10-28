@@ -12,18 +12,6 @@ import wikiReader from '../Images/projects/Wikipedia Viewer.jpg';
 import weatherApp from '../Images/projects/weather-app.jpg';
 import calculator from '../Images/projects/calculator.jpg';
 
-
-
-//'./Images/cortana.jpg';
-//'./Images/farhad.jpg';
-//'./Images/butler.jpg';
-//'./Images/easydom.jpg';
-//'./Images/designers.jpg';
-// './Images/asta.jpg';
-//'./Images/halo.jpg';
-//'./Images/hugh.jpg';
-//'./Images/minecraft.jpg';
-
 export const tempStory = [
     {
         name: 'My Story',

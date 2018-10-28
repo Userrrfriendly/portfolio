@@ -47,21 +47,20 @@ export const routes = [
     }
   ];
 
-  /*Sub-Routes */
+/*Sub-Routes */
 const chartOptions = {
     cutoutPercentage: 60,
     tooltips: {
       callbacks: {
           label: function(tooltipItem, data) {
               var label = data.labels[tooltipItem.index] || 'unlabeled';
-              // console.log(data.labels[tooltipItem.index]);
               return label;
           }
       }
     },
     legend: {
       position: 'bottom',
-      onClick: false
+      onClick: false //when false is passed items are not removed from the pie when clicked
     }
   };
 
@@ -261,7 +260,6 @@ export const subRoutes = [
                     '#108040',
                     '#8A4182',
                     '#0769ad',
-
                 ],
                 borderColor: [
                     '#fff'

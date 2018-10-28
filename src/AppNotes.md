@@ -21,27 +21,27 @@
     + * Add React.Router or #Router 8 hours => 16hours
         - Refactor all the anchor tags into <Link/>s (30 minutes for stories)
     + * Update focus in project page header button that displays code/live page to match the rest of the app
+    + Instead of adding live pages, start writing about each project and also correcting everything about it( live links,git hub links,bugs etc)
+        + Add live pages to all the projects
+            + my reads, restaurant review,
+            + in feedreader (unit tests) update code to remove live page
     
-
+    - * https://grow.google/intl/europe/programmes for past xp style
     - * Create my Story Page 16 hours
     - * Create Resume Page 16 hours
     - * Create Past Experience Page 16 hours  
     - Fix the images css in the stories (1 hour)
     - Stories and Projects should be list items (1 hour) => 1hour for the projects
     - ----------------------
-    + Instead of adding live pages, start writing about each project and also correcting everything about it( live links,git hub links,bugs etc)
-        + Add live pages to all the projects
-            + my reads, restaurant review,
-            + in feedreader (unit tests) update code to remove live page
     - * in Each Individual Project page add to the application overview a section that says either:
         - This project is part of udacity FEND
         - This project is part of freeCodeCamp challenge
-    - * Change font size at the Legend change colors for the Donought component
-    - * Try using object destructuring in routes.js (chart data like 'html', data etc...)
-    - * Do something about the UD between 7000-1000px at Project Page
-    - * It would make more sense if in <Nav> you generated the drop-down-items from a file
-        - thus you could make the css inline style have height that would be 2rem*number of items
-        - this would allow smooth animation.
+        - * Change font size at the Legend change colors for the Donought component
+        - * Try using object destructuring in routes.js (chart data like 'html', data etc...)
+        - * Do something about the UD between 7000-1000px at Project Page
+        - * It would make more sense if in <Nav> you generated the drop-down-items from a file
+            - thus you could make the css inline style have height that would be 2rem*number of items
+            - this would allow smooth animation.
 
     + * Test on Edge (5 minutes) + (10 minutes to setup at Innovator)
     - ** <Story> doesn't make much sense rename it to something meaningfull like hero section or smth
@@ -58,7 +58,6 @@
     - https://news.microsoft.com/stories/inthecloudwetrust/
     - https://news.microsoft.com/stories/invisible-revolution/
     - https://tylermcginnis.com/react-router-route-config/
-    - move the propTypes from project into the class as a static method.
     - try flexbox for aligning the images in the stories
     - https://css-tricks.com/creating-svg-icon-system-react/
     - Stories and Projects should be list items
