@@ -47,7 +47,8 @@ body {
     font-size: 1.1rem;
   }
 
-  #main-home {
+  #main-home,
+  .main-story {
     max-width: 1600px;
     margin: auto;
   }

@@ -20,12 +20,12 @@ import FeedReader from '../Componets/project-page/prj-components/feed-reader';
 import WeatherApp from '../Componets/project-page/prj-components/weather-app';
 import WikipediaViewer from '../Componets/project-page/prj-components/wikipedia-viewer';
 import Calculator from '../Componets/project-page/prj-components/calculator';
-
+import MyStory from '../Componets/MyStory/MyStory';
 
 export const routes = [
     {
         path: '/MyStory',
-        component: TestComponent
+        component: MyStory
     },
     {
         path: '/MyResume',

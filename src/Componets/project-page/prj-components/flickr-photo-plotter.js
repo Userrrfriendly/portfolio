@@ -73,7 +73,7 @@ function FlickrPhotoPlotter()  {
                     </ul>}
                     <p className="prj-pg-details-p">
                     Just like every problem that involves programming the implementations of Google Maps within a React app had multiple solutions.
-                    I choose not to rely on any external library for this task and instead tried to use one of  
+                    I choose not to rely on any external library for this task and instead used one of  
                     react components lifecycle events: <code> componentDidMount()</code> to initialize the map.
                     Although the Wikipedia API call was pretty easy to deal with the flickr API had <strong> a lot</strong> of details:
                     specifically the API call requests for photos that have geolocation as metadata and the search is based on a pair of coordinates

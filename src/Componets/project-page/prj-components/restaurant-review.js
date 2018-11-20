@@ -49,8 +49,8 @@ function RestaurantReview()  {
                         <li>in case you already have python installed on your system:
                             <ul>
                                 <li>check the version of Python you have: <code> python -V </code></li>
-                                <li>for Python 2.x, start up the server with python <code> -m SimpleHTTPServer 8000</code></li>
-                                <li>for Python 3.x you can use python3 <code>python3 -m http.server 8000</code></li>
+                                <li>for Python 2.x, start up the server with <code>python -m SimpleHTTPServer 8000</code></li>
+                                <li>for Python 3.x you can use python3 <code>python -m http.server 8000</code></li>
                             </ul>
                         </li>
                         <li>In case you don't have Python, navigate to <a href="https://www.python.org/" target="_blank"
@@ -90,7 +90,7 @@ function RestaurantReview()  {
                 <p className="prj-pg-details-p">
                     The project presented the first opportunity to learn about progressive web apps 
                     and how they can improve the user experience both for mobile and desktop users. 
-                    The implementing of Service Worker and Caching are the first steps one must take in 
+                    The implementation of Service Worker and Caching are the first steps one must take in 
                     order to transform a static web-page into a progressive web app. 
                     A Service Worker can bring a number of features that would normally require a native 
                     application to the web. Push notifications, rich offline & low-fi experience, background syncs etc. 

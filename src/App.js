@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import smoothscroll from 'smoothscroll-polyfill';
 // import * as Data from './Data/data';
 import * as Routes from './Data/routes';
 import Main from './Componets/main';
 import Footer from './Componets/footer';
 import Nav from './Componets/nav';
-import { Route, Switch } from 'react-router-dom';
 // import TestComponent from './Componets/Testcomponent';
 import PrjMain from './Componets/project-page/prj-main';
 import ErrorRoute from './Componets/error-route';
-import smoothscroll from 'smoothscroll-polyfill';
 
 class App extends Component {
   componentDidMount() {
