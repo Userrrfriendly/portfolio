@@ -11,11 +11,14 @@ const MyStory = ()=> {
                 currently I am in transition from a career in engineering to that of a software-engineer.
                 To make my long story short: I used to make maps, now I make Apps.
             </p>
-            <blockquote className="quote-mystory">I used to make maps, now I make Apps.</blockquote>
+            <figure className="figure-block">
+                <blockquote className="quote-mystory">I used to make maps, now I make Apps.</blockquote>
+            </figure>
             <p className="story-p">
                 My slightly longer story is that I was drawn to tech ever since I can remember me, 
                 my first introduction to coding happened in high-school during computer science courses 
-                where we learned to code with pseudocode (needless to say it was my favorite subject). 
+                where we learned to code with pseudocode 
+                (I know pseudocode doesn't sound really exciting but it was my favorite subject). 
                 Although I was interested in programming I ended up studying Engineering and specifically 
                 Geoinformatics Engineering. One of the reasons for that decision was that 
                 geoinformatics/geomatics engineering among other things often involves aspects of Computer Engineering 
@@ -76,10 +79,12 @@ const MyStory = ()=> {
                 I just wanted to be a better and more versatile geomatics engineer. 
                 So I tried to pick up a learning path that would help me later in my career in geomatics. 
             </p>
-            <blockquote className="quote-mystory">
-                When I made the decision to learn to code I had no idea that it would lead me to a career change, 
-                I just wanted to be a better and more versatile geomatics engineer.
-            </blockquote>
+            <figure className="figure-block">
+                <blockquote className="quote-mystory">
+                    When I made the decision to learn to code I had no idea that it would lead me to a career change, 
+                    I just wanted to be a better and more versatile geomatics engineer.
+                </blockquote>
+            </figure>
             <p className="story-p">
                 Coding has so many applications in geomatics (among other things: creating extensions for ArcGIS 
                 - the most popular commercial software created by ESRI the pioneer in geomatics, 
@@ -114,6 +119,7 @@ const MyStory = ()=> {
                 Well obviously since you are reading this either in your browser or in your phone its pretty obvious 
                 that I choose the web mapping path.
             </p>
+
             <p className="story-p">
                 One of the reasons was that I already had some hands on experience with web mapping – in my 
                 <span className="hover-word" title="Development of a web-GIS application. The case of ArcGIS server for the city of  Komotini"> thesis </span>

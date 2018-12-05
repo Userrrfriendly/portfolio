@@ -1,4 +1,3 @@
-import TestComponent from '../Componets/Testcomponent';
 // project images:
 import flickr from '../Images/projects/flickr-photo-plotter.jpg';
 import arcadeGame from '../Images/projects/arcade-1.jpg'; 
@@ -21,6 +20,9 @@ import WeatherApp from '../Componets/project-page/prj-components/weather-app';
 import WikipediaViewer from '../Componets/project-page/prj-components/wikipedia-viewer';
 import Calculator from '../Componets/project-page/prj-components/calculator';
 import MyStory from '../Componets/MyStory/MyStory';
+import Resume from '../Componets/Resume/resume';
+import TestComponent from '../Componets/Testcomponent';
+
 
 export const routes = [
     {
@@ -29,7 +31,7 @@ export const routes = [
     },
     {
         path: '/MyResume',
-        component: TestComponent
+        component: Resume
   
     },
     {

@@ -7,7 +7,6 @@ import * as Routes from './Data/routes';
 import Main from './Componets/main';
 import Footer from './Componets/footer';
 import Nav from './Componets/nav';
-// import TestComponent from './Componets/Testcomponent';
 import PrjMain from './Componets/project-page/prj-main';
 import ErrorRoute from './Componets/error-route';
 
@@ -38,7 +37,6 @@ class App extends Component {
                 key={subRoute.path}
                 path={subRoute.path}
                 render={(props)=> (
-                  // <TestComponent title={subRoute.title} />
                   <PrjMain data={subRoute.data} title={subRoute.title}/>
                 )}
               />

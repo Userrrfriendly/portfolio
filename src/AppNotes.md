@@ -8,6 +8,7 @@
     + Add text overlay to the stories (1 hour) ==> 3 hours
     + Make Project Screenshots (1 hour) ==> (2hours)
     + .project-caption must be styled green for freeCodeCamp and blue for Udacity (1 hour) ==> 1hour
+    + IN MYSTORY.JS ADD THE STYLING FOR THESSIS AND ALL THE OTHER COMPONENTS THAT WILL DISPLAY UI ON HOVER/CLICK
     + iphone5 landscape my story image sucks
     + Add filter overlays for different screens in projects figcaptions(1 hour) ==> 1hour
     + * Add an arrow next to my projects in <Nav> so that the user 'gets' the list => 15 minuts

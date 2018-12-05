@@ -5,12 +5,19 @@
     /* display:flex; */
 }
 
+.figure-block {
+    position: relative;
+    background-color: #fbfbfb;
+    /* padding: 1.5rem 0; */
+}
+
 .quote-mystory {
     background-color: #fbfbfb;
     display: flex;
     align-items: center;
     min-height: 4rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin: 2rem; */
     font-style: italic;
     /* max-width: 90vw; */
 }
@@ -19,12 +26,22 @@
     content: "“";
     font-size: 4rem;
     padding: 0 1rem;
+    /* position: relative;
+    top: -1.5rem; */
+    position: absolute;
+    top: -1.5rem;
+    left: -1rem;
 }
 
 .quote-mystory::after {
     content: "”";
     font-size: 4rem;
     padding: 0 1rem; 
+    /* position: relative;
+    top: 1.5rem; */
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
 }
 
 .hero-figure {
