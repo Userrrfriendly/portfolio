@@ -1,5 +1,6 @@
 import mainUrl from '../Images/hero-large_h1.jpg';
-import resumeUrl from '../Images/resume_test.png';
+// import resumeUrl from '../Images/resume_test.png';
+import resumeUrl from '../Images/resume2.jpg';
 import pastXPUrl from '../Images/weatherapp.jpg';
 // projects:
 import flickr from '../Images/projects/flickr-photo-plotter.jpg';

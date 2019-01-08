@@ -96,7 +96,7 @@ const MyStory = ()=> {
             </p>
             <figure className="hero-figure">
                 <picture className="hero-image">
-                    <source srcset={heroImgSmall} media="(max-width: 600px)"/>
+                    <source srcSet={heroImgSmall} media="(max-width: 600px)"/>
                     <img src={heroImgMedium} alt="me looking at a haystack"/>
                 </picture>
                 <figcaption className="hero-caption">

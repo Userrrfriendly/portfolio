@@ -17,15 +17,9 @@ nav {
     padding: 0;
 }
 
-
-
 .nav-list-collapsed {
     max-height: 0;
 }
-
-/* .nav-list-item {
-    margin: 0.2rem 0;
-} */
 
 .nav-list-hide-li .nav-list-item,
 .arrowhead {

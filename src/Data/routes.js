@@ -21,6 +21,7 @@ import WikipediaViewer from '../Componets/project-page/prj-components/wikipedia-
 import Calculator from '../Componets/project-page/prj-components/calculator';
 import MyStory from '../Componets/MyStory/MyStory';
 import Resume from '../Componets/Resume/resume';
+import ContactMe from '../Componets/contactMe/ContactMe';
 import TestComponent from '../Componets/Testcomponent';
 
 
@@ -45,7 +46,7 @@ export const routes = [
     },
     {
         path: '/ContactMe',
-        component: TestComponent
+        component: ContactMe,
     }
   ];
 
