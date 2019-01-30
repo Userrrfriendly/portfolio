@@ -1,3 +1,9 @@
+.story-link,
+.story-link:link
+.story-link:visited,
+ {
+    text-decoration: none;
+}
 .story:first-of-type {
     height: 60vh;
 }

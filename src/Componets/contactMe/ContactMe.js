@@ -7,17 +7,117 @@ import './contactme.css';
 // <p>Gotcha! Since you've clicked here, I've got your attention :P so what are
 // you waiting for? Lets chat!</p>       </div>     ) }
 class ContactMe extends React.Component {
+    state = {
+        fullName: "",
+        organization: "",
+        role: "",
+        email: ""
+    }
+
     render() {
         return (
-            <div className="contact-me-container">
-                <div className="animation-container">
-                    <div className="text-container">
-                        <h1 className="animated-text animated fadeInDown">Did I Grab your attention?</h1>
+            <main className="main-contact">
+                <div className="contact-me-container">
+                    <div className="animation-container">
+                        <div className="text-container">
+                            <h1 className="animated-text animated fadeInDown">Lets talk!</h1>
+                        </div>
+                        <div className="animated-div"></div>
+                        <section className="contact-me-section">
+                            <h2>Drop me a line to get started.</h2>
+                            <form
+                                action="mailto:tsigourof_ben@hotmail.com"
+                                onSubmit={e=>{
+                                    // console.log(e)
+                                    e.preventDefault();
+                                    window.setTimeout(()=>{
+                                        console.log('inSetTIMEOUT')
+                                  this.setState({
+                                                fullName:'',
+                                                organization:'',
+                                                role:'',
+                                                email:''
+                                            })
+                                    },1000)
+                                    console.log('timeout');
+                                }}
+                                method="post"
+                                encType="text/plain">
+                                <p className="contact-me-text">My name is &nbsp;
+                                    <input
+                                        className="contact-input"
+                                        type="text"
+                                        name="fullName"
+                                        id="fullName"
+                                        placeholder="Full Name"
+                                        onChange={e => this.setState({fullName: e.target.value})}
+                                        value={this.state.fullName}/>
+                                    &nbsp;and I'm with &nbsp;
+                                    <input
+                                        className="contact-input"
+                                        type="text"
+                                        name="organizationName"
+                                        id="organization"
+                                        placeholder="Organization Name"
+                                        onChange={e => this.setState({organization: e.target.value})}
+                                        value={this.state.organization}/>
+                                    &nbsp;I am in need of a &nbsp;
+                                    <input
+                                        className="contact-input"
+                                        type="text"
+                                        name="role"
+                                        id="context"
+                                        placeholder="JavaScript Developer"
+                                        onChange={e => this.setState({role: e.target.value})}
+                                        value={this.state.role}/>
+                                    . You can reach me at &nbsp;
+                                    <input
+                                        className="contact-input"
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email Address"
+                                        onChange={e => this.setState({email: e.target.value})}
+                                        value={this.state.email}/>
+                                    &nbsp;to get the conversation started. Thanks!
+                                </p>
+                                    <a 
+                                        onClick={e => {
+                                            window.setTimeout(()=>{
+                                                const {fullName,organization,role,email} = this.state;
+                                                this.setState({
+                                                    fullName:'',
+                                                    organization:'',
+                                                    role:'',
+                                                    email:''
+                                                });
+                                            },0)
+                                            }
+                                        }
+                                        className='contact-send-mail'
+                                        href={`mailto:tsigourof_ben@hotmail.com?subject=Hi Ben!&body=My name is ${this.state.fullName || '*full name*'} and I'm with ${this.state.organization || '*organization name*'}. I am in need of a ${this.state.role || ' *role*'}. You can reach me at ${this.state.email || '*email adress*'} to get the conversation started. Thanks!`}>Send
+                                    </a>
+                        
+                            </form>
+                            <br></br>
+                            {/* <a
+                                onClick={e => {
+                                    console.log(e.eventPhase)
+                                    const {fullName,organization,role,email} = this.state;
+                                    this.setState({
+                                        fullName:'',
+                                        organization:'',
+                                        role:'',
+                                        email:''
+                                    })}
+                                }
+                                className='contact-send-mail'
+                                href={`mailto:tsigourof_ben@hotmail.com?subject=Hi Ben!&body=My name is ${this.state.fullName || '*full name*'} and I'm with ${this.state.organization || '*organization name*'}. I am in need of a ${this.state.role || ' *role*'}. You can reach me at ${this.state.email || '*email adress*'} to get the conversation started. Thanks!`}>Send</a> */}
+                        </section>
                     </div>
-                    <div className="animated-div"></div>
                 </div>
-                <p>Did I grab your attention? Don't be shy? Lets chat!</p>
-            </div>
+            </main>
+
         )
     }
 }

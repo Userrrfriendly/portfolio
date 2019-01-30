@@ -18,19 +18,22 @@ export const tempStory = [
         name: 'My Story',
         url: mainUrl,
         caption:'Read about my transision from Engineering to Software Engineering',
-        backgroundColor: 'initial'
+        backgroundColor: 'initial',
+        link: '/MyStory'
     },
     {
         name: 'Resume',
         url: resumeUrl,
         caption: 'View my Resume',
-        backgroundColor: '#0000ff80' //blue
+        backgroundColor: '#0000ff80', //blue,
+        link: '/MyResume'
     },
     {
         name: 'non-tech experience',
         url: pastXPUrl,
         caption: 'Read more if you are curious what about my engineering experience...',
-        backgroundColor: '#beff00b5' //green
+        backgroundColor: '#beff00b5', //green
+        link: ''
     }];
 
 export const tempProjects = [

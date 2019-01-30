@@ -1,26 +1,40 @@
+.main-contact {
+  text-align: left;
+  /* height: calc(100vh - 44px - 8rem); */
+  margin-bottom: 5rem;
+}
+
+.contact-me-container {
+  /* margin-top:3rem; */
+  padding: 3rem 0 3rem
+}
+
+.contact-me-text {
+  font-size: 1.5rem;
+}
+
 .animated-text {
-  color: red;
   margin: 0;
   font-size: 2rem;
 }
 
 .animation-container {
-  width: 50%;
-  height: 400px;
+  width: 90%;
+  /* height: 400px; */
+  height: auto;
   margin: auto;
   position: relative;
-  border: 1px solid blue;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .animated-div {
-  background-color: gray;
   height: 3rem;
   width: 100%;
-  margin: auto;
-  animation: div-animation 1s linear;
+  animation: div-animation 1.5s linear;
   z-index: -1;
 }
 
+/* .animated-div and .text-container are overlayed -hence the absolute position*/
 .animated-div,
 .text-container {
   position: absolute;
@@ -29,36 +43,63 @@
   margin-top: 1rem;
 }
 
-.text-container {
-  background-color: rgba(255, 0, 0, 0.226);
+.contact-me-section {
+  margin-top: 7rem;
+}
+
+.contact-input {
+  background: lightgray;
+  height: 2rem;
+  border: none;
+  padding-left: 1rem;
+}
+
+.contact-input:focus {
+  background: white;
+  outline: none;
+  box-shadow: 0 0 5px lightsteelblue;
+  border: 1px solid darkgrey;
+}
+
+.contact-send-mail {
+  float: right;
+  text-decoration: underline; 
+  font-size: 2rem;
+  color: black;
+  border-radius: 5%;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  padding: 0.25rem 1rem;
+}
+
+.contact-send-mail:hover {
+  font-weight: bold;
+  background-color: grey;
 }
 
 @keyframes div-animation {
   0% {
     width: 0;
+    background-color: gray;
   }
 
   25% {
     width: 30%;
+    background-color: gray;
   }
 
   50% {
     width: 70%;
+    background-color: gray;
   }
 
   75% {
     width: 55%;
+    background-color: gray;
   }
 
   100% {
     width: 100%;
   }
-
-  /* 0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;} */
 }
 
 .animated {
@@ -84,5 +125,40 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main-contact {
+    min-height: calc(100vh - 10.5rem);
+    margin-bottom: 0;
+  }
+
+  .animation-container {
+    width: 70%;
+    margin: auto;
+    position: relative;
+  }
+
+  .contact-me-text {
+    font-size: 2rem;
+  }
+  
+  .animated-text {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .animated-div {
+    height: 4rem;
+    width: 100%;
+  }
+
+  .contact-input {
+    height: 3rem;
+  }
+
+  .contact-send-mail {
+    font-size: 3rem;
   }
 }
