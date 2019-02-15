@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 class Story extends React.Component {
-    onKlik = ()=>{
-        document.getElementById("projects").scrollIntoView(true);
-    }
+    scrollOnClick() {
+        window.scrollTo(0,0);
+    };
+
     render() {
         const figureStyle = {
             backgroundImage: `url(${this.props.url})`
@@ -17,7 +18,7 @@ class Story extends React.Component {
         
         return (
             <article className="story">
-                <Link onClick={this.onKlik} to={this.props.link}>
+                <Link onClick={this.scrollOnClick} to={this.props.link}>
                     <figure style={figureStyle}>
                         <div className="story-color-overlay" style={overlayColor}></div>
                         <figcaption className="story-caption">

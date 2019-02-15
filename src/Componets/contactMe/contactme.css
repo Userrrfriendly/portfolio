@@ -1,12 +1,15 @@
 .main-contact {
   text-align: left;
-  /* height: calc(100vh - 44px - 8rem); */
   margin-bottom: 5rem;
 }
 
 .contact-me-container {
-  /* margin-top:3rem; */
-  padding: 3rem 0 3rem
+  padding: 3rem 0 3rem;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
 
 .contact-me-text {
@@ -19,10 +22,7 @@
 }
 
 .animation-container {
-  width: 90%;
-  /* height: 400px; */
   height: auto;
-  margin: auto;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0);
 }
@@ -62,13 +62,14 @@
 }
 
 .contact-send-mail {
-  float: right;
   text-decoration: underline; 
   font-size: 2rem;
   color: black;
   border-radius: 5%;
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
   padding: 0.25rem 1rem;
+  margin-left: auto;
+  display: inline-block;
 }
 
 .contact-send-mail:hover {
@@ -76,9 +77,30 @@
   background-color: grey;
 }
 
+.contact-send-mail:focus {
+    outline: none;
+    box-shadow: 0px 0px 35px 0px rgba(0, 85, 119, 0.75);
+    border: 1px solid darkgrey;
+}
+
+.contact-icon-container {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid lightgray;
+  /* border-bottom: 1px dashed blue; */
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @keyframes div-animation {
   0% {
-    width: 0;
+    width: 0%;
     background-color: gray;
   }
 
@@ -114,6 +136,8 @@
   animation-name: fadeInDown;
 }
 
+
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -129,14 +153,15 @@
 }
 
 @media screen and (min-width: 600px) {
+  .contact-me-container {
+    width: 70%;
+  }
   .main-contact {
-    min-height: calc(100vh - 10.5rem);
-    margin-bottom: 0;
+    /* min-height: calc(100vh - 10.5rem); */
+    margin-bottom: auto;
   }
 
   .animation-container {
-    width: 70%;
-    margin: auto;
     position: relative;
   }
 

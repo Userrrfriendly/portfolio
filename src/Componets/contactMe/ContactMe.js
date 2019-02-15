@@ -1,5 +1,6 @@
 import React from 'react';
 import './contactme.css';
+import SvgWithXlink from '../SvgWithXlink';
 
 // https://focuslabllc.com/contact
 // https://www.searchenginejournal.com/contact-us-page-examples/272283/ function
@@ -9,7 +10,7 @@ import './contactme.css';
 class ContactMe extends React.Component {
     state = {
         fullName: "",
-        organization: "",
+        company: "",
         role: "",
         email: ""
     }
@@ -28,13 +29,12 @@ class ContactMe extends React.Component {
                             <form
                                 action="mailto:tsigourof_ben@hotmail.com"
                                 onSubmit={e=>{
-                                    // console.log(e)
                                     e.preventDefault();
                                     window.setTimeout(()=>{
                                         console.log('inSetTIMEOUT')
                                   this.setState({
                                                 fullName:'',
-                                                organization:'',
+                                                company:'',
                                                 role:'',
                                                 email:''
                                             })
@@ -56,12 +56,12 @@ class ContactMe extends React.Component {
                                     <input
                                         className="contact-input"
                                         type="text"
-                                        name="organizationName"
-                                        id="organization"
-                                        placeholder="Organization Name"
-                                        onChange={e => this.setState({organization: e.target.value})}
-                                        value={this.state.organization}/>
-                                    &nbsp;I am in need of a &nbsp;
+                                        name="companyName"
+                                        id="company"
+                                        placeholder="Company Name"
+                                        onChange={e => this.setState({company: e.target.value})}
+                                        value={this.state.company}/>
+                                    &nbsp;.I am in need of a &nbsp;
                                     <input
                                         className="contact-input"
                                         type="text"
@@ -81,13 +81,13 @@ class ContactMe extends React.Component {
                                         value={this.state.email}/>
                                     &nbsp;to get the conversation started. Thanks!
                                 </p>
+                                <div className='contact-submit-container'>
                                     <a 
                                         onClick={e => {
                                             window.setTimeout(()=>{
-                                                const {fullName,organization,role,email} = this.state;
                                                 this.setState({
                                                     fullName:'',
-                                                    organization:'',
+                                                    company:'',
                                                     role:'',
                                                     email:''
                                                 });
@@ -95,26 +95,17 @@ class ContactMe extends React.Component {
                                             }
                                         }
                                         className='contact-send-mail'
-                                        href={`mailto:tsigourof_ben@hotmail.com?subject=Hi Ben!&body=My name is ${this.state.fullName || '*full name*'} and I'm with ${this.state.organization || '*organization name*'}. I am in need of a ${this.state.role || ' *role*'}. You can reach me at ${this.state.email || '*email adress*'} to get the conversation started. Thanks!`}>Send
+                                        href={`mailto:tsigourof_ben@hotmail.com?subject=Hi Ben!&body=My name is ${this.state.fullName || '*full name*'} and I'm with ${this.state.company || '*company name*'}. I am in need of a ${this.state.role || ' *role*'}. You can reach me at ${this.state.email || '*email adress*'} to get the conversation started. Thanks!`}>Send
                                     </a>
+                                </div>
                         
                             </form>
-                            <br></br>
-                            {/* <a
-                                onClick={e => {
-                                    console.log(e.eventPhase)
-                                    const {fullName,organization,role,email} = this.state;
-                                    this.setState({
-                                        fullName:'',
-                                        organization:'',
-                                        role:'',
-                                        email:''
-                                    })}
-                                }
-                                className='contact-send-mail'
-                                href={`mailto:tsigourof_ben@hotmail.com?subject=Hi Ben!&body=My name is ${this.state.fullName || '*full name*'} and I'm with ${this.state.organization || '*organization name*'}. I am in need of a ${this.state.role || ' *role*'}. You can reach me at ${this.state.email || '*email adress*'} to get the conversation started. Thanks!`}>Send</a> */}
                         </section>
                     </div>
+                        <div className='contact-icon-container'>
+                            <SvgWithXlink iconName='gitHub' width='80px' height='80px'/>
+                            <SvgWithXlink iconName='linkedIn' width='80px' height='80px'/>
+                        </div>
                 </div>
             </main>
 

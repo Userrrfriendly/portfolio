@@ -6,6 +6,7 @@ import heroImgSmall from '../../Images/hero-small.jpg';
 const MyStory = ()=> {
     return (
         <main className="main-story">
+        <h1 className="my-story-title">From Engineering to Software Engineering...</h1>
             <p className="story-p">
                 Hello there! I am Ben, a self taught front end web developer, 
                 currently I am in transition from a career in engineering to that of a software-engineer.
@@ -65,7 +66,7 @@ const MyStory = ()=> {
                     excel at your work you must be a lifelong learner
                 </li>
             </ul>
-            <h1>So how exactly did I get into coding?</h1>
+            <h1 className='story-h1'>So how exactly did I get into coding?</h1>
             <p className="story-p">
                 After graduating I pursued a career in geomatics, the first years were really challenging and overwhelming 
                 – no University can prepare you for the real world’s needs,  plus as I mentioned before, 

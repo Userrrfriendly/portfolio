@@ -9,9 +9,9 @@ class Main extends React.Component {
         return (
             <main id="main-home">
                 <section id="stories">
-                    <h2>My bio:</h2>
+                    <h2>Ben Tsigourof - Front-end Developer</h2>
                     {Data
-                        .tempStory
+                        .stories
                         .map((item) => {
                             return (<Story
                                 key={item.name}
@@ -25,7 +25,7 @@ class Main extends React.Component {
                 <section id="projects">
                     <h2>My Projects:</h2>
                     {Data
-                        .tempProjects
+                        .projects
                         .map((project) => {
                             return (<Project
                                 key={project.name}

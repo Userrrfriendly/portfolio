@@ -5,17 +5,18 @@ import './CSS/svgWithXlink.css';
 /* Didn't have any experience with SVG but needed a way to display inline SVG hence the messy code
     -The only props that the component requires is svgPath
         -if the props.svgPath is the string 'gitHub' the gitHub icon will display
-        -if the props.svgPath is the string 'linkedIn' the LinkedIn icon will display 
-        -optional props are width and height (use pixels cause firefox ignores rems in SVG)   
+        -if the props.svgPath is the string 'linkedIn' the LinkedIn icon will display
+        -optional props are width and height (use pixels cause firefox ignores rems in SVG)
 */
-function SvgWithXlink (props) {
-    // taken from https://stackoverflow.com/questions/23402542/embedding-svg-into-reactjs
-    let svgPath;
-    let viewBox;
-    let url;
-    let ariaLabel;
+function SvgWithXlink(props) {
+    // taken from
+    // https://stackoverflow.com/questions/23402542/embedding-svg-into-reactjs
+    let svgPath,viewBox,url,ariaLabel;
+
     const gitHubPath = <g>
-        <path className="social-icon" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+        <path
+            className="social-icon"
+            d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
             c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
             c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
             c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
@@ -34,37 +35,48 @@ function SvgWithXlink (props) {
             c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
             c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
             c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
-            C438.536,184.851,428.728,148.168,409.132,114.573z" fill="#82898f"/>
-        </g>;
+            C438.536,184.851,428.728,148.168,409.132,114.573z"
+            fill="#82898f"/>
+    </g>;
     const linkedInPath = <g>
-            <path className="social-icon" d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196
+        <path
+            className="social-icon"
+            d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196
                  s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M182.397,360.994h-60.799V148.197h60.799V360.994z
                  M153.882,135.156c-15.747,0-28.484-12.768-28.484-28.515s12.768-28.515,28.484-28.515c15.747,0.03,28.515,12.798,28.515,28.515
                  C182.397,122.388,169.629,135.156,153.882,135.156z M395.193,360.994h-60.799V229.425c0-15.413-4.408-26.204-23.347-26.204
                  c-31.403,0-37.452,26.204-37.452,26.204v131.569h-60.799V148.197h60.799v20.337c8.694-6.657,30.399-20.307,60.799-20.307
-                 c19.699,0,60.799,11.795,60.799,83.051V360.994z" fill="#82898f"/>
-        </g>;
+                 c19.699,0,60.799,11.795,60.799,83.051V360.994z"
+            fill="#82898f"/>
+    </g>;
     if (props.iconName === 'gitHub') {
         svgPath = gitHubPath;
         viewBox = '0 0 438.549 438.549';
         url = 'https://github.com/Userrrfriendly';
-        ariaLabel = 'Link to my Veniamin\'s github profile'
+        ariaLabel = 'Link to my github profile'
     } else if (props.iconName === 'linkedIn') {
         svgPath = linkedInPath;
-        viewBox = viewBox="0 0 486.392 486.392";
+        viewBox = viewBox = "0 0 486.392 486.392";
         url = 'https://www.linkedin.com/in/veniamin-tsigourof/';
-        ariaLabel = 'Link to my Veniamin\'s LinkedIn profile'
+        ariaLabel = 'Link to my LinkedIn profile'
     }
 
     return (
-        <a href={url} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label={ariaLabel}>
-            <svg className="svg"
-                width= {props.width}
-                height= {props.height}
+        <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-link"
+            aria-label={ariaLabel}
+            style={{ width: `${props.width}`, height: `${props.height}`}}
+            >
+            <svg
+                className="svg"
+                width={props.width}
+                height={props.height}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox={viewBox}
-            >
+                viewBox={viewBox}>
                 {svgPath}
             </svg>
         </a>
@@ -73,7 +85,7 @@ function SvgWithXlink (props) {
 
 SvgWithXlink.defaultProps = {
     width: '32px', //carefull here: rems won't work in firefox for some reason
-    height: '32px',
+    height: '32px'
 };
 
 SvgWithXlink.propTypes = {

@@ -1,0 +1,232 @@
+/* START funky text */
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.rubberBand {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.rubberBand:hover {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* END funky text */
+
+.card-text {
+  margin: 1rem 5px 1rem;
+}
+
+.badge-link:hover {
+  text-decoration: underline;
+}
+
+.bullet-list {
+  /* display: inline; */
+  /* list-style-type: none; */
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* justify-content: space-evenly; looks better but Edge doesn't support it */
+}
+.bullet-list-item {
+  margin-left: 1.5rem;
+  /* padding-left: 1rem; */
+  /* margin:0; */
+  /* float: left; */
+  /* display: inline; */
+}
+.icon-svg-container {
+  width: 80px;
+  height: 100px;
+  /* height: 300px; */
+}
+
+.budges {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content:space-around;
+  /* justify-content: space-evenly; looks better but Edge doesn't support it */
+}
+
+
+/* .about-main h1,
+.about-main h2 {
+  color: #1d5cbd;
+} */
+
+.about-main {
+    width: 100%;
+    margin: 3rem auto auto;
+    max-width: 1600px;
+}
+
+.about-main-header {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  vertical-align: bottom;
+  /* color: #1d5cbd; */
+}
+
+.about-secondary-header {
+  margin: -0.25rem 0 0 0;
+  color: #1d5cbd;
+  font-size: 2rem;
+}
+
+.about-header {
+  /* color: #1d5cbd; */
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+/* .about-attention {
+  font-weight: bold;
+} */
+.about-container {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.about-container-details {
+  /* margin-right: 2rem; */
+  /* margin-left:1rem; */
+  margin: 0 2rem 2rem 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px lightgray dashed;
+}
+
+.about-aside {
+  width: calc(100% - 10px);
+  min-width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1rem auto 1rem;
+  padding-top: 0.5rem;
+}
+
+.card {
+  width: calc(100% - 2px);
+  min-width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto 1rem;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr; */
+}
+
+
+
+.card-image {
+  max-width: 65%;
+  border-radius: 5px 5px 0  0;
+  margin: 5px auto 0 auto;
+}
+
+.card-caption {
+  margin: 0 auto 5px auto;
+  border: 1px solid lightslategrey;
+  width: calc(65% - 2px);
+  /* border-radius: 5px; */
+  border-radius: 0 0 5px 5px;
+  background-color: lightgray;
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .about-main {
+    margin-bottom: auto;
+}
+
+/* .about-container {
+  flex-flow: column;
+} */
+/* .about-aside {
+  margin: 5rem auto 1rem;
+  padding-top: 5rem;
+} */
+.card-image {
+  width: 55%;
+}
+.card-caption {
+  width: calc(55% - 2px);
+}
+/* .card {
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+} */
+
+/* .about-container {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-flow: row;
+} */
+}
+
+@media screen and (min-width: 1000px) {
+  .about-container {
+    flex-flow: row;
+  }
+  .about-container-details {
+    /* margin: 0 2rem 2rem 1rem; */
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .about-aside {
+    width: 40%;
+    border: none;
+    margin: 0 auto 1rem;
+  }
+  .card-image {
+    width: 65%;
+  }
+  .card-caption {
+    width: calc(65% - 2px);
+  }
+
+}

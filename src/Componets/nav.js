@@ -51,7 +51,7 @@ class Nav extends React.Component {
                     <li className="nav-list-item"><NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink></li>                    
                     <li className="nav-list-item"><NavLink to="/MyStory" className="nav-link my-story" activeClassName="active">My Story</NavLink></li>
                     <li className="nav-list-item"><NavLink to="/MyResume" className="nav-link" activeClassName="active">My Resume</NavLink></li>
-                    <li className="nav-list-item"><NavLink to="/PastExperience" className="nav-link" activeClassName="active">Past Experience</NavLink></li>
+                    <li className="nav-list-item"><NavLink to="/AboutMe" className="nav-link" activeClassName="active">About Me</NavLink></li>
                     <li className="nav-list-item li-dropdown-container">
                         <button
                             className="nav-link-dropdown"

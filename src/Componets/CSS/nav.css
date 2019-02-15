@@ -4,7 +4,8 @@ nav {
     width: 100%;
     min-height: 44px;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; this was the default but i changed it to 3 so that the drop down is not overlayed by the up ->*/
+    z-index: 3;
 }
 
 .nav-list {
@@ -32,6 +33,10 @@ nav {
     margin: 0.2rem 0;
     display: flex;
     flex-flow: column nowrap;
+}
+
+.nav-list li:last-of-type {
+    /* margin-top: 16px; */
 }
 
 .nav-list li:first-of-type {
@@ -153,15 +158,16 @@ nav {
     border: 1px dotted #8080804f;
     border-width: 1px 0 1px;
     max-height: 1rem;
-    color: gray;
+    color: black;
+    /* color: gray; */
 }
 
-.drop-down-item a:visited {
-    color: inherit;
-}
+/* .drop-down-item a:visited {
+    color: gray;
+} */
 
 /* .drop-down-menu li:last-of-type a {
-    border-bottom: none;
+    padding-bottom: 0.5rem;
 } */
 
 /* .drop-down-item:hover {

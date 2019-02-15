@@ -8,7 +8,7 @@ function Resume() {
             <h1>Download resume as PDF:</h1>
             {/* <button className="download-btn"> */}
             <a
-                className="download-lnk download-btn"
+                className="download-btn"
                 href="../../assets/Alpha Version03.pdf"
                 download="Ben's Resume.pdf">
                 {/* <DownloadIcon /> */}

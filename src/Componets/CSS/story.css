@@ -1,9 +1,8 @@
 .story-link,
-.story-link:link
-.story-link:visited,
- {
+.story-link:link .story-link:visited {
     text-decoration: none;
 }
+
 .story:first-of-type {
     height: 60vh;
 }
@@ -23,16 +22,15 @@
     width: 105%;
     height: 105%;
     /* change min-height OR change the resolution of the images aka no wide images */
-    /* min-height: 300px; */
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-     -ms-transition: all 1s ease;
-         transition: all 1s ease;
-         background-position: bottom;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    background-position: bottom;
 }
 
 .story figure:hover {
@@ -47,19 +45,19 @@
 }
 
 /* First Story */
-#stories article:first-of-type .story-caption  {
-    background-color: rgba(255,138,0,0.5);
+#stories article:first-of-type .story-caption {
+    background-color: rgba(255, 138, 0, 0.5);
     background-color: #ff8a0080;
 }
 
 .story-caption {
+    color: black;
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     text-align: left;
-    /* margin-left: 1rem; */
-    /* font-size: 1.5rem; */
-    text-shadow: 0px 0px 20px #FFFFFF;
+
+    text-shadow: 0px 0px 10px #FFFFFF;
     width: 100%;
 }
 
@@ -77,21 +75,17 @@
         height: auto;
         margin: 0;
     }
-    /* .story:first-of-type {
-        height: auto;
-    } */
 }
 
 @media screen and (orientation: portrait) and (min-width:600px) {
     .story:first-of-type {
         height: auto;
-        /* max-height: 350px; */
-        /* min-height: 100px; */
     }
+
     .story {
         height: 20vh;
     }
-  }
+}
 
 @media screen and (orientation: landscape) and (max-height:420px) {
     .story {
@@ -107,11 +101,12 @@
     .story-color-overlay {
         background: initial !important;
     }
-    .story-caption  {
-        background-color: rgba(96,169,185,0.64);
-        background-color: #60a9b9a2;
+
+    .story-caption {
+        /* background-color: rgba(96, 169, 185, 0.64);
+        background-color: #60a9b9a2; */
+        background-color: #2a589cbf;
+        background-color: rgba(42, 88, 156, 0.7490196078431373);
+
     }
-    /* .test {
-        background-color: #90287fd1;
-    } */
 }

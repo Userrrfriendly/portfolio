@@ -22,7 +22,7 @@ import Calculator from '../Componets/project-page/prj-components/calculator';
 import MyStory from '../Componets/MyStory/MyStory';
 import Resume from '../Componets/Resume/resume';
 import ContactMe from '../Componets/contactMe/ContactMe';
-import TestComponent from '../Componets/Testcomponent';
+import About from '../Componets/About-me/AboutMe';
 
 
 export const routes = [
@@ -36,13 +36,9 @@ export const routes = [
   
     },
     {
-        path: '/PastExperience',
-        component: TestComponent
+        path: '/AboutMe',
+        component: About
   
-    },
-    {
-        path: '/MyProjects',
-        component: TestComponent,
     },
     {
         path: '/ContactMe',

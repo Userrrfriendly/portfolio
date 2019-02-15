@@ -1,7 +1,8 @@
 import mainUrl from '../Images/hero-large_h1.jpg';
 // import resumeUrl from '../Images/resume_test.png';
 import resumeUrl from '../Images/resume2.jpg';
-import pastXPUrl from '../Images/weatherapp.jpg';
+// import pastXPUrl from '../Images/weatherapp.jpg';
+import aboutMe from '../Images/about-me.jpg';
 // projects:
 import flickr from '../Images/projects/flickr-photo-plotter.jpg';
 import arcadeGame from '../Images/projects/arcade-1.jpg'; 
@@ -13,7 +14,7 @@ import wikiReader from '../Images/projects/Wikipedia Viewer.jpg';
 import weatherApp from '../Images/projects/weather-app.jpg';
 import calculator from '../Images/projects/calculator.jpg';
 
-export const tempStory = [
+export const stories = [
     {
         name: 'My Story',
         url: mainUrl,
@@ -24,19 +25,19 @@ export const tempStory = [
     {
         name: 'Resume',
         url: resumeUrl,
-        caption: 'View my Resume',
-        backgroundColor: '#0000ff80', //blue,
+        caption: 'Download my Resume',
+        backgroundColor: 'rgba(0, 0, 255, 0.5)', //purple, #0000ff80 Edge doesnt read hex colors with alpha
         link: '/MyResume'
     },
     {
-        name: 'non-tech experience',
-        url: pastXPUrl,
-        caption: 'Read more if you are curious what about my engineering experience...',
-        backgroundColor: '#beff00b5', //green
-        link: ''
+        name: 'About Me',
+        url: aboutMe,
+        caption: 'A few words about me ...',
+        backgroundColor: 'rgba(39, 168, 175, 0.71)',  //cyan #27a8afb5
+        link: '/AboutMe'
     }];
 
-export const tempProjects = [
+export const projects = [
     {
         name:'Flickr-Photo-Plotter',
         description:'Pins images on a map based on the images geolocation',
