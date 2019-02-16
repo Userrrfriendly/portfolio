@@ -1,9 +1,8 @@
 import React from 'react';
-import './CSS/upArrowButton.css';
+import './ScrollUpButton.css';
 
-class UpArrowBtn extends React.Component {
+class ScrollUpButton extends React.Component {
     handleClick = (e)=> {
-        // e.preventDefault();
         window.scrollTo({
             top: 1,
             behavior: 'smooth'
@@ -22,4 +21,4 @@ class UpArrowBtn extends React.Component {
     *this does not display well in edge:⬆
     *this looks less pretty but does:⇧ 
 */
-export default UpArrowBtn;
+export default ScrollUpButton;

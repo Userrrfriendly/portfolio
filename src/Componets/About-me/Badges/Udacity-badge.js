@@ -2,7 +2,7 @@ import React from 'react';
 
 const Udacity = () => {
     return (
-        <div title="Udacity" className="icon-svg-container">
+        <div title="Udacity" className="icon-svg-container" aria-hidden="true">
             <svg
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const JavaScript = () => {
     return (
-        <div title="JavaScript" className='icon-svg-container'>
+        <div title="JavaScript" className="icon-svg-container" aria-hidden="true">
             <svg
                 width="100%"
                 height="100%"

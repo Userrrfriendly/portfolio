@@ -2,7 +2,7 @@ import React from 'react';
 
 const Jasmine = () => {
     return (
-        <div title="Jasmine" className="icon-svg-container">
+        <div title="Jasmine" className="icon-svg-container" aria-hidden="true">
             <svg
                 width="100%"
                 height="100%"

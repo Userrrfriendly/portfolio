@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/error-Route.css';
+import './errorRoute.css';
 
 function ErrorRoute() {
     return(

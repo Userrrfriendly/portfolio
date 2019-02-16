@@ -1,7 +1,7 @@
 import React from 'react';
-import './CSS/footer.css';
-import SvgWithXlink from './SvgWithXlink';
-import UpArrowBtn from './upArrowButton';
+import './footer.css';
+import GitHubLinkedInIconLink from '../GitHub-LinkIn-Icon/GitHubLinkedInIconLink';
+import ScrollUpButton from './ScrollUpButton/ScrollUpButton';
 import {Link} from 'react-router-dom';
 
 class Footer extends React.Component {
@@ -12,11 +12,11 @@ class Footer extends React.Component {
     render() {
         return (
             <footer id="footer">
-                <UpArrowBtn/>
+                <ScrollUpButton/>
                 <div className="footer-contact-info">
                     <Link to="/ContactMe" onClick={this.scrollOnClick} className="footer-links">Contact Me</Link>
-                    <SvgWithXlink iconName="gitHub"/>
-                    <SvgWithXlink iconName="linkedIn"/>
+                    <GitHubLinkedInIconLink iconName="gitHub"/>
+                    <GitHubLinkedInIconLink iconName="linkedIn"/>
                 </div>
                 <div className="footer-legal">
                     <p>Veniamin Tsigourof - 2018</p>

@@ -2,14 +2,14 @@ import React from 'react';
 
 const Gulp = () => {
     return (
-      <div title="Gulp" className="icon-svg-container">
+      <div title="Gulp" className="icon-svg-container" aria-hidden="true">
         <svg
             width="100%"
             height="100%"
             viewBox="0 0 175 387"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="gulp" fill="#DA4648">
                     <g id="Gulp-Logo" transform="translate(0.000000, 1.000000)">
                         <path

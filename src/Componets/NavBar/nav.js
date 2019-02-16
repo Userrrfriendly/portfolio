@@ -1,7 +1,7 @@
 import React from 'react';
-import './CSS/nav.css';
+import './nav.css';
 import { NavLink } from 'react-router-dom';
-import * as Routes from '../Data/routes';
+import * as Routes from '../../Data/routes';
 
 class Nav extends React.Component {
     componentDidMount() {
@@ -61,9 +61,9 @@ class Nav extends React.Component {
                                 <span className="arrowhead" aria-hidden="true"> ▼</span>
                         </button>                        
                         <ul className="drop-down-menu drop-down-hide">
-                            {Routes.subRoutes.map((subRoute)=> (
-                                <li key={subRoute.path} className="drop-down-item">
-                                    <NavLink to={subRoute.path}>{subRoute.title}</NavLink>
+                            {Routes.projectRoutes.map((prjRoute)=> (
+                                <li key={prjRoute.path} className="drop-down-item">
+                                    <NavLink to={prjRoute.path}>{prjRoute.title}</NavLink>
                                 </li>
                             ))
                             }

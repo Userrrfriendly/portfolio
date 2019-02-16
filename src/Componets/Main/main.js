@@ -1,8 +1,8 @@
 import React from 'react';
-import './CSS/main.css';
-import Story from './story';
-import Project from './project';
-import * as Data from '../Data/data';
+import './main.css';
+import Story from './Story/story';
+import Project from './Project/project';
+import * as Data from '../../Data/data';
 
 class Main extends React.Component {
     render() {

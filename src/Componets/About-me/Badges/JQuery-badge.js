@@ -2,17 +2,17 @@ import React from 'react';
 
 const JQuery = () => {
     return (
-        <div title="jQuery" className="icon-svg-container">
+        <div title="jQuery" className="icon-svg-container" aria-hidden="true">
             <svg
                 height="100%"
-                width="120%"
+                width="100%"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
                 viewBox="0 0 278.4 70.7"
-                enable-background="new 0 0 278.4 70.7">
+                enableBackground="new 0 0 278.4 70.7">
                 <g>
                     <g>
                         <path

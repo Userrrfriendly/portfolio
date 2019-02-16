@@ -1,3 +1,4 @@
+import React from 'react';
 // project images:
 import flickr from '../Images/projects/flickr-photo-plotter.jpg';
 import arcadeGame from '../Images/projects/arcade-1.jpg'; 
@@ -8,7 +9,6 @@ import restaurantReview from '../Images/projects/restaurant-review.jpg';
 import wikiReader from '../Images/projects/Wikipedia Viewer.jpg'; 
 import weatherApp from '../Images/projects/weather-app.jpg';
 import calculator from '../Images/projects/calculator.jpg';
-import React from 'react';
 //Project components:
 import ArcadeGame from '../Componets/project-page/prj-components/arcade-game';
 import FlickrPhotoPlotter from '../Componets/project-page/prj-components/flickr-photo-plotter';
@@ -25,7 +25,7 @@ import ContactMe from '../Componets/contactMe/ContactMe';
 import About from '../Componets/About-me/AboutMe';
 
 
-export const routes = [
+export const navRoutes = [
     {
         path: '/MyStory',
         component: MyStory
@@ -46,7 +46,7 @@ export const routes = [
     }
   ];
 
-/*Sub-Routes */
+/*Project-Routes */
 const chartOptions = {
     cutoutPercentage: 60,
     tooltips: {
@@ -63,7 +63,7 @@ const chartOptions = {
     }
   };
 
-export const subRoutes = [
+export const projectRoutes = [
     {
         path: '/projects/flickr-photo-plotter',
         title: 'Flickr-Photo-Plotter',

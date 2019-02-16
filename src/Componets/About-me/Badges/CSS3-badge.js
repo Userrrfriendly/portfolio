@@ -3,9 +3,9 @@ import React from 'react';
 const CSS = () => {
 
     return (
-        <div title="CSS3" className="icon-svg-container">
+        <div title="CSS3" className="icon-svg-container" aria-hidden="true">
             <svg
-                enable-background="new 0 0 32 32"
+                enableBackground="new 0 0 32 32"
                 height="100%"
                 width="100%"
                 id="Layer_1"

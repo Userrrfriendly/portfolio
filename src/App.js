@@ -4,11 +4,11 @@ import { Route, Switch } from 'react-router-dom';
 import smoothscroll from 'smoothscroll-polyfill';
 // import * as Data from './Data/data';
 import * as Routes from './Data/routes';
-import Main from './Componets/main';
-import Footer from './Componets/footer';
-import Nav from './Componets/nav';
+import Main from './Componets/Main/main';
+import Footer from './Componets/Footer/footer';
+import Nav from './Componets/NavBar/nav';
 import PrjMain from './Componets/project-page/prj-main';
-import ErrorRoute from './Componets/error-route';
+import ErrorRoute from './Componets/errorRoute/errorRoute';
 
 class App extends Component {
   componentDidMount() {
@@ -22,22 +22,21 @@ class App extends Component {
           <Nav/>
           <Switch>
             <Route exact path ="/" component={Main}></Route>
-            {Routes.routes.map((route)=>(
+            {Routes.navRoutes.map((navRoute)=>(
               <Route
-                key={route.path}
-                path={route.path}
-                // component={route.component}
+                key={navRoute.path}
+                path={navRoute.path}
                 render= {(props)=> (
-                  <route.component title={route.path}/>
+                  <navRoute.component title={navRoute.path}/>
                 )}
               />
             ))}
-            {Routes.subRoutes.map((subRoute)=> (
+            {Routes.projectRoutes.map((prjRoute)=> (
               <Route
-                key={subRoute.path}
-                path={subRoute.path}
+                key={prjRoute.path}
+                path={prjRoute.path}
                 render={(props)=> (
-                  <PrjMain data={subRoute.data} title={subRoute.title}/>
+                  <PrjMain data={prjRoute.data} title={prjRoute.title}/>
                 )}
               />
             ))}

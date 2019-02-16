@@ -1,12 +1,9 @@
 import React from 'react';
 import './contactme.css';
-import SvgWithXlink from '../SvgWithXlink';
+import GitHubLinkedInIconLink from '../GitHub-LinkIn-Icon/GitHubLinkedInIconLink';
 
 // https://focuslabllc.com/contact
 // https://www.searchenginejournal.com/contact-us-page-examples/272283/ function
-// ContactMe() {     return(       <div className="contact-me-container">
-// <p>Gotcha! Since you've clicked here, I've got your attention :P so what are
-// you waiting for? Lets chat!</p>       </div>     ) }
 class ContactMe extends React.Component {
     state = {
         fullName: "",
@@ -103,8 +100,8 @@ class ContactMe extends React.Component {
                         </section>
                     </div>
                         <div className='contact-icon-container'>
-                            <SvgWithXlink iconName='gitHub' width='80px' height='80px'/>
-                            <SvgWithXlink iconName='linkedIn' width='80px' height='80px'/>
+                            <GitHubLinkedInIconLink iconName='gitHub' width='80px' height='80px'/>
+                            <GitHubLinkedInIconLink iconName='linkedIn' width='80px' height='80px'/>
                         </div>
                 </div>
             </main>

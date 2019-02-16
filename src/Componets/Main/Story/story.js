@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/story.css';
+import './story.css';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 

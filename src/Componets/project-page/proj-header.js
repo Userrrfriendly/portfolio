@@ -18,7 +18,7 @@ class PrjHeader extends React.Component {
      * 
      */
     render () {
-        const data= this.props.data;
+        const data = this.props.data;
         return (
             <header className="prj-pg-header">
                 <div className="prj-pg-header-title-container">

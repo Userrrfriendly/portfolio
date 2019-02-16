@@ -1,7 +1,5 @@
 import mainUrl from '../Images/hero-large_h1.jpg';
-// import resumeUrl from '../Images/resume_test.png';
-import resumeUrl from '../Images/resume2.jpg';
-// import pastXPUrl from '../Images/weatherapp.jpg';
+import resumeUrl from '../Images/resume_Jupiter.jpg';
 import aboutMe from '../Images/about-me.jpg';
 // projects:
 import flickr from '../Images/projects/flickr-photo-plotter.jpg';
@@ -33,7 +31,7 @@ export const stories = [
         name: 'About Me',
         url: aboutMe,
         caption: 'A few words about me ...',
-        backgroundColor: 'rgba(39, 168, 175, 0.71)',  //cyan #27a8afb5
+        backgroundColor: 'rgba(39, 168, 175, 0.71)',  //cyan #27a8afb5 Edge doesnt read hex colors with alpha
         link: '/AboutMe'
     }];
 

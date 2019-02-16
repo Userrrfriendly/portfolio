@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CSS/svgWithXlink.css';
+import './GitHubLinkedInIconLink.css';
 
 /* Didn't have any experience with SVG but needed a way to display inline SVG hence the messy code
     -The only props that the component requires is svgPath
@@ -8,7 +8,7 @@ import './CSS/svgWithXlink.css';
         -if the props.svgPath is the string 'linkedIn' the LinkedIn icon will display
         -optional props are width and height (use pixels cause firefox ignores rems in SVG)
 */
-function SvgWithXlink(props) {
+function GitHubLinkedInIconLink(props) {
     // taken from
     // https://stackoverflow.com/questions/23402542/embedding-svg-into-reactjs
     let svgPath,viewBox,url,ariaLabel;
@@ -83,15 +83,15 @@ function SvgWithXlink(props) {
     );
 }
 
-SvgWithXlink.defaultProps = {
+GitHubLinkedInIconLink.defaultProps = {
     width: '32px', //carefull here: rems won't work in firefox for some reason
     height: '32px'
 };
 
-SvgWithXlink.propTypes = {
+GitHubLinkedInIconLink.propTypes = {
     iconName: PropTypes.string.isRequired,
     width: PropTypes.string,
     height: PropTypes.string
 }
 
-export default SvgWithXlink;
+export default GitHubLinkedInIconLink;

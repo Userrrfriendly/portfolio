@@ -13,63 +13,45 @@ import Jasmine from './Badges/Jasmine-badge';
 import Udacity from './Badges/Udacity-badge';
 import FreeCodeCamp from './Badges/FreeCodeCamp-badge';
 
-import FunkyText from './FunkyText/FunkyText';
+import FunkyText from '../FunkyText/FunkyText';
+import FunkyHeader from '../FunkyText/FunkyHeader';
 
 const About = (props) => {
+    const punchline = `Hi! My name is Veniamin Tsigourof (feel free to call me Ben) and I am a front end developer, currently transitioning from a career in geomatics engineering to software-engineering.`;
+    const punchlineSub= `I'm passionate about Javascript & love working with React.js, I like coding things from scratch and shape ideas into apps that offer great user experiences across all devices & browsers and are accessible to all users. Coding is my passion and it drives me to constantly improve and learn new things.`;
+    const cardText = `Outside of coding and learning new things about JavaScript & the web, I spend my free time with nerdy things like reading books (classics, history, fantacy, scifi, anything as long as it's good) a bit of pc gaming and a bit of good old pen and paper, occasionally I dabble in making horrible sounds with the bass guitar. I also enjoy watching good tv-shows (can't wait for Season 4 of the Expanse). Did I mention I like cats?`;
+
     return (
         <main className='about-main'>
             <div className='about-container'>
                 <section className='about-container-details'>
-                    <h1 className='about-main-header'>About me</h1>                    
+                    <h1 className='about-main-header' aria-label='About me'><FunkyHeader text="About me"/></h1>
+                    
                     {/* <h1 className='about-main-header'>Veniamin Tsigourof</h1> */}
                     {/* <h2 className='about-secondary-header'>Front-end Developer</h2> */}
-                    {/*  */}
-                    <p>
-                        <FunkyText />
-                        
-                        </p>
-                    {/*  */}
-                    <p>Hi! My name is <b>Veniamin Tsigourof</b> (<i>feel free to call me</i> <b>Ben</b>) and I am a <b>front end developer</b>,
-                        currently transitioning from a career in geomatics engineering to software-engineering.
-                    </p>
-                    <p>
-                        I'm passionate about Javascript & love working with React.js, I like coding
-                        things from scratch and shape ideas into apps that offer great user experiences
-                        across all devices & browsers and are accessible to all users. Coding is my passion and it drives me to
-                        constantly improve and learn new things.
-                    </p>
-
-                    <h3 className='about-header'>Laguages that i speak:</h3>
-                    <ul className='bullet-list'>
-                        <li className='bullet-list-item'>JavaScript</li>
-                        <li className='bullet-list-item'>HTML5</li>
-                        <li className='bullet-list-item'>CSS3</li>
+                    <FunkyText text={punchline}/>
+                    <FunkyText text={punchlineSub}/>
+                    
+                    <h3 className='about-header' aria-label='Laguages that i speak:'><FunkyHeader text="Laguages that i speak:"/></h3>
+                    <ul className='bullet-list-new '>
+                        <li className='bullet-list-item-new '><FunkyText text='JavaScript'/> <JavaScript/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='HTML5'/> <HTML5/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='CSS3' /> <CSS3/></li>
                     </ul>
-                    <div className="budges">
-                        <JavaScript/>
-                        <HTML5/>
-                        <CSS3/>
-                    </div>
 
-                    <h3 className='about-header'>Frameworks/Tools:</h3>
-                    <ul className='bullet-list'>
-                        <li className='bullet-list-item'>React</li>
-                        <li className='bullet-list-item'>jQuery</li>
-                        <li className='bullet-list-item'>Git</li>
-                        <li className='bullet-list-item'>Gulp</li>
-                        <li className='bullet-list-item'>Jasmine</li>
+                    <h3 className='about-header' aria-label='Frameworks/Tools:'><FunkyHeader text="Frameworks/Tools:"/></h3>
+                    <ul className='bullet-list-new'>
+                        <li className='bullet-list-item-new'><FunkyText text='React'/> <ReactJS/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='jQuery' /> <JQuery/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='Git' /> <Git/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='Gulp' /> <Gulp/></li>
+                        <li className='bullet-list-item-new'><FunkyText text='Jasmine' /> <Jasmine/></li>
+
                     </ul>
-                    <div className="budges">
-                        <ReactJS/>
-                        <JQuery/>
-                        <Git/>
-                        <Gulp/>
-                        <Jasmine/>
-                    </div>
 
-                    <h3 className='about-header'>Certificates:</h3>
-                    <ul className='bullet-list'>
-                        <li className='bullet-list-item'>
+                    <h3 className='about-header' aria-label='Certificates:'><FunkyHeader text="Certificates:"/></h3>
+                    <ul className='bullet-list-new'>
+                        <li className='bullet-list-item-new'>
                             <a
                                 href={`https://graduation.udacity.com/confirm/2G6WGWQX`}
                                 target="_blank"
@@ -77,45 +59,21 @@ const About = (props) => {
                                 className="badge-link"
                                 aria-label={`Udacity Certificate link`}>
                                 Front-End Web Developer Nanodegree
+                                <Udacity/>
                             </a>
                         </li>
-                        <li className='bullet-list-item'>
+                        <li className='bullet-list-item-new'>
                             <a
-                                href={`https://graduation.udacity.com/confirm/2G6WGWQX`}
+                                href={`https://www.freecodecamp.org/certification/userrrfriendly/javascript-algorithms-and-data-structures`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="badge-link"
                                 aria-label={`freeCodeCamp Certificate link`}>
                                 Javascript algorithms and data structures Certificate
+                                <FreeCodeCamp/>
                             </a>
                         </li>
                     </ul>
-                    <div className="budges">
-                        <a
-                            href={`https://graduation.udacity.com/confirm/2G6WGWQX`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="badge-link"
-                            aria-label={`Udacity Certificate link`}
-                            style={{
-                            width: `auto`,
-                            height: `100%`
-                        }}>
-                            <Udacity/>
-                        </a>
-                        <a
-                            href={`https://www.freecodecamp.org/certification/userrrfriendly/javascript-algorithms-and-data-structures`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="badge-link"
-                            aria-label={`freeCodeCamp Certificate link`}
-                            style={{
-                            width: `auto`,
-                            height: `100%`
-                        }}>
-                            <FreeCodeCamp/>
-                        </a>
-                    </div>
 
                 </section>
 
@@ -126,14 +84,7 @@ const About = (props) => {
                             That's me... and my notorious cat :)
                         </figcaption>
                     </figure>
-                    <p className='card-text'>
-                        Outside of coding and learning new things about JavaScript & the web, I spend my
-                        free time with nerdy things like reading books (classics, history, fantacy,
-                        scifi, anything as long as it's good) a bit of pc gaming and a bit of good old
-                        pen and paper, occasionally I dabble in making horrible sounds with the bass
-                        guitar. I also enjoy watching tv-shows (can't wait for Season 4 of the Expanse).
-                        Did I mention I like cats?
-                    </p>
+                    <FunkyText classes='card-text' text={cardText} />
                 </aside>
             </div>
         </main>
