@@ -26,13 +26,16 @@ const About = (props) => {
             <div className='about-container'>
                 <section className='about-container-details'>
                     <h1 className='about-main-header' aria-label='About me'><FunkyHeader text="About me"/></h1>
+                    <p aria-label={punchline}>
+                        <FunkyText text={punchline}/>
+                    </p>
+                    <p aria-label={punchlineSub}>
+                        <FunkyText text={punchlineSub} />
+                    </p>
+                    {/* <FunkyText text={punchline}/> */}
+                    {/* <FunkyText text={punchlineSub}/> */}
                     
-                    {/* <h1 className='about-main-header'>Veniamin Tsigourof</h1> */}
-                    {/* <h2 className='about-secondary-header'>Front-end Developer</h2> */}
-                    <FunkyText text={punchline}/>
-                    <FunkyText text={punchlineSub}/>
-                    
-                    <h3 className='about-header' aria-label='Laguages that i speak:'><FunkyHeader text="Laguages that i speak:"/></h3>
+                    <h3 className='about-header' aria-label='Languages that I speak:'><FunkyHeader text="Languages that I speak:"/></h3>
                     <ul className='bullet-list-new '>
                         <li className='bullet-list-item-new '><FunkyText text='JavaScript'/> <JavaScript/></li>
                         <li className='bullet-list-item-new'><FunkyText text='HTML5'/> <HTML5/></li>
@@ -84,7 +87,9 @@ const About = (props) => {
                             That's me... and my notorious cat :)
                         </figcaption>
                     </figure>
-                    <FunkyText classes='card-text' text={cardText} />
+                    <p className='card-text' aria-label={cardText}>
+                        <FunkyText text={cardText} />
+                    </p>
                 </aside>
             </div>
         </main>

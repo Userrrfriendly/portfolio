@@ -34,6 +34,7 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
 .rubberBand {
   display: inline-block;
   box-sizing: border-box;

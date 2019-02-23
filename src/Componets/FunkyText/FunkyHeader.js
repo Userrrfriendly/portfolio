@@ -4,7 +4,7 @@ import './FunkyText.css';
 const FunkyHeader = (props) => {
     const arrayOfText = props.text.split('');
     const onMouseEnter = (e) => {
-        return (e.target.tagName === 'SPAN'
+        return (e.target.classList.contains('animated-span')
             ? e.target.classList.add('rubberBand')
             : '');
     };

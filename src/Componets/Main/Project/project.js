@@ -26,7 +26,7 @@ class Project extends React.Component {
                 <article className="project">
                     <figure className="project-figure">
                         <img src={this.props.imageUrl} alt="" className="project-thumbnail"/>
-                        <figcaption className={figcaptionClass + " project-caption"}>{this.props.projectType}</figcaption>
+                        <figcaption aria-hidden="true" className={figcaptionClass + " project-caption"}>{this.props.projectType}</figcaption>
                     </figure>
                     <h3>{this.props.name}</h3>
                     <p>{this.props.description}</p>

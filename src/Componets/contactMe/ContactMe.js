@@ -1,6 +1,8 @@
 import React from 'react';
 import './contactme.css';
 import GitHubLinkedInIconLink from '../GitHub-LinkIn-Icon/GitHubLinkedInIconLink';
+import FunkyHeader from '../FunkyText/FunkyHeader';
+
 
 // https://focuslabllc.com/contact
 // https://www.searchenginejournal.com/contact-us-page-examples/272283/ function
@@ -18,11 +20,11 @@ class ContactMe extends React.Component {
                 <div className="contact-me-container">
                     <div className="animation-container">
                         <div className="text-container">
-                            <h1 className="animated-text animated fadeInDown">Lets talk!</h1>
+                            <h1 className="animated-text animated fadeInDown" aria-label='Lets talk!'><FunkyHeader text='Lets talk!' /></h1>
                         </div>
                         <div className="animated-div"></div>
                         <section className="contact-me-section">
-                            <h2>Drop me a line to get started.</h2>
+                            <h2 aria-label='Drop me a line to get started.'><FunkyHeader text="Drop me a line to get started." /></h2>
                             <form
                                 action="mailto:tsigourof_ben@hotmail.com"
                                 onSubmit={e=>{
