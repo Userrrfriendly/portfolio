@@ -66,7 +66,7 @@ const chartOptions = {
 export const projectRoutes = [
     {
         path: '/projects/flickr-photo-plotter',
-        title: 'Flickr-Photo-Plotter',
+        title: 'Flickr Photo Plotter',
         type: 'Project',
         data:{
             imgUrl: flickr,

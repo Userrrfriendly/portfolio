@@ -38,7 +38,7 @@ export const stories = [
 export const projects = [
     {
         name:'Flickr-Photo-Plotter',
-        description:'Pins images on a map based on the images geolocation',
+        description:'Pins images on a map based on the image\'s geolocation',
         imageUrl: flickr,
         projectType: 'Udacity',
         path: '/projects/flickr-photo-plotter'

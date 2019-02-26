@@ -8,7 +8,6 @@ const CSS = () => {
                 enableBackground="new 0 0 32 32"
                 height="100%"
                 width="100%"
-                id="Layer_1"
                 version="1.0"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg">

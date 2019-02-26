@@ -13,11 +13,18 @@ import Jasmine from './Badges/Jasmine-badge';
 import Udacity from './Badges/Udacity-badge';
 import FreeCodeCamp from './Badges/FreeCodeCamp-badge';
 
-import FunkyText from '../FunkyText/FunkyText';
+import Ft from '../FunkyText/FunkyText';
 import FunkyHeader from '../FunkyText/FunkyHeader';
 
 const About = (props) => {
-    const punchline = `Hi! My name is Veniamin Tsigourof (feel free to call me Ben) and I am a front end developer, currently transitioning from a career in geomatics engineering to software-engineering.`;
+    const punchline = `Hi! My name is ${'<strong>'}Veniamin Tsigourof ${'</strong>'} (feel free to call me Ben) and I am a front end developer, currently transitioning from a career in geomatics engineering to software-engineering.`;
+    const punchlineJSX = ()=> {
+        return (
+            <>
+            <Ft>Hi! My name is <strong><Ft>Veniamin Tsigourof</Ft></strong> (feel free to call me Ben) and I am a front end developer, currently transitioning from a career in geomatics engineering to software-engineering.</Ft>
+            </>
+        )
+    }
     const punchlineSub= `I'm passionate about Javascript & love working with React.js, I like coding things from scratch and shape ideas into apps that offer great user experiences across all devices & browsers and are accessible to all users. Coding is my passion and it drives me to constantly improve and learn new things.`;
     const cardText = `Outside of coding and learning new things about JavaScript & the web, I spend my free time with nerdy things like reading books (classics, history, fantacy, scifi, anything as long as it's good) a bit of pc gaming and a bit of good old pen and paper, occasionally I dabble in making horrible sounds with the bass guitar. I also enjoy watching good tv-shows (can't wait for Season 4 of the Expanse). Did I mention I like cats?`;
 
@@ -27,28 +34,26 @@ const About = (props) => {
                 <section className='about-container-details'>
                     <h1 className='about-main-header' aria-label='About me'><FunkyHeader text="About me"/></h1>
                     <p aria-label={punchline}>
-                        <FunkyText text={punchline}/>
+                        <Ft>{punchlineJSX()}</Ft>
                     </p>
                     <p aria-label={punchlineSub}>
-                        <FunkyText text={punchlineSub} />
+                        <Ft>{punchlineSub}</Ft>
                     </p>
-                    {/* <FunkyText text={punchline}/> */}
-                    {/* <FunkyText text={punchlineSub}/> */}
-                    
+
                     <h3 className='about-header' aria-label='Languages that I speak:'><FunkyHeader text="Languages that I speak:"/></h3>
                     <ul className='bullet-list-new '>
-                        <li className='bullet-list-item-new '><FunkyText text='JavaScript'/> <JavaScript/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='HTML5'/> <HTML5/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='CSS3' /> <CSS3/></li>
+                        <li className='bullet-list-item-new '><Ft> JavaScript</Ft><JavaScript/></li>
+                        <li className='bullet-list-item-new'><Ft> HTML5</Ft><HTML5/></li>
+                        <li className='bullet-list-item-new'><Ft> CSS3</Ft><CSS3/></li>
                     </ul>
 
                     <h3 className='about-header' aria-label='Frameworks/Tools:'><FunkyHeader text="Frameworks/Tools:"/></h3>
                     <ul className='bullet-list-new'>
-                        <li className='bullet-list-item-new'><FunkyText text='React'/> <ReactJS/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='jQuery' /> <JQuery/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='Git' /> <Git/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='Gulp' /> <Gulp/></li>
-                        <li className='bullet-list-item-new'><FunkyText text='Jasmine' /> <Jasmine/></li>
+                        <li className='bullet-list-item-new'><Ft>React</Ft> <ReactJS/></li>
+                        <li className='bullet-list-item-new'><Ft>jQuery</Ft> <JQuery/></li>
+                        <li className='bullet-list-item-new'><Ft>Git</Ft><Git/></li>
+                        <li className='bullet-list-item-new'><Ft>Gulp</Ft> <Gulp/></li>
+                        <li className='bullet-list-item-new'><Ft>Jasmine</Ft> <Jasmine/></li>
 
                     </ul>
 
@@ -88,7 +93,7 @@ const About = (props) => {
                         </figcaption>
                     </figure>
                     <p className='card-text' aria-label={cardText}>
-                        <FunkyText text={cardText} />
+                        <Ft>{cardText}</Ft>
                     </p>
                 </aside>
             </div>

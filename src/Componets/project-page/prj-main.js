@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import './css/prj-main.css';
 import PrjDetails from './prj-details';
 import Chart from './prj-chart';
+import FunkyHeader from '../FunkyText/FunkyHeader';
+import Ft from '../FunkyText/FunkyText';
 
 class PrjMain extends React.Component {
     static propTypes = {
@@ -21,8 +23,8 @@ class PrjMain extends React.Component {
                 <main id="prj-main">
                     <PrjDetails data={this.props.data} />
                     <aside className="prj-pg-aside">
-                        <h2 className="prj-pg-h2">Application Overview</h2>
-                        <p>Build with:</p>
+                        <h2 className="prj-pg-h2" aria-label="Application Overview"><FunkyHeader text="Application Overview"/></h2>
+                        <p aria-label="Build with:"><Ft>Build with:</Ft></p>
                         <div className="chart-container">
                             <Chart
                                 data={this.props.data.chartData}

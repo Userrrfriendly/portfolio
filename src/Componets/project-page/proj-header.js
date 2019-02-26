@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import {Link} from 'react-router-dom';
 import './css/prj-header.css';
+import FunkyHeader from '../FunkyText/FunkyHeader';
 
 class PrjHeader extends React.Component {
     static propTypes = {
@@ -22,7 +23,7 @@ class PrjHeader extends React.Component {
         return (
             <header className="prj-pg-header">
                 <div className="prj-pg-header-title-container">
-                    <h1>{this.props.title}</h1>
+                    <h1 aria-label={this.props.title}><FunkyHeader text={this.props.title}/></h1>
                     <div className="prj-pg-header-links-container">
                         {data.livePageUrl && <a href={data.livePageUrl}
                             target="_blank" rel="noopener noreferrer"

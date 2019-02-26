@@ -1,4 +1,6 @@
 import React from 'react';
+import FunkyHeader from '../../FunkyText/FunkyHeader';
+import Ft from '../../FunkyText/FunkyText';
 
 function MemoryGame()  {
     const goalsData = [
@@ -13,45 +15,48 @@ function MemoryGame()  {
         'All application components are usable across modern desktop, tablet, and phone browsers.',
         'A README file is included detailing the game and all dependencies.',
         'Comments are present and effectively explain longer code procedure when necessary.'
-        ]
+        ];
+    const goals = 'Build a complete browser-based card matching game.';
+    const functionality = 'The game board consists of sixteen "cards" arranged in a grid. The deck is made up of eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!';
+    const functionalityList = [
+        'The player flips one card over to reveal its underlying symbol.',
+        'The player then turns over a second card, trying to find the corresponding card with the same symbol.',
+        'If the cards match, both cards stay flipped over.',
+        'If the cards do not match, both cards are flipped face down.',
+        'The game ends once all cards have been correctly matched.'
+    ];
+    const finale = 'The memory game presented a good opportunity to fully combine my skills in HTML, CSS, and JavaScript into a large project. Aside from solidifying my skills with these three technologies, I discovered how best to combine them in a complex application.';
+
     return (
         <div>
             <article className="prj-pg-details-article">
-                <h3 className="prj-pg-details-article-h3">Goals:</h3>
-                <p className="prj-pg-details-p">
-                    Build a complete browser-based card matching game.
+                <h3 className="prj-pg-details-article-h3" aria-label="Goals:"><FunkyHeader text="Goals:"/></h3>
+                <p className="prj-pg-details-p" aria-label={goals}>
+                    <Ft>{goals}</Ft>
                 </p>
-                <ul className="check-list"><strong>Additional requirements:</strong>
+                <strong aria-label="Additional requirements:"><Ft>Additional requirements:</Ft></strong>
+                <ul className="check-list">
                     {goalsData.map((listItem, i)=>(
-                        <li key={i} className="check-item"> {listItem}</li>
+                        <li key={i} className="check-item"> <Ft>{listItem}</Ft></li>
                     ))}
                 </ul>
             </article>
             <article className="prj-pg-details-article">
-                <h3 className="prj-pg-details-article-h3">Functionality:</h3>
-                <p className="prj-pg-details-p">
-                    The game board consists of sixteen "cards" arranged in a grid. 
-                    The deck is made up of eight different pairs of cards, each with different symbols on one side. 
-                    The cards are arranged randomly on the grid with the symbol face down. 
-                    The gameplay rules are very simple: 
-                    flip over two hidden cards at a time to locate the ones that match!
+                <h3 className="prj-pg-details-article-h3" aria-label="Functionality:"><FunkyHeader text='Functionality:'/></h3>                
+                <p className="prj-pg-details-p" aria-label={functionality}>
+                    <Ft>{functionality}</Ft>
                 </p>
                 <ul>
-                    <li>The player flips one card over to reveal its underlying symbol.</li>
-                    <li>The player then turns over a second card, trying to find the corresponding card with the same symbol.</li>
-                    <li>If the cards match, both cards stay flipped over.</li>
-                    <li>If the cards do not match, both cards are flipped face down.</li>
-                    <li>The game ends once all cards have been correctly matched.</li>
+                    {functionalityList.map((li,i)=>{
+                        return (<li key={i} aria-label={li}><Ft>{li}</Ft></li>)
+                    })}
                 </ul>
             </article>
 
             <article className="prj-pg-details-article">
-                <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3>
-                <p className="prj-pg-details-p">
-                    The memory game presented a good opportunity to fully combine my skills in 
-                    HTML, CSS, and JavaScript into a large project. 
-                    Aside from solidifying my skills with these three technologies, 
-                    I discovered how best to combine them in a complex application.
+                <h3 className="prj-pg-details-article-h3" aria-label="What did I learn from this project?"><FunkyHeader text="What did I learn from this project?"/></h3>
+                <p className="prj-pg-details-p" aria-label={finale}>
+                    <Ft>{finale}</Ft>
                 </p>
             </article>
         </div>

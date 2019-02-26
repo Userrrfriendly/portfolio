@@ -24,9 +24,9 @@
 }
 
 .prj-pg-header-title-container h1 {
-    margin: 2rem 1rem;
-    font-size: 3rem;
-    max-width: 350px;
+    margin: 2rem 0 2rem 0.5rem;
+    font-size: 2.2rem;
+    max-width: calc(100vw - 1rem);
 }
 
 .prj-pg-header-title-container,
@@ -101,7 +101,11 @@
     }
     .prj-pg-header-img-container {
         margin-left: -2rem;
+    }
 
+    .prj-pg-header-title-container h1 {
+        max-width: 100%;
+        font-size: 1.9rem;
     }
 }
 
@@ -121,11 +125,14 @@
 }
 .prj-pg-header-title-container h1 {
     margin: 0;
+    font-size: 3rem;
 }
 .prj-pg-header-img-container {
     margin-left: -2rem;
 
 }
+
+
 }
 
 @media screen and (min-width:1300px) {

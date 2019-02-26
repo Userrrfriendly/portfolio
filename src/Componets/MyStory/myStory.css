@@ -11,6 +11,13 @@
     /* padding: 1.5rem 0; */
 }
 
+/* .figure-block:hover {
+    background-color: #f5f5f5;
+}
+.quote-mystory:hover {
+    background-color: #f5f5f5;
+} */
+
 .quote-mystory {
     background-color: #fbfbfb;
     display: flex;

@@ -3,7 +3,6 @@ import './contactme.css';
 import GitHubLinkedInIconLink from '../GitHub-LinkIn-Icon/GitHubLinkedInIconLink';
 import FunkyHeader from '../FunkyText/FunkyHeader';
 
-
 // https://focuslabllc.com/contact
 // https://www.searchenginejournal.com/contact-us-page-examples/272283/ function
 class ContactMe extends React.Component {
@@ -50,7 +49,8 @@ class ContactMe extends React.Component {
                                         id="fullName"
                                         placeholder="Full Name"
                                         onChange={e => this.setState({fullName: e.target.value})}
-                                        value={this.state.fullName}/>
+                                        value={this.state.fullName}
+                                        aria-label="full name"/>
                                     &nbsp;and I'm with &nbsp;
                                     <input
                                         className="contact-input"
@@ -59,7 +59,8 @@ class ContactMe extends React.Component {
                                         id="company"
                                         placeholder="Company Name"
                                         onChange={e => this.setState({company: e.target.value})}
-                                        value={this.state.company}/>
+                                        value={this.state.company}
+                                        aria-label="company name"/>
                                     &nbsp;.I am in need of a &nbsp;
                                     <input
                                         className="contact-input"
@@ -68,7 +69,8 @@ class ContactMe extends React.Component {
                                         id="context"
                                         placeholder="JavaScript Developer"
                                         onChange={e => this.setState({role: e.target.value})}
-                                        value={this.state.role}/>
+                                        value={this.state.role}
+                                        aria-label="role"/>
                                     . You can reach me at &nbsp;
                                     <input
                                         className="contact-input"
@@ -77,7 +79,8 @@ class ContactMe extends React.Component {
                                         name="email"
                                         placeholder="Email Address"
                                         onChange={e => this.setState({email: e.target.value})}
-                                        value={this.state.email}/>
+                                        value={this.state.email}
+                                        aria-label="email address"/>
                                     &nbsp;to get the conversation started. Thanks!
                                 </p>
                                 <div className='contact-submit-container'>
