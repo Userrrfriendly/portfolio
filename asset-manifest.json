@@ -1,7 +1,7 @@
 {
   "main.css": "/portfolio/static/css/main.3758419f.chunk.css",
-  "main.js": "/portfolio/static/js/main.0ceb2cfd.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.0ceb2cfd.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.17fd5a9d.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.17fd5a9d.chunk.js.map",
   "static/js/1.be914d67.chunk.js": "/portfolio/static/js/1.be914d67.chunk.js",
   "static/js/1.be914d67.chunk.js.map": "/portfolio/static/js/1.be914d67.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
@@ -25,6 +25,6 @@
   "static/media/nav.css": "/portfolio/static/media/Hamburger_icon.86595150.svg",
   "static/css/main.3758419f.chunk.css.map": "/portfolio/static/css/main.3758419f.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.5e77559498bb5877a56bfe9b1dd55802.js": "/portfolio/precache-manifest.5e77559498bb5877a56bfe9b1dd55802.js",
+  "precache-manifest.a4c5acd8bd656e0c81f4b40e1700ab10.js": "/portfolio/precache-manifest.a4c5acd8bd656e0c81f4b40e1700ab10.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
