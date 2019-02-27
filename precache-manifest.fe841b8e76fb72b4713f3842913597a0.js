@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "17fd5a9d3ef68bcd318e",
+    "revision": "a79e413ec1d5f78d22a2",
     "url": "/portfolio/static/css/main.3758419f.chunk.css"
   },
   {
-    "revision": "17fd5a9d3ef68bcd318e",
-    "url": "/portfolio/static/js/main.17fd5a9d.chunk.js"
+    "revision": "a79e413ec1d5f78d22a2",
+    "url": "/portfolio/static/js/main.a79e413e.chunk.js"
   },
   {
     "revision": "be914d6734e50d64941c",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Hamburger_icon.86595150.svg"
   },
   {
-    "revision": "c68606ff2ab57831afd9d5a38fd448ec",
+    "revision": "ce1686ed15b1bf712c670b1b9f79fc03",
     "url": "/portfolio/index.html"
   }
 ];
