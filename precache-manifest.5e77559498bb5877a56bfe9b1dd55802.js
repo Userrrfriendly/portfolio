@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "0e968f6f0f47e9c8172e",
+    "revision": "0ceb2cfd52af31ec3510",
     "url": "/portfolio/static/css/main.3758419f.chunk.css"
   },
   {
-    "revision": "0e968f6f0f47e9c8172e",
-    "url": "/portfolio/static/js/main.0e968f6f.chunk.js"
+    "revision": "0ceb2cfd52af31ec3510",
+    "url": "/portfolio/static/js/main.0ceb2cfd.chunk.js"
   },
   {
-    "revision": "e475a9a9c1eefbf77761",
-    "url": "/portfolio/static/js/1.e475a9a9.chunk.js"
+    "revision": "be914d6734e50d64941c",
+    "url": "/portfolio/static/js/1.be914d67.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Hamburger_icon.86595150.svg"
   },
   {
-    "revision": "b763be2d4a2bd8fcd25e1a7297d74a9b",
+    "revision": "7e4d68de481a96bdb57b6f5b857b9fc4",
     "url": "/portfolio/index.html"
   }
 ];
