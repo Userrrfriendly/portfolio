@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import smoothscroll from 'smoothscroll-polyfill';
-// import * as Data from './Data/data';
 import * as Routes from './Data/routes';
 import Main from './Componets/Main/main';
 import Footer from './Componets/Footer/footer';
