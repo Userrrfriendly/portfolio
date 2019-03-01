@@ -48,3 +48,6 @@
     box-sizing: border-box;
 }
 
+.word {
+  display: inline-block;
+}

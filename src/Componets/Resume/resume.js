@@ -11,7 +11,8 @@ function Resume() {
             {/* <button className="download-btn"> */}
             <a
                 className="download-btn"
-                href="../../assets/Alpha Version03.pdf"
+                href=".../../assets/AlphaVersion03.pdf" 
+                //working codfe for dev {href="../../assets/Alpha Version03.pdf"}
                 download="Ben's Resume.pdf">
                 {/* <DownloadIcon /> */}
                 Download my Resume
