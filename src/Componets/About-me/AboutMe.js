@@ -101,13 +101,4 @@ const About = (props) => {
     )
 }
 
-/**
- * https://jacekjeznach.com/about/
- * https://ianlunn.co.uk/about/
- * https://daveismyname.blog/about-me
- * http://jeffsmith.me/
- * http://mattfarley.ca/
- * https://www.datchley.name/about-me/
- */
-
 export default About;

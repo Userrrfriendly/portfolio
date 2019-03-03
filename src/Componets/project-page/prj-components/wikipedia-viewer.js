@@ -38,31 +38,17 @@ function WikipediaViewer()  {
                     <Ft>{functionality}</Ft>
                 </p>
             </article>
-            {/* <article className="prj-pg-details-article">
-                <h3 className="prj-pg-details-article-h3">Approach/Milestones:</h3>
-                <p className="prj-pg-details-p">
-                    Althought the project is dead simple it was my first time 
-                </p>
-                <p className="prj-pg-details-p">
-                    One problem that I encountered was Cross-Origin Resource Sharing (CORS). While the application run without errors on my desktop
-                    when hosted on codepen.io the request to the openweathermap API was violating the CORS policy, as a workaround the 
-                    <a href="https://cors-anywhere.herokuapp.com/" target="_blank" rel="noopener noreferrer"> cors-anywhere.herokuapp.com </a>
-                    was used.
-                </p>
-            </article> */}
+
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3" aria-label="What did I learn from this project?"><FunkyHeader text="What did I learn from this project?"/></h3>
                 <p className="prj-pg-details-p" aria-label={finale}>
-                    {/* Althought the project is relatively simple it was my first experience with a lot of things that
-                    you meat in the web, this app was my crash course at fetching data from a RESTful API, apart from that
-                    I had to use jQuery to create new elements & insert them in the DOM to visualize the data. */}
                     <Ft>
-                    Although the project is relatively simple it was my crush course on a lot of common
-                    features encountered in the web. This was my first experience using asynchronous requests 
-                    and fetching data from a RESTful API. jQuery was used extensively on most parts of the project
-                    from fetching data from external sources by using the <code><Ft> $.ajax()</Ft></code> to creating elements and
-                    appending them in the DOM to visualize the results from the request. 
-                    Additionally Bootstrap was used to assure the responsiveness of the app.
+                        Although the project is relatively simple it was my crush course on a lot of common
+                        features encountered in the web. This was my first experience using asynchronous requests 
+                        and fetching data from a RESTful API. jQuery was used extensively on most parts of the project
+                        from fetching data from external sources by using the <code><Ft> $.ajax()</Ft></code> to creating elements and
+                        appending them in the DOM to visualize the results from the request. 
+                        Additionally Bootstrap was used to assure the responsiveness of the app.
                     </Ft>
                      
                 </p>

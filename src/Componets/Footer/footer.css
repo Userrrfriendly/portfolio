@@ -9,13 +9,11 @@
     justify-content: center;
     align-items: center;
     font-family: serif;
-    /* color: gray; */
-    color:#717171;
+    color: #717171;
 }
 
 .footer-links {
-    /* color: gray; */
-    color:#717171;
+    color: #717171;
     font-size: 1rem;
     display: block;
     text-decoration: none;
@@ -23,18 +21,18 @@
 
 .footer-links:hover {
     text-decoration: underline;
-    color: black!important;
+    color: black !important;
 }
 
 .footer-links:focus {
     outline: none;
     -webkit-box-shadow: 0 0 5px lightsteelblue;
-            box-shadow: 0 0 5px lightsteelblue;
+    box-shadow: 0 0 5px lightsteelblue;
     border: 2px solid darkgrey;
 }
 
 .footer-links:visited {
-    color:inherit;
+    color: inherit;
 }
 
 .footer-contact-info {
@@ -68,4 +66,3 @@
         margin-left: 3rem;
     }
 }
-

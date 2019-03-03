@@ -19,7 +19,7 @@ class ContactMe extends React.Component {
                         <div className="text-container">
                             <h1 className="animated-text animated fadeInDown" aria-label='Lets talk!'><FunkyHeader text='Lets talk!' /></h1>
                         </div>
-                        <div className="animated-div"></div>
+                        {/* <div className="animated-div"></div> */}
                         <section className="contact-me-section">
                             <h2 aria-label='Drop me a line to get started.'><FunkyHeader text="Drop me a line to get started." /></h2>
                             <form

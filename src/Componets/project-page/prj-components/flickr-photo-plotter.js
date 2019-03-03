@@ -85,14 +85,8 @@ function FlickrPhotoPlotter()  {
             </article>
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3" aria-label="What did I learn from this project?"><FunkyHeader text="What did I learn from this project?"/></h3>                
-                {/* <h3 className="prj-pg-details-article-h3">What did I learn from this project?</h3> */}
                 <p className="prj-pg-details-p" aria-label={finale}>
-                <Ft>{finale}</Ft>
-                {/* I learned how design patterns and UI libraries like React assist in developing a manageable codebase. 
-                I also explored how frameworks can decrease the time required developing an application and provide a 
-                number of utilities for us to use. 
-                Finally, by implementing third-party APIs that provide valuable data sets can greatly improve the quality 
-                of an application. */}
+                    <Ft>{finale}</Ft>
                 </p>
             </article>
         </div>

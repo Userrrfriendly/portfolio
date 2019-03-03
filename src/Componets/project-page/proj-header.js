@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import {Link} from 'react-router-dom';
 import './css/prj-header.css';
 import FunkyHeader from '../FunkyText/FunkyHeader';
 
@@ -9,15 +8,7 @@ class PrjHeader extends React.Component {
         title: PropTypes.string.isRequired,
         data: PropTypes.object.isRequired
     };
-    // static defaultProps = {
-    //     title: 'No Title!'
-    // };
-    /**
-     * path github
-     * path livepage
-     * img
-     * 
-     */
+
     render () {
         const data = this.props.data;
         return (

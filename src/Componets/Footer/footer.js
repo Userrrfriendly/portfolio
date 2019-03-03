@@ -19,7 +19,7 @@ class Footer extends React.Component {
                     <GitHubLinkedInIconLink iconName="linkedIn"/>
                 </div>
                 <div className="footer-legal">
-                    <p>Veniamin Tsigourof - 2018</p>
+                    <p>Veniamin Tsigourof - 2019</p>
                 </div>
             </footer>
         )

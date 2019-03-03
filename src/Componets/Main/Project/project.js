@@ -7,7 +7,7 @@ class Project extends React.Component {
     static propTypes = {
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
-        imageUrl: PropTypes.string.isRequired, //change to array for the srcset ???
+        imageUrl: PropTypes.string.isRequired,
         projectType: PropTypes.string.isRequired
     }
 

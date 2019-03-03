@@ -1,10 +1,9 @@
 #main-home {
     background-color: #ebebeb;
 }
+
 #main-home h2 {
     text-align: left;
-    /* margin-top: 1rem; */
-    /* margin-bottom: 1rem; */
     margin: 1rem 0 1rem 0.25rem;
     font-size: 2.2rem;
 }
@@ -24,10 +23,12 @@
         flex-flow: row wrap;
         font-size: inherit;
     }
+
     .sub-header {
         font-size: inherit;
     }
 }
+
 @media screen and (min-width:600px) {
     #stories {
         display: grid;
@@ -36,15 +37,14 @@
         /* https://stackoverflow.com/questions/50708974/how-do-you-collapse-unused-row-in-a-css-grid */
         grid-gap: 1rem;
     }
-    
-    #stories article:first-of-type  {
+
+    #stories article:first-of-type {
         grid-row: 2 / 4;
     }
 
     #projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 0.1rem; */
         margin-bottom: 3rem;
     }
 

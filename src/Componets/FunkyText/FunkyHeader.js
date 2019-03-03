@@ -6,7 +6,7 @@ const FunkyHeader = (props) => {
         .text
         .split(' ')
         .map(word => word + ' ');
-    // arrayOfWords = arrayOfWords.map(word => word + ' ');
+        
     const onMouseEnter = (e) => {
         return (e.target.classList.contains('animated-span')
             ? e.target.classList.add('rubberBand')

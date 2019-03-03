@@ -55,4 +55,5 @@ const FunkyText = (props) => {
  * nested elements/elements mixed with text will render normaly but the text inside them will not have the funky animation
  * if nested elements need have animation on hover, another Funky Element must wrap the text inside them.
  */
+
 export default FunkyText;

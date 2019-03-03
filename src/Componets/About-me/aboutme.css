@@ -1,17 +1,13 @@
 /* START list with badges */
-
 .bullet-list-new {
-  /* display: inline; */
-  /* list-style-type: none; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   margin-left: 0;
-  padding:0;
+  padding: 0;
 }
 
 .bullet-list-item-new {
-  /* margin-left: 1.5rem; */
   list-style-type: none;
 }
 
@@ -19,10 +15,6 @@
   animation-name: rubberBand;
   list-style-type: none;
 }
-/* START funky text */
-
-
-/* END funky text */
 
 .card-text {
   margin: 1rem 5px 1rem;
@@ -33,52 +25,41 @@
 }
 
 .bullet-list {
-  /* display: inline; */
-  /* list-style-type: none; */
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   /* justify-content: space-evenly; looks better but Edge doesn't support it */
 }
+
 .bullet-list-item {
   margin-left: 1.5rem;
-  /* padding-left: 1rem; */
-  /* margin:0; */
-  /* float: left; */
-  /* display: inline; */
 }
+
 .icon-svg-container {
   width: 80px;
   height: 100px;
   margin: auto;
-  /* height: 300px; */
 }
 
 .budges {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   /* justify-content: space-evenly; looks better but Edge doesn't support it */
 }
 
 
-/* .about-main h1,
-.about-main h2 {
-  color: #1d5cbd;
-} */
-
 .about-main {
-    width: 100%;
-    margin: 3rem auto auto;
-    max-width: 1600px;
+  width: 100%;
+  margin: 3rem auto auto;
+  max-width: 1600px;
 }
 
 .about-main-header {
   font-size: 2.5rem;
   margin-bottom: 0;
   vertical-align: bottom;
-  /* color: #1d5cbd; */
 }
 
 .about-secondary-header {
@@ -88,13 +69,10 @@
 }
 
 .about-header {
-  /* color: #1d5cbd; */
   font-size: 1.5rem;
   margin-bottom: 0;
 }
-/* .about-attention {
-  font-weight: bold;
-} */
+
 .about-container {
   margin-bottom: 4rem;
   display: flex;
@@ -123,15 +101,13 @@
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto 1rem;
-  /* display: grid;
-  grid-template-columns: 1fr 2fr 1fr; */
 }
 
 
 
 .card-image {
   max-width: 75%;
-  border-radius: 5px 5px 0  0;
+  border-radius: 5px 5px 0 0;
   margin: 5px auto 0 auto;
 }
 
@@ -139,7 +115,6 @@
   margin: 0 auto 5px auto;
   border: 1px solid lightslategrey;
   width: calc(75% - 2px);
-  /* border-radius: 5px; */
   border-radius: 0 0 5px 5px;
   background-color: lightgray;
 
@@ -150,47 +125,41 @@
 @media screen and (min-width: 600px) {
   .about-main {
     margin-bottom: auto;
-}
+  }
 
-.card-image {
-  width: 55%;
-}
-.card-caption {
-  width: calc(55% - 2px);
-}
-.about-header {
-  font-size: 2rem;
-}
-/* .card {
-  width: 60%;
-  display: flex;
-  flex-flow: column nowrap;
-} */
+  .card-image {
+    width: 55%;
+  }
 
-/* .about-container {
-  margin-bottom: 4rem;
-  display: flex;
-  flex-flow: row;
-} */
+  .card-caption {
+    width: calc(55% - 2px);
+  }
+
+  .about-header {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .about-container {
     flex-flow: row;
   }
+
   .about-container-details {
-    /* margin: 0 2rem 2rem 1rem; */
     padding-bottom: 0;
     border-bottom: none;
   }
+
   .about-aside {
     width: 40%;
     border: none;
     margin: 0 auto 1rem;
   }
+
   .card-image {
     width: 65%;
   }
+
   .card-caption {
     width: calc(65% - 2px);
   }

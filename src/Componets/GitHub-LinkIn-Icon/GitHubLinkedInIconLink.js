@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './GitHubLinkedInIconLink.css';
 
-/* Didn't have any experience with SVG but needed a way to display inline SVG hence the messy code
+/* 
     -The only props that the component requires is svgPath
         -if the props.svgPath is the string 'gitHub' the gitHub icon will display
         -if the props.svgPath is the string 'linkedIn' the LinkedIn icon will display

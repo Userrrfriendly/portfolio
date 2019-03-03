@@ -16,10 +16,6 @@ function Calculator()  {
         'When the decimal element is clicked, a . should append to the currently displayed value; two . in one number should not be accepted.',
         'If 2 or more operators are entered consecutively, the operation performed should be the last operator entered.',
         `Pressing an operator immediately following = should start a new calculation that operates on the result of the previous evaluation.`,
-        //  `calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, 
-        // but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).,`
-        //`When inputting numbers, my calculator should not allow a number to begin with multiple zeros.`//
-        //`I should be able to perform any operation (+, -, *, /) on numbers containing decimal points.`//
         ];
     const approach = "Oh boy, honestly I don't know where to start... At the time that I was coding this my quiver of tools & skills had only two arrows: jQuery & bootstrap. Some would argue that they are enough to do they job and although I completely agree with that notion, you have to take into account that at the time I was only 6 months into programming ,had no idea what the best practices are, no idea how to make an app scalable and no idea whatsoever about MVC... Basically I relied solely on my instincts and what 'made sense' to me at the moment Since I tried to make the calculator look more 'scientific' I had to add more features apart from the basic add, subtract, divide and multiple. Of course the more features you add to any app the more complex it becomes. Every new feature I added broke a couple that where working correctly. For a newbie like me this was a developing hell, a hell that taught me a lot of things.";
     const finale1 = 'This is not a project that I am proud of, none the less it is a project that taught me a LOT of things like:';

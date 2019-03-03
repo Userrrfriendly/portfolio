@@ -1,22 +1,15 @@
 .chart-container {
-    position: relative;
-    /* height:40vh; */
-    width: 80vw;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
-  }
+  position: relative;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
 
-  @media screen and (min-width:1000px) {
-    .chart-container {
-      max-width: 300px;
-    }
+@media screen and (min-width:1000px) {
+  .chart-container {
+    max-width: 300px;
   }
-
-  @media screen and (min-width:900px) {
-    /* .chart-container {
-      max-width: 350px;
-    } */
-  }
+}

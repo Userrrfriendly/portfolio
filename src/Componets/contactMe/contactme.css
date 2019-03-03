@@ -62,11 +62,11 @@
 }
 
 .contact-send-mail {
-  text-decoration: underline; 
+  text-decoration: underline;
   font-size: 2rem;
   color: black;
   border-radius: 5%;
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
   padding: 0.25rem 1rem;
   margin-left: auto;
   display: inline-block;
@@ -78,16 +78,15 @@
 }
 
 .contact-send-mail:focus {
-    outline: none;
-    box-shadow: 0px 0px 35px 0px rgba(0, 85, 119, 0.75);
-    border: 1px solid darkgrey;
+  outline: none;
+  box-shadow: 0px 0px 35px 0px rgba(0, 85, 119, 0.75);
+  border: 1px solid darkgrey;
 }
 
 .contact-icon-container {
   margin-top: 3rem;
   padding-top: 3rem;
   border-top: 1px solid lightgray;
-  /* border-bottom: 1px dashed blue; */
   min-height: 6rem;
   display: flex;
   justify-content: space-around;
@@ -124,13 +123,6 @@
   }
 }
 
-/* .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-} */
-
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -155,8 +147,8 @@
   .contact-me-container {
     width: 70%;
   }
+
   .main-contact {
-    /* min-height: calc(100vh - 10.5rem); */
     margin-bottom: auto;
   }
 
@@ -167,7 +159,7 @@
   .contact-me-text {
     font-size: 2rem;
   }
-  
+
   .animated-text {
     margin: 0;
     font-size: 3rem;
