@@ -1,14 +1,14 @@
 import React from 'react';
 // project images:
-import flickr from '../Images/projects/flickr-photo-plotter.jpg';
-import arcadeGame from '../Images/projects/arcade-1.jpg'; 
-import matchingGame from '../Images/projects/matching-game.jpg';
-import myReads from '../Images/projects/myReads.jpg';
-import unitTest from '../Images/projects/jasmine.jpg';
-import restaurantReview from '../Images/projects/restaurant-review.jpg';
-import wikiReader from '../Images/projects/Wikipedia Viewer.jpg'; 
-import weatherApp from '../Images/projects/weather-app.jpg';
-import calculator from '../Images/projects/calculator.jpg';
+import flickr from '../Images/compressed/projects/flickr-photo-plotter-compressor.jpg';
+import arcadeGame from '../Images/compressed/projects/arcade-1-compressor.jpg'; 
+import matchingGame from '../Images/compressed/projects/matching-game-compressor.jpg';
+import myReads from '../Images/compressed/projects/myReads-compressor.jpg';
+import unitTest from '../Images/compressed/projects/jasmine-compressor.jpg';
+import restaurantReview from '../Images/compressed/projects/restaurant-review-compressor.jpg';
+import wikiReader from '../Images/compressed/projects/Wiki-Viewer-compressor.jpg'; 
+import weatherApp from '../Images/compressed/projects/weather-app-compressor.jpg';
+import calculator from '../Images/compressed/projects/calculator-compressor.jpg';
 //Project components:
 import ArcadeGame from '../Componets/project-page/prj-components/arcade-game';
 import FlickrPhotoPlotter from '../Componets/project-page/prj-components/flickr-photo-plotter';

@@ -3,8 +3,6 @@ import './contactme.css';
 import GitHubLinkedInIconLink from '../GitHub-LinkIn-Icon/GitHubLinkedInIconLink';
 import FunkyHeader from '../FunkyText/FunkyHeader';
 
-// https://focuslabllc.com/contact
-// https://www.searchenginejournal.com/contact-us-page-examples/272283/ function
 class ContactMe extends React.Component {
     state = {
         fullName: "",

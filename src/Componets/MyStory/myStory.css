@@ -3,6 +3,7 @@
     /* margin: 1rem 0.25rem 2rem; */
     /* margin: 0; */
     /* display:flex; */
+    overflow: hidden;
 }
 
 .figure-block {
@@ -83,7 +84,7 @@
 }
 
 .hover-word {
-    font-weight: bold;
+    font-style: italic;
 }
 
 time {
