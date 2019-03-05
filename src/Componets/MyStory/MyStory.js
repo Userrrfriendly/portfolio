@@ -40,11 +40,11 @@ class MyStory extends React.Component {
                     so I subscribed to their newsletter and a couple of months later got an email that saying that Udacity and Google
                      where offering a limited opportunity through the 
                      <a
-                        href={`https://grow.google/intl/europe/`}
+                        href="https://grow.google/intl/europe/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="badge-link"
-                        aria-label={`Grow with Google link`}>
+                        aria-label="Grow with Google link">
                         <strong><Ft>Grow with Google</Ft></strong> 
                     </a>
                     program that offered a full Udacity NanoDegree in either Web or Android Scholarship Program, 
@@ -57,12 +57,12 @@ class MyStory extends React.Component {
           return (
               <Ft>
                   After the first application phase I was one of the 20.000 people from around the globe that participated in the 
-                  <a
-                        href={`https://www.udacity.com/grow-with-google`}
+                  <a 
+                        href="https://www.udacity.com/google-scholarships"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="badge-link"
-                        aria-label={`Google Developer Challenge Scholarship link`}>
+                        aria-label="Google Developer Challenge Scholarship link">
                         <strong><Ft>Google Developer Challenge Scholarship</Ft></strong> 
                     </a>
                   that lasted 3 months and offered a series of JavaScript CSS and HTML lessons and challenges. Top 2,000 students from this challenge were to be awarded full scholarships to the Front-End Web Developer NanoDegree Program by Udacity.
@@ -159,7 +159,7 @@ class MyStory extends React.Component {
                         looking for a needle in a haystack
                     </figcaption>
                 </figure>
-                <p data-aos="fade-down" className="story-p" aria-label={p7}> <strong><Ft>{p7}</Ft></strong> </p>
+                <p style={{marginBottom:'0'}} data-aos="fade-down" className="story-p" aria-label={p7}> <strong><Ft>{p7}</Ft></strong> </p>
                 <ol>
                     <li data-aos="fade-right" aria-label="either creating custom tools/extensions upon already existing software (preferably C# with .NET framework for ArcGIS or Python for qGIS)">
                         <Ft>either creating custom tools/extensions upon already existing software (preferably C# with .NET framework for ArcGIS or Python for qGIS)</Ft>

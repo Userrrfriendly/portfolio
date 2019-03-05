@@ -9,7 +9,6 @@ function Resume() {
             <a
                 className="download-btn"
                 href="../../assets/resume_web.pdf" 
-                // working codfe for  dev {href="../../assets/resumeresume_web.pdf"}
                 download="Ben's Resume.pdf">
                 Download my Resume
             </a>
