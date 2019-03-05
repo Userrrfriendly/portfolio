@@ -17,6 +17,10 @@
     font-size: 1.7rem;
 }
 
+#projects {
+    margin-bottom: 5rem;
+}
+
 @media screen and (min-width:650px) {
     .main-header {
         display: flex;
@@ -45,7 +49,6 @@
     #projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 3rem;
     }
 
     #stories h2 {

@@ -68,12 +68,13 @@
 
 .hover-word {
     font-style: italic;
+    font-weight: bold;
 }
 
 time {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .my-story-title {

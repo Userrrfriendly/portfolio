@@ -5,13 +5,10 @@
 
 }
 
+
 .download-btn {
   cursor: pointer;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
-}
-
-
-.download-btn {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -26,7 +23,7 @@
   font: normal normal bold 20px arial;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .download-btn:hover {
