@@ -32,7 +32,7 @@ function MyReads()  {
                 <strong><Ft>Additional requirements:</Ft></strong>
                 <ul className="check-list">
                     {goalsData.map((listItem, i)=>(
-                        <li key={i} className="check-item"><Ft>{listItem}</Ft></li>
+                        <li key={i} className="check-item" aria-label={listItem}><Ft>{listItem}</Ft></li>
                     ))}
                 </ul>
             </article>

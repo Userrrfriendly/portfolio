@@ -23,7 +23,7 @@ function ArcadeGame()  {
                 <strong><FunkyText>Build a game where:</FunkyText></strong>
                 <ul className="check-list">
                     {goalsData.map((listItem, i)=>(
-                        <li key={i} className="check-item">
+                        <li key={i} className="check-item" aria-label={listItem}>
                             <FunkyText>{listItem}</FunkyText>
                         </li>
                     ))}

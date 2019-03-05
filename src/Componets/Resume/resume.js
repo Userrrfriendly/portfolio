@@ -8,8 +8,8 @@ function Resume() {
             <h1 aria-label="Download resume as PDF:"><FunkyHeader text="Download resume as PDF:" /></h1>
             <a
                 className="download-btn"
-                href=".../../assets/AlphaVersion03.pdf" 
-                //working codfe for dev {href="../../assets/Alpha Version03.pdf"}
+                href="../../assets/resume_web.pdf" 
+                // working codfe for  dev {href="../../assets/resumeresume_web.pdf"}
                 download="Ben's Resume.pdf">
                 Download my Resume
             </a>

@@ -19,7 +19,7 @@ function FlickrPhotoPlotter()  {
         ];
     const goals='Develop a single-page application using React featuring a map of your choice or a map of a place you would like to visit. Add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a list view to support simple browsing of all locations. Research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).';
     const functionality = 'This single page application displays a map (Google Maps) and a list of landmarks (currently the landmarks are Dodecanese islands of Greece plus Santorini and Delos). The user can filter the landmarks by using the input field above the marker list. By clicking on either the marker on the map or the list item at the list of markers an infoWindow will expand above the marker on the map.';
-    const approach = 'Just like every problem that involves programming the implementations of Google Maps within a React app had multiple solutions. I choose not to rely on any external library for this task and instead used one of react components lifecycle events: componentDidMount() to initialize the map. Although the Wikipedia API call was pretty easy to deal with the flickr API had a of details: specifically the API call requests for photos that have geolocation as metadata and the search is based on a pair of coordinates within a specific radius and must contain a certain string either as a title/album name/photograph name or TAG, plus an extra call is made to get the actual geolocation and finally a function was written for the purpose of constructing the url for each photograph...fortunately the flickr API has great documentation. Since most of the API calls were made with fetch API it the <code> catch</code> method was used to handle the errors and in case of errors would provide the user with some meaningful information about what went wrong.';
+    const approach = 'Just like every problem that involves programming the implementations of Google Maps within a React app had multiple solutions. I choose not to rely on any external library for this task and instead used one of react components lifecycle events: componentDidMount() to initialize the map. Although the Wikipedia API call was pretty easy to deal with the flickr API had a of details: specifically the API call requests for photos that have geolocation as metadata and the search is based on a pair of coordinates within a specific radius and must contain a certain string either as a title/album name/photograph name or TAG, plus an extra call is made to get the actual geolocation and finally a function was written for the purpose of constructing the url for each photograph...fortunately the flickr API has great documentation. Since most of the API calls were made with fetch API it the catch method was used to handle the errors and in case of errors would provide the user with some meaningful information about what went wrong.';
     const finale = 'I learned how design patterns and UI libraries like React assist in developing a manageable codebase. I also explored how frameworks can decrease the time required developing an application and provide a number of utilities for us to use. Finally, by implementing third-party APIs that provide valuable data sets can greatly improve the quality of an application.';
     return (
         <div>
@@ -31,7 +31,7 @@ function FlickrPhotoPlotter()  {
                 <strong aria-label="Additional requirements:"><Ft>Additional requirements:</Ft></strong>
                 <ul className="check-list">
                     {goalsData.map((listItem, i)=>(
-                        <li key={i} className="check-item"><Ft>{listItem}</Ft></li>
+                        <li key={i} className="check-item" aria-label={listItem}><Ft>{listItem}</Ft></li>
                     ))}
                 </ul>
             </article>
@@ -71,17 +71,17 @@ function FlickrPhotoPlotter()  {
                     </ul>}
                     <p className="prj-pg-details-p" aria-label={approach}>
                     <Ft>Just like every problem that involves programming the implementations of Google Maps within a React app had multiple solutions.
-                    I choose not to rely on any external library for this task and instead used one of  
-                    react components lifecycle events: <code><Ft> componentDidMount()</Ft></code> to initialize the map.
-                    Although the Wikipedia API call was pretty easy to deal with the flickr API had <strong><Ft>a lot</Ft></strong> of details:
-                    specifically the API call requests for photos that have geolocation as metadata and the search is based on a pair of coordinates
-                    within a specific radius and must contain a certain string 
-                    either as a title/album name/photograph name or TAG,
-                    plus an extra call is made to get the actual geolocation and finally a function 
-                    was written for the purpose of constructing the url for each photograph...fortunately the flickr API has great documentation
-                    .Since most of the API calls were made with fetch API it the <code><Ft> catch</Ft></code> method was used to handle the errors
-                    and in case of errors would provide the user with some meaningful information about what went wrong.</Ft>
-                </p>
+                        I choose not to rely on any external library for this task and instead used one of  
+                        react components lifecycle events: <code><Ft> componentDidMount()</Ft></code> to initialize the map.
+                        Although the Wikipedia API call was pretty easy to deal with the flickr API had <strong><Ft>a lot</Ft></strong> of details:
+                        specifically the API call requests for photos that have geolocation as metadata and the search is based on a pair of coordinates
+                        within a specific radius and must contain a certain string 
+                        either as a title/album name/photograph name or TAG,
+                        plus an extra call is made to get the actual geolocation and finally a function 
+                        was written for the purpose of constructing the url for each photograph...fortunately the flickr API has great documentation
+                        .Since most of the API calls were made with fetch API it the <code><Ft> catch</Ft></code> method was used to handle the errors
+                        and in case of errors would provide the user with some meaningful information about what went wrong.</Ft>
+                    </p>
             </article>
             <article className="prj-pg-details-article">
                 <h3 className="prj-pg-details-article-h3" aria-label="What did I learn from this project?"><FunkyHeader text="What did I learn from this project?"/></h3>                
