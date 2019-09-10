@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "676f4a663a36b408be33",
-    "url": "/static/css/main.fcd50d03.chunk.css"
+    "revision": "e9e99615206674d26f0b",
+    "url": "/static/css/main.829005d1.chunk.css"
   },
   {
-    "revision": "676f4a663a36b408be33",
-    "url": "/static/js/main.676f4a66.chunk.js"
+    "revision": "e9e99615206674d26f0b",
+    "url": "/static/js/main.e9e99615.chunk.js"
   },
   {
-    "revision": "c42f4fc9c1c0c1592cc4",
-    "url": "/static/css/1.c264d458.chunk.css"
+    "revision": "9b46fac77df0a1514943",
+    "url": "/static/css/1.d1498c88.chunk.css"
   },
   {
-    "revision": "c42f4fc9c1c0c1592cc4",
-    "url": "/static/js/1.c42f4fc9.chunk.js"
+    "revision": "9b46fac77df0a1514943",
+    "url": "/static/js/1.9b46fac7.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
+  },
+  {
+    "revision": "41746d7113c8d4977da2827afec6402e",
+    "url": "/static/media/sempernote_compressor.41746d71.jpg"
   },
   {
     "revision": "9df964f17691be1d17d3135436aff8ae",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/Hamburger_icon.86595150.svg"
   },
   {
-    "revision": "58c8e3df46e6a72e8016b9ab6184cb2a",
+    "revision": "a4c3031646c437d7c7ca59b4618e4921",
     "url": "/index.html"
   }
 ];
