@@ -47,66 +47,66 @@ export const projects = [
     path: "/projects/sempernote"
   },
   {
-    name: "Flickr-Photo-Plotter",
+    name: "World Gallery",
     description: "Pins images on a map based on the image's geolocation",
     imageUrl: flickr,
-    projectType: "Udacity",
-    path: "/projects/flickr-photo-plotter"
+    projectType: "SPA",
+    path: "/projects/world-gallery"
   },
-  {
-    name: "My reads",
-    description: "Organize books on shelves based on what you are reading",
-    imageUrl: myReads,
-    projectType: "Udacity",
-    path: "/projects/my-reads"
-  },
-  {
-    name: "Restaurant Review",
-    description: "Restaurant review app",
-    imageUrl: restaurantReview,
-    projectType: "Udacity",
-    path: "/projects/restaurant-review"
-  },
+  // {
+  //   name: "My reads",
+  //   description: "Organize books on shelves based on what you are reading",
+  //   imageUrl: myReads,
+  //   projectType: "Udacity",
+  //   path: "/projects/my-reads"
+  // },
+  // {
+  //   name: "Restaurant Review",
+  //   description: "Restaurant review app",
+  //   imageUrl: restaurantReview,
+  //   projectType: "Udacity",
+  //   path: "/projects/restaurant-review"
+  // },
   {
     name: "Arcade Game",
     description: "Save the princess from bugs",
     imageUrl: arcadeGame,
     projectType: "Udacity",
     path: "/projects/arcade-game"
-  },
-  {
-    name: "Matching Game",
-    description: "Retro matching game",
-    imageUrl: matchingGame,
-    projectType: "Udacity",
-    path: "/projects/matching-game"
-  },
-  {
-    name: "Unit Tests",
-    description: "Test before you code",
-    imageUrl: unitTest,
-    projectType: "Udacity",
-    path: "/projects/unit-tests"
-  },
-  {
-    name: "Calculator",
-    description: "A calculator build with jQuery",
-    imageUrl: calculator,
-    projectType: "freeCodeCamp",
-    path: "/projects/calculator"
-  },
-  {
-    name: "Wikipedia reader",
-    description: "Uses the wikipedia API to browse wikipedia articles",
-    imageUrl: wikiReader,
-    projectType: "freeCodeCamp",
-    path: "/projects/wikipedia-reader"
-  },
-  {
-    name: "Weather App",
-    description: "Find out what the weather is without going outiside!",
-    imageUrl: weatherApp,
-    projectType: "freeCodeCamp",
-    path: "/projects/weather-app"
   }
+  // {
+  //   name: "Matching Game",
+  //   description: "Retro matching game",
+  //   imageUrl: matchingGame,
+  //   projectType: "Udacity",
+  //   path: "/projects/matching-game"
+  // }
+  // {
+  //   name: "Unit Tests",
+  //   description: "Test before you code",
+  //   imageUrl: unitTest,
+  //   projectType: "Udacity",
+  //   path: "/projects/unit-tests"
+  // }
+  // {
+  //   name: "Calculator",
+  //   description: "A calculator build with jQuery",
+  //   imageUrl: calculator,
+  //   projectType: "freeCodeCamp",
+  //   path: "/projects/calculator"
+  // },
+  // {
+  //   name: "Wikipedia reader",
+  //   description: "Uses the wikipedia API to browse wikipedia articles",
+  //   imageUrl: wikiReader,
+  //   projectType: "freeCodeCamp",
+  //   path: "/projects/wikipedia-reader"
+  // },
+  // {
+  //   name: "Weather App",
+  //   description: "Find out what the weather is without going outiside!",
+  //   imageUrl: weatherApp,
+  //   projectType: "freeCodeCamp",
+  //   path: "/projects/weather-app"
+  // }
 ];

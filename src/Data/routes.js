@@ -13,7 +13,7 @@ import calculator from "../Images/compressed/projects/calculator-compressor.jpg"
 //Project components:
 import Sempernote from "../Componets/project-page/prj-components/sempernote";
 import ArcadeGame from "../Componets/project-page/prj-components/arcade-game";
-import FlickrPhotoPlotter from "../Componets/project-page/prj-components/flickr-photo-plotter";
+import FlickrPhotoPlotter from "../Componets/project-page/prj-components/world-gallery";
 import MyReads from "../Componets/project-page/prj-components/my-reads";
 import RestaurantReview from "../Componets/project-page/prj-components/restaurant-review";
 import MemoryGame from "../Componets/project-page/prj-components/memory-game";
@@ -108,32 +108,24 @@ export const projectRoutes = [
     }
   },
   {
-    path: "/projects/flickr-photo-plotter",
-    title: "Flickr Photo Plotter",
+    path: "/projects/world-gallery",
+    title: "World Gallery",
     type: "Project",
     data: {
       imgUrl: flickr,
-      livePageUrl: "https://userrrfriendly.github.io/Flickr-Photo-Plotter/",
-      sourceCodeUrl: "https://github.com/Userrrfriendly/Flickr-Photo-Plotter",
+      livePageUrl: "https://userrrfriendly.github.io/World-Gallery/",
+      sourceCodeUrl: "https://github.com/Userrrfriendly/World-Gallery/",
       content: [
         {
           articleContent: <FlickrPhotoPlotter />
         }
       ],
       chartData: {
-        labels: [
-          "HTML5",
-          "CSS",
-          "JavaScript",
-          "ReactJs",
-          "Google Maps",
-          "Wikipedia API",
-          "Flickr API"
-        ],
+        labels: ["ReactJs", "Material-UI", "Google Maps", "Flickr API"],
         datasets: [
           {
             label: "Tools & Frameworks used:",
-            data: [2, 2, 2, 2, 2, 2, 2],
+            data: [2, 2, 2, 2],
             backgroundColor: [
               "rgba(255, 99, 132, 0.4)",
               "rgba(54, 162, 235, 0.4)",
